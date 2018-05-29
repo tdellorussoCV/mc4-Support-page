@@ -1,0 +1,296 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-top\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"pull",
+				"pull-right"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"ba",
+				"background-image\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"magin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"vert",
+				"vertical-align\tproperty"
+			],
+			[
+				"height",
+				"min-height\tproperty"
+			],
+			[
+				"pu",
+				"pull-left"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"BOOTSTRAP",
+				"bootstrap"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"a",
+				"align-content"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"no",
+				"noscript\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"b",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/Weather.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/carousel.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/test",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index_2.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/script.js",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/bootstrap.css",
+		"/C/Users/tdellorusso/Downloads/HTML5-canvas-projects-master/flip_clock/flip_clock.js",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/Tinton Falls test.json",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/azure.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/time.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index_2.php",
+		"/C/Program Files/Sublime Text 3/carousel.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/temp/index.html",
+		"/C/Users/tdellorusso/Downloads/style.css",
+		"/C/Users/tdellorusso/Downloads/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index.php",
+		"/C/Users/tdellorusso/Documents/Sublime3 Workspace/Getlogs app/getlogs.cs",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/test.html",
+		"/C/Users/tdellorusso/Documents/Webrot/the_kindergarten_site/template12/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/temp/zengarden-sample.css",
+		"/C/Users/tdellorusso/Documents/Webrot/the_kindergarten_site/template12/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/ScoreCard Exclude Weekends.mhtml",
+		"/C/Users/tdellorusso/Documents/Webrot/personal_portfolio/template11/index.html",
+		"//172.25.202.75/PiShare/index.htm",
+		"/Z/configs/bookmarks_11_12_14.html",
+		"/Z/configs/Firefox Recovery Key.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"gly",
+			"glyf"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
