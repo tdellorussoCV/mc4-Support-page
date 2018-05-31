@@ -1,51 +1,36 @@
- function startTime() {
-    var today=new Date();
-    var h=today.getHours();
-    var m=today.getMinutes();
-    var s=today.getSeconds();
-    var ampm = "";
-    m = checkTime(m);
+//alert("test");
 
-    if (h > 12) {
-    	h = h - 12;
-    	ampm = " PM";
-    } else if (h == 12){
-        h = 12;
-    	ampm = " AM";
-    } else if (h < 12){
-        ampm = " AM";
-    } else {
-        ampm = "PM";
-    };
-  
-  if(h==0) {
-    h=12;
-  }
-    
-    document.getElementById('display').innerHTML = h+":"+m+ampm;
-    var t = setTimeout(function(){startTime()},500);
+
+
+
+function listeners(){
+$(".btn-client .fa-plus-square").click(function(){
+  $("a.client").fadeToggle("slow");
+  });
+$(".btn-mm .fa-plus-square").click(function(){
+  $("a.mm").fadeToggle("slow");
+  });
+$(".btn-msg .fa-plus-square").click(function(){
+   $("a.msg").fadeToggle("slow");
+  });
+$(".btn-server .fa-plus-square").click(function(){
+   $("a.server").fadeToggle("slow");
+      });
+$(".btn-unix .fa-plus-square").click(function(){
+   $("a.unix").fadeToggle("slow");
+  });
 }
 
-function checkTime(i) {
-    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
 
-function genQuote() {
-  var randNum = Math.floor(Math.random() * 8) + 1;
-  document.getElementById('quote').innerHTML = quotes[randNum];
-  var tweetQuote = quotes[randNum].split(' ').join('%20');
-  tweetQuote = tweetQuote.split('<br>').join('');
-  tweetQuote = "https://twitter.com/intent/tweet?text=" + tweetQuote.split('"').join('')
-  $('.twitter-share-button').attr('href', tweetQuote);
-}
-
-//quote array
-var quotes = ["Blank", "\"Dude, suckin' at something is the first step at being sorta good at something.\"<br>-  Jake <small><em>(Adventure Time)</em></small>", "\"Either I will find a way, or I will make one.\"<br> - Philip Sidney", "\"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.\"<br>- Thomas A. Edison", "\"You are never too old to set another goal or to dream a new dream.\"<br>- C.S Lewis", "\"If you can dream it, you can do it.\"<br>- Walt Disney", "\"Never give up, for that is just the place and time that the tide will turn.\"<br>- Harriet Beecher Stowe", "\"I know where I'm going and I know the truth, and I don't have to be what you want me to be. I'm free to be what I want.\"<br>- Muhammad Ali", "\"If you always put limit on everything you do, physical or anything else. It will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.\"<br>- Bruce Lee",];
-
-//date
-function startDate() {
-  var d = new Date();
-  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-  document.getElementById("date").innerHTML = days[d.getDay()]+" | "+[d.getMonth()+1]+"/"+d.getDate()+"/"+d.getFullYear();
-}
+function dropdown(mySel)
+      {
+      var myWin, myVal, myId, myUrl;
+      myVal = mySel.options[mySel.selectedIndex].value;
+      myId = myForm.CCID.value;
+      myUrl = myVal + myId;
+      if(myVal)
+         {
+        window.open(myUrl)
+         }
+      return false;
+      }
