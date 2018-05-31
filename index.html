@@ -9,9 +9,19 @@
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	  	<script type="text/javascript" src="script.js"></script>
+	  	<style type="text/css">
+	  		body{
+	  			background: #ADA996;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+				height: 100%;
+				margin: 0;
+				}
+	  	</style>
 	</head>
 
-	<body id="top" style="position: relative; min-height: 100%; top: 0px;" onload="listeners()">
+	<body id="top" style="position: relative; min-height: 100%; top: 0px;" onload="loader()">
 		<!-- Navbar -->
 		<div class="nav-header">
 			<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -56,36 +66,15 @@
 	    <!-- Jumbotron Level -->
 	    <div class="row">
 	    		<div class="col-sm-2" >
-	    			
-				</div>
+	    		</div>
 	    		<div class="col-sm-8" >
 	    			<!-- <div class="container-fluid"> -->
-	    				<div class="jumbotron rounded" align="center" style="height: 100%;padding: 0; margin: 0">
-							<h1>Welcome to the MC4 Group Support Page</h1>
-							
-							<h3>Tools for the MC4 Support Team </h3>
-							<h3>to assist providing The Best Support:</h3>
-							<h2>Period!!!</h2>
-							<!-- <ul>
-							<li>
-								<a>1-Touch</a> - 
-								<a>Active Directory iDA</a>
-							</li>
-							<li>
-								<a>CDR (Continuous Data Replicator)</a> -
-								<a>File Archiver (Windows)</a>
-							</li>
-							<li>
-								<a>Image Level iDA / Image Level ProxyHost ProxyHost</a>
-							</li>
-							<li>
-								<a>SnapProtect (Windows File System, Virtual Server)</a> - 
-								<a>Windows File System</a>
-							</li>
-							 
-							</ul> -->
-	    				</div>
-	    			<!-- </div> -->
+	    			<div class="jumbotron rounded" align="center" style="height: 100%;padding: 0; margin: 0">
+						<h1>Welcome to the MC4 Group Support Page</h1>
+						<h3>Tools for the MC4 Support Team </h3>
+						<h3>to assist providing The Best Support:</h3>
+						<h2>Period!!!</h2>
+	    			</div>
 	    		</div>
 	    		<div class="col-sm-2" >
 	    		</div>
@@ -96,7 +85,7 @@
 			</div>
 			<div class="col-sm-8">
 				<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%">
-					<button class="btn btn-dark docNav">Documentation</button>
+					<button class="btn cvbutton docNav">Documentation</button>
 					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://internaldocs/">Internal Docs</a>
 					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm">Simpana v9</a>
 					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v10/article">Simpana v10</a>
@@ -108,14 +97,15 @@
 		</div>
 		<!-- Links Section -->
 		<div class="row">
-	    	<div class="col-sm-2" >
-	    		<div class="btn-group-vertical rounded">
-  					<button class="btn btn-info " data-toggle="modal" data-target="#myModal">Customer Log Files</button>
-  					<button class="btn btn-info " data-toggle="modal" data-target="#labSystems">Lab Systems</button>
-  					<a class="btn btn-info" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
- 					<a class="btn btn-info" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
-  					<a class="btn btn-info" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
-  					<a class="btn btn-info"  title="CommVault, Tinton Falls, NJ" role="button" href="http://engweb.commvault.com/OfficeMap/default.asp" target="_blank">Interactive Map</a>
+	    	<div class="col-sm-2" style="padding: 0 " >
+	    		<div class="btn-group-vertical rounded leftNav">
+  					<button class="btn cvbutton" data-toggle="modal" data-target="#myModal">Customer Log Files</button>
+  					<button class="btn cvbutton" data-toggle="modal" data-target="#labSystems">Lab Systems</button>
+  					<a class="btn cvbutton" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
+ 					<a class="btn cvbutton" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
+  					<a class="btn cvbutton" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
+  					<a class="btn cvbutton"  title="CommVault, Tinton Falls, NJ" role="button" href="http://engweb.commvault.com/OfficeMap/default.asp" target="_blank">Interactive Map</a>
+  					<a class="btn cvbutton" role="button" href="https://commvault.samanage.com/" target="_blank">HelpDesk</a>
 				</div>
 	    	</div>
 	    	<div class="col-sm-8" align="center">
@@ -291,17 +281,19 @@
     			<div class="rounded container">
 					<h4>Focus Teams</h4>
 				    <div class="btn-group-vertical rounded teams">
-				    	<button class="btn btn-teams btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-	        			<a class="btn btn-secondary client" role="button"  target="_blank" title="\\tdellorusso\Logs" href="file://tdellorusso/Logs">T. Dellorusso</li>
-        				<a class="btn btn-secondary client" role="button"  target="_blank" title="\\tarunkumar\Logs" href="file://tarunkumar/Logs">T.K. Jain</a>
-        				<a class="btn btn-secondary client" role="button"  target="_blank" title="\\jkrol\Logs" href="file://jkrol/Logs">J. Krol</a>
-        				<a class="btn btn-secondary client" role="button"  target="_blank" href="AD.html">Active Directory</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="CDR.html">CDR (DataReplicator)</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="FileArchiver.html">File Archiver</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="ImageLevel.html">Image Level (Deprecated)</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="SnapProtect.html">SnapProtect</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="VirtualServer.html">Virtual Server</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="WinFileSystem.html">Windows File System</a>
+				    	<button class="btn cvbutton btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
+				    	<!-- Client Members -->
+	        			<a class="btn btn-secondary client" role="button" target="_blank" title="\\mmancino840\Logs" href="file://mmancino840/Logs">Michael Mancino</a>
+	        			<a class="btn btn-secondary client" role="button" target="_blank" title="\\tdellorusso\Logs" href="file://tdellorusso/Logs">Thomas Dello Russo</a>
+        				<a class="btn btn-secondary client" role="button" target="_blank" title="\\tarunkumar\Logs" href="file://tarunkumar/Logs">Tarun Kumar Jain</a>
+        				<a class="btn btn-secondary client" role="button" target="_blank" title="\\jkrol\Logs" href="file://jkrol/Logs">Jason Krol</a>
+        				<a class="btn btn-secondary client" role="button"  target="_blank" title="\\WSHERIDAN\Logs" href="file://WSHERIDAN/Logs">William "Liam" Sheridan</a>
+					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="file://mwhitman/Logs">Mike Whitman</a>
+					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="file://cvce007940/Logs">Chris Stogsdill</a>
+					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="file://wesyoung\Logs">Wes Young</a>
+					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="file://jpolicastro//logs">James Policastro</a>
+					   	<a class="btn btn-secondary client" role="button"  target="_blank" href="file://dwhite800/logs">Daniel White</a>
+					   	<!-- MM logs -->
 					   	<button class="btn btn-teams btn-lg btn-mm">MM <i id="mm" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="FileArchiver.html">File Archiver</a>
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="ImageLevel.html">Image Level (Deprecated)</a>

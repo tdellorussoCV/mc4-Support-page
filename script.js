@@ -1,6 +1,10 @@
 //alert("test");
 
-
+function loader()
+{
+  listeners();
+  dropdown();
+}
 
 
 function listeners(){
