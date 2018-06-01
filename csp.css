@@ -29,3 +29,5 @@ span.MsoHyperlink{color:red;text-decoration:none;text-underline:none;text-decora
 .cvbutton{color: white;background-color: steelblue; border-color: steelblue}
 .btn-teams {color: white; background-color: steelblue;}
 .btn-client{background-color: steelblue; border-color: steelblue}
+
+.cvfooter {width: 50 %;float: left}

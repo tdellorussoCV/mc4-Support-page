@@ -25,31 +25,35 @@
 		<!-- Navbar -->
 		<div class="nav-header">
 			<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-		  		<a class="navbar-brand" href="index.html">MC4 Support Page</a>
+		  		<a class="navbar-brand" href="csp.html" >MC4 Support Page</a>
 		  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		    		<span class="navbar-toggler-icon"></span>
 		  		</button>
-		  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		    		<ul class="navbar-nav">
+		  		<div class="collapse navbar-collapse" id="collapsibleNavbar" >
+		    		<ul class="navbar-nav navbar-right">
 		      			<li class="nav-item">
-				        	<a class="nav-link" href="links.html">Links</a>
+				        	<a class="nav-link" href="mailto:tdellorusso@commvault.com"><i class="far fa-envelope"></i> Feedback</a>
 				      	</li>
-				      	<li class="nav-item">
+				      	<!-- <li class="nav-item">
 				        	<a class="nav-link" href="search.asp">Search</a>
-				      	</li>
+				      	</li> -->
 			    	</ul>
 			    	<!-- <ul class="navbar-nav"> 
 			    		<li class="nav-item  navbar-right" style="float: right;">
 			    			<form class="form-inline" id="alexSch" target="_blank" action="https://alexandria.commvault.com/#!/">
+			    				
 						    	<input class="form-control mr-sm-2" required type="text" placeholder="In progress">
 						    	<button class="btn btn-secondary" type="submit">Search</button>
 						  	</form>
 						  	<script type="text/javascript">
 						  		function alexSearch(){
 						  			var alexIpt = alexSch.input.value;
-						  			console.Log = 'alexIpt';
+						  			var alexStr = "https://alexandria.commvault.com/#!/search;searchTerms=";
+						  			var searchStr = alexStr + alexIpt;
+						  			console.Log (searchStr);
 						  		}
 						  	</script>
+						  	action="csp.html" method="POST" onsubmit="return dropdown(this.gourl)" 
 			    		</li>
 			    	</ul> -->
 		  		</div>  
@@ -104,7 +108,7 @@
   					<a class="btn cvbutton" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
  					<a class="btn cvbutton" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
   					<a class="btn cvbutton" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
-  					<a class="btn cvbutton"  title="CommVault, Tinton Falls, NJ" role="button" href="http://engweb.commvault.com/OfficeMap/default.asp" target="_blank">Interactive Map</a>
+  					<a class="btn cvbutton"  title="CommVault, Tinton Falls, NJ" role="button" href="http://engweb.commvault.com/OfficeMap/default.asp" target="_blank">Office Map</a>
   					<a class="btn cvbutton" role="button" href="https://commvault.samanage.com/" target="_blank">HelpDesk</a>
 				</div>
 	    	</div>
@@ -160,15 +164,24 @@
 								<a href="https://mscrm.commvault.com/" target="_blank">Microsoft Dynamics CRM</a> - 
 								<a href="https://co13611.purelyhr.com/?ct=1" target="_blank">TimeOff</a>
 							</li>
+							<li>
+								<a href="http://sso.forum.commvault.com/forums/default.aspx" target="_blank">Customer Support Forums</a>
+							</li>
 						</ul>
 	    			</div>	
 	    			<div class="well col-sm-4">
 	    				<h4>Customer Support Info Archive</h4>
 	    				<ul>
 	    					<li>
+	    						<h6>These Links are Depricated</h6>
+	    						<p>For Reference Only</p>
+	    					</li>
+	    					<li>
+								<a href="http://devcenter/wiki/index.php/Dev_Center_Home" target="_blank">Devcenter (WIKI)</a>
+							</li>
+	    					<li>
 								<a href="http://cic/pages/home.aspx" target="_blank">CIC</a> - 
 								<a href="http://cic/departments/hr/Pages/Home.aspx" target="_blank">myCV</a>
-
 							</li>
 							<li>
 								<a href="http://cic/departments/training/elearning/Pages/Home.aspx" target="_blank">CommVault E-Learning</a>
@@ -190,9 +203,6 @@
 	    				<h4 align="center">Development Information:</h4>
 	    					<ul >
 								<li>
-									<a href="http://devcenter/wiki/index.php/Dev_Center_Home" target="_blank">Devcenter (WIKI)</a>
-								</li>
-								<li>
 									<a href="http://engweb/search/" target="_blank">EngWeb Search</a>
 								</li>
 								<li>
@@ -213,26 +223,13 @@
 	    				<h4>Update Information:</h4>															
     					<ul>
 							<li>
-								<a href="http://devserver-2.gp.cv.commvault.com/" target="_blank">Devserver</a> - 
-								[<a href="http://devserver-2.gp.cv.commvault.com/cgi-bin/mainpage.pl?win?700?76" target="_blank">v7</a>] 
-								[<a href="http://devserver-2.gp.cv.commvault.com/cgi-bin/mainpage.pl?win?800?68" target="_blank">v8</a>] 
-								[<a href="http://devserver-2.gp.cv.commvault.com/pages/Release900.htm" target="_blank">v9</a>] 
-								[<a href="http://updatecenter.commvault.com/SearchForm.aspx?nBuildID=1000116&amp;" target="_blank">v10</a>]
-								[<a href="http://updatecenter.commvault.com/SearchForm.aspx?nBuildID=1100080&amp;" target="_blank">v11</a>]
-							</li>
-							<li>
-								<a href="http://updatecenter.commvault.com/" target="_blank">UpdateCenter</a> -
-								<a href="http://updatecenter.commvault.com/SearchForm.aspx?nBuildID=1000116&amp;" target="_blank">Search Forms</a>
+								<a href="http://updatecenter.commvault.com/" target="_blank">UpdateCenter</a>
 							</li>
 							<li>
 								<a href="file://vega/releasedPackages" target="_blank">ReleasedPackages</a>
 							</li>
 							<li>
 								<a href="https://cloud.commvault.com/" target="_blank">cloud.commvault.com</a>
-							</li>
-							<li>
-								<a href="http://devserver-2.gp.cv.commvault.com/morningreport.html" target="_blank">Updates in Progress</a> -
-								<a href="https://devserver-2.gp.cv.commvault.com/pages/Forms.pl" target="_blank">Scripts/Forms</a>
 							</li>
 							<li>
 								<a href="https://engweb.commvault.com/releasemanagement/targets" target="_blank">Service Pack Timelines</a>
@@ -245,8 +242,8 @@
     					<ul>
 							<li>
 								<a href="http://www.google.com/" target="_blank">Google</a> - 
-								<a href="http://www.bing.com/" target="_blank">Bing</a> - 
-								<a href="http://support.microsoft.com/search/?adv=1" target="_blank">Microsoft KB</a>
+								<a href="http://www.bing.com/" target="_blank">Bing</a> -
+								<a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia</a> 
 							</li>
 							<li>
 								<a href="http://msdn2.microsoft.com/en-us/library/ms681382.aspx" target="_blank">MSDN System Error Codes</a>
@@ -255,23 +252,18 @@
 								<a href="http://msdn2.microsoft.com/en-us/library/ms740668.aspx" target="_blank">MSDN Winsock Errors</a>
 							</li>
 							<li>
-								<a href="http://172.19.21.10/Advanced/HTML/MSDN%20Installer%20Error%20Codes" target="_blank">MSDN Installer	Error Codes</a>
-							</li>
-							<li>
 								<a href="http://msdn.microsoft.com/en-gb/library/hh994433.aspx" target="_blank">MSDN Bug Check Codes</a>
 							</li>
 							<li>
-								<a href="http://labmice.techtarget.com/troubleshooting/errorcodes.htm" target="_blank">Stop Errors (Lab Mice)</a> - 
-								<a href="http://aumha.org/win5/kbestop.htm" target="_blank">(Win5)</a>
+								<a href="http://labmice.techtarget.com/troubleshooting/errorcodes.htm" target="_blank">Stop Errors (Lab Mice)</a>
 							</li>
 							<li>
 								<a href="http://www.eventid.net/" target="_blank">EventID.net</a> -  
 								<a href="http://www.jsifaq.com/reghack.htm" target="_blank">JSI FAQ</a>
 							</li>
 							<li>
-								<a href="http://www.microsoft.com/technet/sysinternals/default.mspx" target="_blank">Sysinternals</a> - 
-								<a href="http://www.file.net/process/index.html" target="_blank">File.net</a> - 
-								<a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wiki</a>
+								<a href="https://docs.microsoft.com/en-us/sysinternals/" target="_blank">Sysinternals</a> - 
+								<a href="http://www.file.net/process/index.html" target="_blank">File.net</a> 
 							</li>
 						</ul>
 	    			</div>
@@ -327,7 +319,7 @@
 				   	</div>
 					<!-- Modal body -->
 		      		<div class="modal-body">
-		        		<form  id="myForm" action="index.html" method="POST" onsubmit="return dropdown(this.gourl)">	
+		        		<form  id="myForm" action="csp.html" method="POST" onsubmit="return dropdown(this.gourl)">	
 		        			<div class="form-group form-control">
 		        				<label >CCID</label>
 			        			<input type="text" name="CCID" size="4" value="">
@@ -400,23 +392,9 @@
 		      		</div>
 	    		</div>
 	  		</div>
-		</div>	
-		<!-- <script type="text/javascript">
-			$(".btn-client .fa-plus-square").click(function(){
-				$("a.client").fadeToggle("slow");
-			});
-			$(".btn-mm .fa-plus-square").click(function(){
-				$("a.mm").fadeToggle("slow");
-			});
-			$(".btn-msg .fa-plus-square").click(function(){
-				$("a.msg").fadeToggle("slow");
-			});
-			$(".btn-server .fa-plus-square").click(function(){
-				$("a.server").fadeToggle("slow");
-			});
-			$(".btn-unix .fa-plus-square").click(function(){
-				$("a.unix").fadeToggle("slow");
-			});
-		</script>		  -->
+		</div>
+<nav></nav>
+
+		
 	</body>
 </html>
