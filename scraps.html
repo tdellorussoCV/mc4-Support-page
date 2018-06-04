@@ -160,3 +160,38 @@ javascript:void function(){"mscrm.commvault.com"!==window.location.hostname%26%2
 						</div>-->
 						df
 				
+
+
+Imports System.Threading 'outside of class
+'inside class:
+function SomeButtonGotClickedHere()
+{
+   var thread As New Thread(AddressOf openExplorer)
+   thread.Start()
+}
+function openExplorer(){
+   Process.Start("explorer")
+}
+
+
+<button onclick="myFunction()" onmouseout="outFunc()">
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  Copy text
+  </button>
+</div>
+
+<script>
+function copyLogs() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+</script>

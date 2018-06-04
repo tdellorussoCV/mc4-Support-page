@@ -23,7 +23,7 @@ span.MsoHyperlink{color:red;text-decoration:none;text-underline:none;text-decora
 .firstrow{align-self: center;height: 25px;margin-left: 15px; padding-right: 0px}
 
 .heading{padding: 0;margin: 0;}
-
+.navlogo{padding: 0 10px}
 .fa-plus-square{float: right;}
 
 .cvbutton{color: white;background-color: steelblue; border-color: steelblue}
@@ -31,3 +31,5 @@ span.MsoHyperlink{color:red;text-decoration:none;text-underline:none;text-decora
 .btn-client{background-color: steelblue; border-color: steelblue}
 
 .cvfooter {width: 50 %;float: left}
+
+#cvlogo{height: 36px; width: 36px}

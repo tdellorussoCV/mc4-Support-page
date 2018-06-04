@@ -1,9 +1,11 @@
 //alert("test");
+var mySel = "test"
 
 function loader()
 {
   listeners();
   dropdown();
+  alexSearch();
 }
 
 
@@ -38,3 +40,20 @@ function dropdown(mySel)
          }
       return false;
       }
+
+function alexSearch(alexSch){
+                    var alexIpt = alexSch;
+                    var alexStr = "https://alexandria.commvault.com/#!/search;searchTerms=";
+                    var searchStr = alexStr + alexIpt;
+                    if(searchStr)
+                      {
+                        window.open(searchStr)
+                      }
+                    return false;
+                  } 
+
+function openExplorer(test){
+   var objecttxt =  test;
+   console.log(objecttxt);
+   window.open(objecttxt);
+}     
