@@ -10,7 +10,7 @@ button.docNav{width: 20%}
 
 a.docNav{width: 20%}
 a.client, a.msg, a.mm, a.server, a.unix{display:none;}
-
+button.client, button.unix, button.msg, button.mm, button.server {display:none;}
 div.teams{width: 100%}
 div.teamNav{width: 100%}
 div.leftNav{width: 75%; margin-left: 50px; margin-right: 50px}
@@ -24,7 +24,7 @@ span.MsoHyperlink{color:red;text-decoration:none;text-underline:none;text-decora
 
 .heading{padding: 0;margin: 0;}
 .navlogo{padding: 0 10px}
-.fa-plus-square{float: right;}
+.fa-plus-square, .fa-clipboard-check, .fa-clipboard-list{float: right;}
 
 .cvbutton{color: white;background-color: steelblue; border-color: steelblue}
 .btn-teams {color: white; background-color: steelblue;}
@@ -33,3 +33,41 @@ span.MsoHyperlink{color:red;text-decoration:none;text-underline:none;text-decora
 .cvfooter {width: 50 %;float: left}
 
 #cvlogo{height: 36px; width: 36px}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

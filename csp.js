@@ -1,32 +1,52 @@
 //alert("test");
-var mySel = "test"
-
-function loader()
-{
-  listeners();
-  dropdown();
-  alexSearch();
+function loaders(){
+  fadelisteners();
+  alexlisteners();
+  buttonlisteners();
 }
 
-
-function listeners(){
-$(".btn-client .fa-plus-square").click(function(){
-  $("a.client").fadeToggle("slow");
+function fadelisteners(){
+  $(".btn-client .fa-plus-square").click(function(){
+    $("button.client").fadeToggle("slow");
   });
-$(".btn-mm .fa-plus-square").click(function(){
-  $("a.mm").fadeToggle("slow");
+  $(".btn-mm .fa-plus-square").click(function(){
+    $("button.mm").fadeToggle("slow");
   });
-$(".btn-msg .fa-plus-square").click(function(){
-   $("a.msg").fadeToggle("slow");
+  $(".btn-msg .fa-plus-square").click(function(){
+    $("button.msg").fadeToggle("slow");
   });
-$(".btn-server .fa-plus-square").click(function(){
-   $("a.server").fadeToggle("slow");
-      });
-$(".btn-unix .fa-plus-square").click(function(){
-   $("a.unix").fadeToggle("slow");
+  $(".btn-server .fa-plus-square").click(function(){
+    $("button.server").fadeToggle("slow");
   });
+  $(".btn-unix .fa-plus-square").click(function(){
+    $("button.unix").fadeToggle("slow");
+  });
+  
 }
 
+function alexlisteners(){
+  $("#alex[type='text']").keypress(function(event){
+    //console.trace();
+    if(event.which === 13){
+      var alexinput = $(this).val();
+      var alexstatic = "https://alexandria.commvault.com/#!/search;searchTerms=";
+      var alexurl = alexstatic + alexinput;
+      window.open(alexurl);
+      $(this).val("");
+    }
+  });
+ }
+
+function buttonlisteners(){
+  $(".cvlogs").click(function(){
+    var copyText = $(this);
+    var cvid = $(copyText).attr("name");
+    console.log(cvid);
+    var dummyContent = cvid;
+    var dummy = $('<input>').val(dummyContent).appendTo('body').select();
+    document.execCommand('copy');
+    });
+}    
 
 function dropdown(mySel)
       {
@@ -39,21 +59,30 @@ function dropdown(mySel)
         window.open(myUrl)
          }
       return false;
-      }
+      };
 
-function alexSearch(alexSch){
-                    var alexIpt = alexSch;
-                    var alexStr = "https://alexandria.commvault.com/#!/search;searchTerms=";
-                    var searchStr = alexStr + alexIpt;
-                    if(searchStr)
-                      {
-                        window.open(searchStr)
-                      }
-                    return false;
-                  } 
 
 function openExplorer(test){
-   var objecttxt =  test;
-   console.log(objecttxt);
-   window.open(objecttxt);
-}     
+  var objecttxt =  test;
+  console.log(objecttxt);
+  window.open(objecttxt);
+};  
+
+function copyToClipboard(val){
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    $(dummy).css('display','none');
+    dummy.setAttribute("id", "dummy_id");
+    document.getElementById("dummy_id").value=val;
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+
+}
+
+// function copyLogs(mytitle) {
+//   var copyText = mytitle;
+//   copyText.select();
+//   document.execCommand("copy");
+//   alert("Copied the text: " + copyText.value);
+//  };

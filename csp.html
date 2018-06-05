@@ -21,7 +21,7 @@
 	  	</style>
 	</head>
 
-	<body id="top" style="position: relative; min-height: 100%; top: 0px;" onload="loader()">
+	<body id="top" style="position: relative; min-height: 100%; top: 0px;" onload="loaders()">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
 			<div class="container-fluid">
@@ -44,12 +44,9 @@
 					</div>
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right flex-row-reverse">
-							<!-- <li class="nav-item">
-					      		<form class="form-inline" action="csp.html" method="POST" onsubmit="return alexSearch(this.srchTerm)">
-	    							<input class="form-control mr-sm-2" type="text" name="srchTerm" placeholder="Alexandria Search">
-	    							<button class="btn btn-secondary" type="submit">Search</button>
-								</form>
-							</li> -->
+							<li class="nav-item">
+					      		<input class="form-control mr-sm-2" type="text" id="alex" placeholder="Alexandria Search" name="alex1">
+	    					</li>
 							<li class="nav-item" style="padding: 0 10px">
 					        	<a class="nav-link" href="mailto:tdellorusso@commvault.com"><i class="far fa-envelope"></i> Feedback</a>
 					      	</li>
@@ -272,18 +269,18 @@
     			<div class="rounded container">
 					<h4>Log Shares by Focus Team</h4>
 				    <div class="btn-group-vertical rounded teams">
-				    	<button class="btn cvbutton btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
 				    	<!-- Client Members -->
-	        			<a class="btn btn-secondary client" role="button" target="_blank" title="\\mmancino840\Logs" id="mmancino840" href="file://mmancino840/Logs">Michael Mancino</a>
-	        			<a class="btn btn-secondary client" role="button" target="_blank" title="\\tdellorusso\Logs" href="file://tdellorusso/Logs">Thomas Dello Russo</a>
-        				<a class="btn btn-secondary client" role="button" target="_blank" title="\\tarunkumar\Logs" href="file://tarunkumar/Logs">Tarun Kumar Jain</a>
-        				<a class="btn btn-secondary client" role="button" target="_blank" title="\\jkrol\Logs" href="file://jkrol/Logs">Jason Krol</a>
-        				<a class="btn btn-secondary client" role="button"  target="_blank" title="\\WSHERIDAN\Logs" href="file://WSHERIDAN/Logs">William "Liam" Sheridan</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" title="\\mwhitman\Logs"href="file://mwhitman/Logs">Mike Whitman</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" title="\\jkcstogsdill800rol\Logs"href="file://cstogsdill800/Logs/">Chris Stogsdill</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" title="\\wesyoung\Logs"href="file://wesyoung/Logs">Wes Young</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" title="\\jpolicastro\Logs"href="file://jpolicastro/logs">James Policastro</a>
-					   	<a class="btn btn-secondary client" role="button"  target="_blank" title="\\dwhite800\Logs"href="file://dwhite800/logs">Daniel White</a>
+				    	<button class="btn cvbutton btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
+				    	<button class="btn btn-secondary client cvlogs" name="file://mmancino840/Logs" title="\\mmancino840\Logs">Michael Mancino</button>
+	        			<button class="btn btn-secondary client cvlogs" name="file://tdellorusso/Logs" title="\\tdellorusso\Logs">Thomas Dello Russo</button>
+        				<button class="btn btn-secondary client cvlogs" name="file://tarunkumar/Logs" title="\\tarunkumar\Logs">Tarun Kumar Jain</button>
+        				<button class="btn btn-secondary client cvlogs" name="file://jkrol/Logs" title="\\jkrol\Logs">Jason Krol</button>
+        				<button class="btn btn-secondary client cvlogs" name="file://WSHERIDAN/Logs" title="\\WSHERIDAN\Logs">William "Liam" Sheridan</button>
+					   	<button class="btn btn-secondary client cvlogs" name="file://mwhitman/Logs" title="\\mwhitman\Logs">Mike Whitman</button>
+					   	<button class="btn btn-secondary client cvlogs" name="file://cstogsdill800/Logs" title="\\cstogsdill800\Logs">Chris Stogsdill</button>
+					   	<button class="btn btn-secondary client cvlogs" name="file://wesyoung/Logs" title="\\wesyoung\Logs">Wes Young</button>
+					   	<button class="btn btn-secondary client cvlogs" name="file://jpolicastro/Logs" title="\\jpolicastro\Logs">James Policastro</button>
+					   	<button class="btn btn-secondary client cvlogs" name="file://dwhite800/Logs" title="\\dwhite800\Logs">Daniel White</button>
 					   	<!-- MM logs -->
 					   	<button class="btn btn-teams btn-lg btn-mm">MM <i id="mm" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="FileArchiver.html">File Archiver</a>
@@ -291,16 +288,19 @@
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="SnapProtect.html">SnapProtect</a>
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="VirtualServer.html">Virtual Server</a>
 					   	<a class="btn btn-secondary mm" role="button"  target="_blank" href="WinFileSystem.html">Windows File System</a>
+					   	<!-- MSG Members -->
 					   	<button class="btn btn-teams btn-lg btn-msg">MSG <i id="msg" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<a class="btn btn-secondary msg" role="button"  target="_blank" href="SnapProtect.html">SnapProtect</a>
 					   	<a class="btn btn-secondary msg" role="button"  target="_blank" href="VirtualServer.html">Virtual Server</a>
 					   	<a class="btn btn-secondary msg" role="button"  target="_blank" href="WinFileSystem.html">Windows File System</a>
+					   	<!-- Server Members -->
 					   	<button class="btn btn-teams btn-lg btn-server">Server <i id="server" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<a class="btn btn-secondary server" role="button"  target="_blank" href="SnapProtect.html">SnapProtect</a>
 					   	<a class="btn btn-secondary server" role="button"  target="_blank" href="VirtualServer.html">Virtual Server</a>
 					   	<a class="btn btn-secondary server" role="button"  target="_blank" href="WinFileSystem.html">Windows File System</a>
+					   	<!-- Unix Members -->
 					   	<button class="btn btn-teams btn-lg btn-unix">Unix <i id="unix" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
-					   	<a class="btn btn-secondary unix" role="button"  target="_blank" href="file://THADLEY800/Logs">Thomas Hadley</a>
+					   	<button class="btn btn-secondary unix cvlogs" name="file://THADLEY800/Logs" title="\\thadley800\Logs">Thomas Hadley</button>
 					   	<a class="btn btn-secondary unix" role="button"  target="_blank" href="VirtualServer.html">Virtual Server</a>
 					   	<a class="btn btn-secondary unix" role="button"  target="_blank" href="WinFileSystem.html">Windows File System</a>
 	        		</div>
