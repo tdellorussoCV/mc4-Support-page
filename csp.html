@@ -267,7 +267,7 @@
     		</div>
     		<div class="col-sm-2" style="padding: 0;" >
     			<div class="rounded container">
-					<h4>Log Shares by Focus Team</h4>
+					<h4>Log Shares <i class="fas fa-screwdriver"></i></h4><span><p>Click on Name to copy Log location to Clipboard... Work In Progress</p></span>
 				    <div class="btn-group-vertical rounded teams">
 				    	<!-- Client Members -->
 				    	<button class="btn cvbutton btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
@@ -283,22 +283,28 @@
 					   	<button class="btn btn-secondary client cvlogs" name="file://dwhite800/Logs" title="\\dwhite800\Logs">Daniel White</button>
 					   	<!-- MM logs -->
 					   	<button class="btn btn-teams btn-lg btn-mm">MM <i id="mm" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
-					   	<button class="btn btn-secondary mm " name="file://pbattifora/Logs" title="\\pbattifora\logs">Paolo Battifora</button>
-					   	<button class="btn btn-secondary mm " name="file://tobermeit/Logs" title="\\tobermeit\logs">Michael Cozzi</button>
+					   	<button class="btn btn-secondary mm cvlogs" name="file://PBATTIFORA/Logs" title="\\PBATTIFORA\Logs">Paolo Battifora</button>
+					   	<button class="btn btn-secondary mm disabled" name="file://mcozzi/Logs" title="\\mcozzi\logs">Michael Cozzi</button>
 					   	<button class="btn btn-secondary mm cvlogs" name="file://CMCCARTHY/Logs" title="\\CMCCARTHY\Logs">Charles McCarthy</button>
+					   	<button class="btn btn-secondary mm cvlogs" name="file://cvce009077/Logs" title="\\cvce009077\Logs">Colin Falkinburg</button>
+					   	<button class="btn btn-secondary mm cvlogs" name="file://bsamuel/Logs" title="\\bsamuel\logs">Bryan Samuel</button>
+					   	<button class="btn btn-secondary mm disabled" name="file://bmarrow/Logs" title="\\bmarrow\logs">Bernard Marrow</button>
+					   	<button class="btn btn-secondary mm disabled" name="file://rcauterucci/Logs" title="\\rcauterucci\logs">Richard Cauterucci</button>
 					   	<!-- MSG Members -->
 					   	<button class="btn btn-teams btn-lg btn-msg">MSG <i id="msg" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<button class="btn btn-secondary msg cvlogs" name="file://tobermeit/Logs" title="\\tobermeit\logs">Tamara Obermeit</button>
-					   	<button class="btn btn-secondary msg " name="null" title="null">Vlad Vovchik</button>
-					   	<button class="btn btn-secondary msg " name="null" title="null">Thomas Flanagan</button>
+					   	<button class="btn btn-secondary msg disabled" name="null" title="null">Vlad Vovchik</button>
+					   	<button class="btn btn-secondary msg disabled" name="null" title="null">Thomas Flanagan</button>
 					   	<!-- Server Members -->
 					   	<button class="btn btn-teams btn-lg btn-server">Server <i id="server" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
-					   	<button class="btn btn-secondary server " name="file://tobermeit/Logs" title="\\khayes800\logs">Kenneth Hayes</button>
-					   	<button class="btn btn-secondary server " name="null" title="null">Michael Peterson</button>
+					   	<button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="\\khayes800\logs">Kenneth Hayes</button>
+					   	<button class="btn btn-secondary server disabled" name="null" title="null">Michael Peterson</button>
 					   	<!-- Unix Members -->
 					   	<button class="btn btn-teams btn-lg btn-unix">Unix <i id="unix" style="padding-top: 6px"  class="far fa-plus-square"></i></span></button>
 					   	<button class="btn btn-secondary unix cvlogs" name="file://THADLEY800/Logs" title="\\thadley800\Logs">Thomas Hadley</button>
-					   	<button class="btn btn-secondary unix " name="file://v/Logs" title="\\thadley800\Logs">Mahender Reddy</button>
+					   	<button class="btn btn-secondary unix disabled" name="file://v/Logs" title="\\thadley800\Logs">Rick Trione</button>
+					   	<button class="btn btn-secondary unix disabled" name="file://v/Logs" title="\\thadley800\Logs">Mahender Reddy</button>
+					   	<button class="btn btn-secondary unix disabled" name="file://v/Logs" title="\\thadley800\Logs">Kerwin Rodgers</button>
 	        		</div>
 		    	</div>
 		    </div>
@@ -317,7 +323,7 @@
 		        		<form  id="myForm" action="csp.html" method="POST" onsubmit="return dropdown(this.gourl)">	
 		        			<div class="form-group form-control">
 		        				<label >CCID</label>
-			        			<input type="text" name="CCID" size="4" value="">
+			        			<input id="cvgetlog" type="text" name="CCID" size="4" value="">
 								<select name="gourl">
 									<option value="\\ENG\CELOGS\">QUPLOAD [GUI SendLogs]</option>
 									<option value="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/">QNFTP [FTP Upload]</option>
@@ -326,7 +332,7 @@
 								<input class="btn btn-primary btn-info" type="submit" value="Go" name="B1">
 								<p class="MsoNormal">
 									<span style="font-size:9.0pt;font-family:Verdana; color:#D8D8D8">
-										<a href="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming">QNFTP</a> -	<a href="file://eng/CELOGS/">QUPLOAD</a> - <a href="file://eng/escalationlogs/">Escalation Logs</a> - <a href="file://127.0.0.1/Logs">Local Logs</a> - <a <="" p=""></a>
+										<a href="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming">QNFTP</a> -	<a target="_blank" href="file://\\\eng\CELOGS\">QUPLOAD</a> - <a target="_blank" href="file://\\\eng\escalationlogs\">Escalation Logs</a> - <a href="file:///127.0.0.1/Logs">Local Logs</a> - <a <="" p=""></a>
 									</span>
 								</p>
 							</div>

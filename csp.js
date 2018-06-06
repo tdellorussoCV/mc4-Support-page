@@ -40,12 +40,13 @@ function alexlisteners(){
 function buttonlisteners(){
   $(".cvlogs").click(function(){
     var copyText = $(this);
-    var cvid = $(copyText).attr("name");
+    var cvid = $(copyText).attr("title");
     var dummyContent = cvid;
     var dummy = $('<input>').val(dummyContent).appendTo('body').select();
     document.execCommand('copy');
-    $('input').css('display','none');
-    $('#alex').fadeToggle();
+    // $('input').css('display','none');
+    // $('#alex').fadeToggle();
+    // $('#cvgetlog').fadeToggle();
     });
 }    
 
@@ -81,9 +82,3 @@ function copyToClipboard(val){
 
 }
 
-// function copyLogs(mytitle) {
-//   var copyText = mytitle;
-//   copyText.select();
-//   document.execCommand("copy");
-//   alert("Copied the text: " + copyText.value);
-//  };
