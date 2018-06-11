@@ -9,7 +9,7 @@
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	  	<script type="text/javascript" src="csp.js"></script>
-	  	<style type="text/css">
+	  	<!-- <style type="text/css">
 	  		body{
 	  			background: #ADA996;  /* fallback for old browsers */
 				background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
@@ -18,10 +18,10 @@
 				height: 100%;
 				margin: 0;
 				}
-	  	</style>
+	  	</style> -->
 	</head>
 
-	<body id="top" style="position: relative; min-height: 100%; top: 0px;" onload="loaders()">
+	<body id="top" onload="loaders()">
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
 			<div class="container-fluid">
@@ -79,24 +79,10 @@
 	    		<div class="col-sm-2" >
 	    		</div>
 		</div>
-		<!-- Documentation Navbar row -->
+		
+		
 		<div class="row">
-			<div class="col-sm-2">
-			</div>
-			<div class="col-sm-8">
-				<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%">
-					<button class="btn cvbutton docNav">Documentation</button>
-					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://internaldocs/">Internal Docs</a>
-					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm">Simpana v9</a>
-					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v10/article">Simpana v10</a>
-					<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v11/article">Simpana v11</a>
-				</div>
-			</div>
-			<div class="col-sm-2">
-			</div>
-		</div>
-		<!-- Links Section -->
-		<div class="row">
+			<!-- Left Hand Buttons -->
 	    	<div class="col-sm-2" style="padding: 0 " >
 	    		<div class="btn-group-vertical rounded leftNav">
   					<button class="btn cvbutton" data-toggle="modal" data-target="#myModal">Customer Log Files</button>
@@ -108,8 +94,24 @@
   					<a class="btn cvbutton" role="button" href="https://commvault.samanage.com/" target="_blank">HelpDesk</a>
 				</div>
 	    	</div>
+	    	<!-- Center Links Section -->
 	    	<div class="col-sm-8" align="center">
 	    		<div class="row">	
+		   			<!-- Documentation Navbar row -->
+					<div class="container-fluid heading">
+						<div class="row">
+							<div class="col-sm-12 heading">
+								<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%;">
+									<button class="btn cvbutton docNav">Documentation</button>
+									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://internaldocs/">Internal Docs</a>
+									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm">Simpana v9</a>
+									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v10/article">Simpana v10</a>
+									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v11/article">Simpana v11</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- CommVault Information: -->
 		   			<div class="well col-sm-4">
 		   				<h4 align="center">CommVault Information:</h4>
 		   				<ul>
@@ -124,10 +126,10 @@
 								<a href="https://connect.commvault.com/" target="_blank">Commvault Connect</a>
 							</li>
 							<li>
-								<a href="http://brand.commvault.com/"target="_blank">Commvault Brand Place</a>
+								<a href="http://brand.commvault.com/" target="_blank">Commvault Brand Place</a>
 							</li>
 							<li>
-								<a href="https://ops-commvault-home.teamexos.com">EXOS | Fitness Center</a>
+								<a href="https://ops-commvault-home.teamexos.com" target="_blank">EXOS | Fitness Center</a>
 							</li>
 							<li>
 								<a href="https://portal.adp.com/public/index.htm" target="_blank">ADP Portal</a>
@@ -137,6 +139,7 @@
 							</li>
 						</ul>
 	    			</div>
+	    			<!-- Customer Engineering: -->
 	    			<div class="well col-sm-4">
 	    				<h4 align="center">Customer Engineering:</h4>
 	    				<ul>
@@ -163,6 +166,7 @@
 							</li>
 						</ul>
 	    			</div>	
+	    			<!-- Connect Customer Support: -->
 	    			<div class="well col-sm-4">
 	    				<h4>Connect Customer Support:</h4>
 	    				<ul>
@@ -195,6 +199,7 @@
 	    			</div>
 	    		</div>
 	    		<div class="row">
+	    			<!-- Development Information: -->
 	    			<div class="col-sm-4">
 	    				<h4 align="center">Development Information:</h4>
 	    					<ul >
@@ -215,6 +220,7 @@
 								</li>
 							</ul>
 	    			</div>
+	    			<!-- Update Information: -->
 	    			<div class="col-sm-4">
 	    				<h4>Update Information:</h4>															
     					<ul>
@@ -232,6 +238,7 @@
 							</li>
 						</ul>
 	    			</div>
+	    			<!-- Web Links: -->
 	    			<div class="col-sm-4">
 	    				<!-- TODO  -->
 	    				<h4 align="center">Web Links:</h4>		    				
@@ -265,6 +272,7 @@
 	    			</div>
 	    		</div> 	
     		</div>
+    		<!-- Right Hand Buttons  -->
     		<div class="col-sm-2" style="padding: 0;" >
     			<div class="rounded container">
 					<h4>Log Shares <i class="fas fa-screwdriver"></i></h4><span><p>Click on Name to copy Log location to Clipboard... Work In Progress</p></span>
@@ -394,8 +402,6 @@
 	    		</div>
 	  		</div>
 		</div>
-<nav></nav>
-
-		
+	
 	</body>
 </html>

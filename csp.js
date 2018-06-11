@@ -70,15 +70,14 @@ function openExplorer(test){
   window.open(objecttxt);
 };  
 
-function copyToClipboard(val){
-    var dummy = document.createElement("input");
-    document.body.appendChild(dummy);
-    $(dummy).css('display','none');
-    dummy.setAttribute("id", "dummy_id");
-    document.getElementById("dummy_id").value=val;
-    dummy.select();
-    document.execCommand("copy");
-    document.body.removeChild(dummy);
+// function copyToClipboard(val){
+//     //var dummy = document.createElement("input");
+//     //document.body.appendChild(dummy);
+//     //$(dummy).css('display','none');
+//     //dummy.setAttribute("id", "dummy_id");
+//     document.getElementById("dummy_id").value=val;
+//     dummy.select();
+//     document.execCommand("copy");
+//     // document.body.removeChild(dummy);
 
-}
-
+//};
