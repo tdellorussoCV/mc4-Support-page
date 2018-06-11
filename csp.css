@@ -42,7 +42,7 @@ span.MsoHyperlink {color:red;text-decoration:none;text-underline:none;text-decor
 
 .cvfooter 	{width: 50 %;float: left}
 
-.dummy_id	{ display: none }
+#dummy_id	{ display: none }
 #cvlogo		{height: 36px; width: 36px}
 
 .tooltip 	{

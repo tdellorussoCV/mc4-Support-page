@@ -44,6 +44,8 @@ function buttonlisteners(){
     var dummyContent = cvid;
     var dummy = $('<input>').val(dummyContent).appendTo('body').select();
     document.execCommand('copy');
+
+    //$( "input" ).remove( ".dummy_id" );
     // $('input').css('display','none');
     // $('#alex').fadeToggle();
     // $('#cvgetlog').fadeToggle();
