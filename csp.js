@@ -3,6 +3,7 @@ function loaders(){
   fadelisteners();
   alexlisteners();
   buttonlisteners();
+  // logfiles();
 }
 
 function fadelisteners(){
@@ -21,7 +22,7 @@ function fadelisteners(){
   $(".btn-unix .fa-plus-square").click(function(){
     $("button.unix").fadeToggle("slow");
   });
-  
+    
 }
 
 function alexlisteners(){
@@ -42,14 +43,10 @@ function buttonlisteners(){
     var copyText = $(this);
     var cvid = $(copyText).attr("title");
     var dummyContent = cvid;
-    var dummy = $('<input>').val(dummyContent).appendTo('body').select();
+    var dummy = $('<input id="dummy_id">').val(dummyContent).appendTo('body').select();
     document.execCommand('copy');
-
-    //$( "input" ).remove( ".dummy_id" );
-    // $('input').css('display','none');
-    // $('#alex').fadeToggle();
-    // $('#cvgetlog').fadeToggle();
-    });
+    $( "input" ).remove( "#dummy_id" );
+  });
 }    
 
 function dropdown(mySel)
@@ -65,12 +62,53 @@ function dropdown(mySel)
       return false;
       };
 
+function celogfiles(){
+  $("#CELOGS").click(function(){
+    var ccid = $("#CCID").val();
+    var copyText = $(this).attr("title");
+    var logurl = copyText + ccid;
+    var dummy = $('<input id="dummy_id">').val(logurl).appendTo('body').select();
+    document.execCommand('copy');
+    $( "input" ).remove( "#dummy_id" );
+    return false;
+  });
+}
+
+function englogfiles(){
+  $("#engLogs").click(function(){
+    var ccid = $("#CCID").val();
+    var copyText = $(this).attr("title");
+    var logurl = copyText + ccid;
+    var dummy = $('<input id="dummy_id">').val(logurl).appendTo('body').select();
+    document.execCommand('copy');
+    $( "input" ).remove( "#dummy_id" );
+    return false;
+  });
+}
+function ftplogfiles(){
+  $("#QNFTP").click(function(){
+    var ccid = $("#CCID").val();
+    var copyText = $(this).attr("title");
+    var logurl = copyText + ccid;
+    var dummy = $('<input id="dummy_id">').val(logurl).appendTo('body').select();
+    document.execCommand('copy');
+    $( "input" ).remove( "#dummy_id" );
+    return false;
+  });
 
 function openExplorer(test){
   var objecttxt =  test;
   console.log(objecttxt);
   window.open(objecttxt);
 };  
+}
+function clfbutton(){
+  //console.trace();
+  // $(".btn-logfiles .cvlogbtn").click(function(){
+    $("button.logfiles").fadeToggle("slow");
+    $("input.logfiles").fadeToggle("slow");
+  // });
+}
 
 // function copyToClipboard(val){
 //     //var dummy = document.createElement("input");

@@ -7,18 +7,11 @@
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	  	<script type="text/javascript" src="csp.js"></script>
-	  	<!-- <style type="text/css">
-	  		body{
-	  			background: #ADA996;  /* fallback for old browsers */
-				background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-				background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-				height: 100%;
-				margin: 0;
-				}
-	  	</style> -->
+	  	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.2.0/js/tooltip.min.js"></script> -->
+	   	<script type="text/javascript" src="csp.js"></script>
+	  	
 	</head>
 
 	<body id="top" onload="loaders()">
@@ -27,7 +20,7 @@
 			<div class="container-fluid">
 				<div class="nav-header">
 					<a class="navbar-brand" href="csp.html" >
-						<span class="navlogo"><img id="cvlogo" src="images/favicon.png"></span>
+						<span class="navlogo"><img id="cvlogo" src="images/favicon.png" alt="cvlogo"></span>
 						<span>MC4 Support Page</span>
 					</a>			  		
 				</div>	
@@ -79,14 +72,33 @@
 	    		<div class="col-sm-2" >
 	    		</div>
 		</div>
-		
-		
+		<!-- Main Body -->
 		<div class="row">
 			<!-- Left Hand Buttons -->
 	    	<div class="col-sm-2" style="padding: 0 " >
 	    		<div class="btn-group-vertical rounded leftNav">
-  					<button class="btn cvbutton" data-toggle="modal" data-target="#myModal">Customer Log Files</button>
-  					<button class="btn cvbutton" data-toggle="modal" data-target="#labSystems">Lab Systems</button>
+	    			<button class="btn cvbutton btn-logfiles cvlogbtn" type="button" onclick="clfbutton()">Customer Log Files</button>
+		        		<input class="btn btn-input logfiles" type="text" id="CCID" title="Hex CCID" placeholder="CCID" pattern="([a-fA-F0-9]{1,6})$">
+		        		<button class="btn btn-secondary logfiles" type="button" id="CELOGS" title="\\ENG\CELOGS\" onclick="celogfiles()">QUPLOAD [GUI SendLogs]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
+	        			<button class="btn btn-secondary logfiles" type="button" id="engLogs" title="\\eng\escalationlogs\" onclick="englogfiles()">Eng Logs [CE Log Share]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
+        				<button class="btn btn-secondary logfiles" type="button" id="QNFTP" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" onclick="ftplogfiles()">QNFTP [FTP Upload]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
+  					<!-- <button class="btn cvbutton" data-toggle="modal" data-target="#labSystems">Lab Systems</button> -->
+  					<!-- Labs Dropright -->
+  					<div class="dropdown dropright explorer">
+    						<button type="button" class="btn cvbutton dropdown-toggle" data-toggle="dropdown">Lab Systems</button>
+    						<div class="dropdown-menu">
+      								<div class="dropdown dropright">
+      									<button type="button" class="btn cvbutton dropdown-toggle" data-toggle="dropdown">ADV70v</button>
+										<div class="dropdown-menu">
+      											<a class="dropdown-item btn cvbutton" href="https://adv70v-exchx64/OWA" target="_blank">OWA</a>
+      									</div>
+      								</div>
+
+      								<a class="dropdown-item btn cvbutton" href="#">ADV70v</a>
+      								<a class="dropdown-item btn cvbutton" href="#">Link 2</a>
+      								<a class="dropdown-item btn cvbutton" href="#">Link 3</a>
+    						</div>
+  					</div>
   					<a class="btn cvbutton" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
  					<a class="btn cvbutton" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
   					<a class="btn cvbutton" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
@@ -111,9 +123,9 @@
 							</div>
 						</div>
 					</div>
-					<!-- CommVault Information: -->
+					<!-- Commvault Information: -->
 		   			<div class="well col-sm-4">
-		   				<h4 align="center">CommVault Information:</h4>
+		   				<h4 align="center">Commvault Information:</h4>
 		   				<ul>
 							<li>
 								<a href="https://ma.commvault.com/Account/Login?ReturnUrl=%2F" target="_blank">Maintenance Advantage</a> - 
@@ -144,10 +156,11 @@
 	    				<h4 align="center">Customer Engineering:</h4>
 	    				<ul>
 							<li>
-								<a href="https://alexandria.commvault.com/" target="_blank">Alexandria</a> - 
-								<a href="https://commvault.webex.com/" target="_blank">WebEx</a>	
+								<a href="https://alexandria.commvault.com/" target="_blank"><i class="fas fa-search"></i>  Alexandria</a>
 							</li>
-							
+							<li>
+								<a href="https://commvault.webex.com/" target="_blank">Commvault WebEx</a>
+							</li>
 							<li>
 								<a href="https://ce-staging.commvault.com/" target="_blank">Staging Servers</a> 
 							</li>

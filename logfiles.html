@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		test
+	</title>
+		<link rel="stylesheet" type="text/css" href="csp.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	  	<script type="text/javascript" src="csp.js"></script>
+</head>
+<body onload="loaders()">
+	<script type="text/javascript">
+		function dropdown(mySel)
+    	{
+      		var myWin, myVal, myId, myUrl;
+    		myVal = mySel.options[mySel.selectedIndex].value;
+    		myId = myForm.CCID.value;
+      		myUrl = myVal + myId;
+      		
+      		if(myVal.length != 58)
+        	{
+        		var dummy = $('<input>').val(myUrl).appendTo('body').select();
+        		document.execCommand('copy');
+    			//$( "input" ).remove( "#dummy_id" );
+    			return false;
+       		} else {
+       			window.open(myUrl);
+       			return false;
+       			} 
+	    };
+
+    </script>
+
+   <!--  <form  id="myForm" action="logfiles.html" onsubmit="return dropdown(this.gourl)">	
+		        			<div class="form-group form-control">
+		        				<label >CCID</label>
+			        			<input id="cvgetlog" type="text" name="CCID" size="5" value="">
+								<select name="gourl">
+									<option value="\\ENG\CELOGS\">QUPLOAD [GUI SendLogs]</option>
+									<option value="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/">QNFTP [FTP Upload]</option>
+									<option value="\\eng\escalationlogs\">Escalation Logs [CE Log Share]</option>
+								</select>
+								<input class="btn btn-primary btn-info" type="submit" value="Go" name="B1">
+								
+
+								<p class="MsoNormal">
+										<span style="font-size:9.0pt;font-family:Verdana; color:#D8D8D8">
+										<a href="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming">QNFTP</a> -	<a target="_blank" href="file://\\\eng\CELOGS\">QUPLOAD</a> - <a target="_blank" href="file://\\\eng\escalationlogs\">Escalation Logs</a> - <a href="file:///127.0.0.1/Logs">Local Logs</a>
+									</span>
+								</p>
+							</div>
+		        		</form> -->
+		</div>
+</body>
+</html>
