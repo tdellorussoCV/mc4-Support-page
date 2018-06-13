@@ -1,9 +1,14 @@
-//alert("test");
+// csp.js Javascript for the MC$ Support Page Setup.
+// Design by Thomas Dellorusso
+// tdellorusso@commvault.com 
+// @2018
+
+// Initial Load
 function loaders(){
   fadelisteners();
   alexlisteners();
   buttonlisteners();
-  // logfiles();
+ 
 }
 
 function fadelisteners(){
@@ -102,12 +107,14 @@ function openExplorer(test){
   window.open(objecttxt);
 };  
 }
+
 function clfbutton(){
-  //console.trace();
-  // $(".btn-logfiles .cvlogbtn").click(function(){
     $("button.logfiles").fadeToggle("slow");
     $("input.logfiles").fadeToggle("slow");
-  // });
+}
+function labbutton(){
+    $("button.labsys").fadeToggle("slow");
+    $("input.labsys").fadeToggle("slow");
 }
 
 // function copyToClipboard(val){

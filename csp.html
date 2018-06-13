@@ -41,7 +41,7 @@
 					      		<input class="form-control mr-sm-2" type="text" id="alex" placeholder="Alexandria Search" name="alex1">
 	    					</li>
 							<li class="nav-item" style="padding: 0 10px">
-					        	<a class="nav-link" href="mailto:tdellorusso@commvault.com"><i class="far fa-envelope"></i> Feedback</a>
+					        	<a class="nav-link" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
 					      	</li>
 					    </ul>
 					</div>    
@@ -82,23 +82,47 @@
 		        		<button class="btn btn-secondary logfiles" type="button" id="CELOGS" title="\\ENG\CELOGS\" onclick="celogfiles()">QUPLOAD [GUI SendLogs]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
 	        			<button class="btn btn-secondary logfiles" type="button" id="engLogs" title="\\eng\escalationlogs\" onclick="englogfiles()">Eng Logs [CE Log Share]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
         				<button class="btn btn-secondary logfiles" type="button" id="QNFTP" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" onclick="ftplogfiles()">QNFTP [FTP Upload]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-  					<!-- <button class="btn cvbutton" data-toggle="modal" data-target="#labSystems">Lab Systems</button> -->
   					<!-- Labs Dropright -->
-  					<div class="dropdown dropright explorer">
-    						<button type="button" class="btn cvbutton dropdown-toggle" data-toggle="dropdown">Lab Systems</button>
-    						<div class="dropdown-menu">
-      								<div class="dropdown dropright">
-      									<button type="button" class="btn cvbutton dropdown-toggle" data-toggle="dropdown">ADV70v</button>
-										<div class="dropdown-menu">
-      											<a class="dropdown-item btn cvbutton" href="https://adv70v-exchx64/OWA" target="_blank">OWA</a>
-      									</div>
-      								</div>
+  					<button class="btn cvbutton cvlogbtn" type="button" onclick="labbutton()">Lab Systems</button>
+  						<div class="dropdown dropright btn-labsys">
+  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">ADV90 V9 Lab</button>
+	  							<div class="dropdown-menu">
+	  								<a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">ADV90 GUI Console</a>
+	  								<a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">QNet</a>
+									<a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">Search</a> 
+									<a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">Comp</a> 
+									<a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">Webconsole</a>
+									<a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">Custom Reports</a>
+	  							</div>
+	  					</div>
+	  					<div class="dropdown dropright btn-labsys">
+  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">ADV10 V10 Lab</button>
+	  							<div class="dropdown-menu">
+	  								<a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">ADV10 GUI Console</a>
+	  								<a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">QNet</a> 
+									<a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">Search</a> 
+									<a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">Comp</a> 
+									<a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">Webconsole</a>
+									<a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">Custom Reports</a>
+		  						</div>
+	  					</div>
+	  					<div class="dropdown dropright btn-labsys">
+  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV11" title="ADV11">ADV11 V11 Lab</button>
+	  							<div class="dropdown-menu">
+	  								<a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">ADV11</a>
+									<a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">Webconsole</a>
+									<a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">Adminconsole</a>
+		  						</div>
+	  					</div>
+	  					<div class="dropdown dropright btn-labsys">
+  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">QM11v-CS</button>
+	  							<div class="dropdown-menu">
+	  								<a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">QM11v-CS</a>
+	  								<a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">QM Lab Sheet</a>
+		  						</div>
+	  					</div>
 
-      								<a class="dropdown-item btn cvbutton" href="#">ADV70v</a>
-      								<a class="dropdown-item btn cvbutton" href="#">Link 2</a>
-      								<a class="dropdown-item btn cvbutton" href="#">Link 3</a>
-    						</div>
-  					</div>
+  					<!-- Rest of the links  -->
   					<a class="btn cvbutton" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
  					<a class="btn cvbutton" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
   					<a class="btn cvbutton" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
@@ -221,7 +245,7 @@
 								</li>
 								<li>
 									<a href="http://engweb/" target="_blank">EngWeb</a> -
-									<a href="https://engweb.commvault.com/qa/mr_details.php?NewMr=yes" target="_blank">MR Request</a> -
+									<a href="https://engweb.commvault.com/engtools/defect" target="_blank">New MR Request</a> -
 									<a href="https://engweb.commvault.com/qa/mr_details.php" target="_blank">Doc MR</a>
 								</li>
 								<li>
@@ -415,6 +439,12 @@
 	    		</div>
 	  		</div>
 		</div>
-	
+
+<!-- 
+csp.html Main Page for the MC$ Support Page Setup.
+Design by Thomas Dellorusso 
+tdellorusso@commvault.com 
+@2018 
+-->
 	</body>
 </html>

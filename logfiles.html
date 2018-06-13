@@ -12,47 +12,26 @@
 	  	<script type="text/javascript" src="csp.js"></script>
 </head>
 <body onload="loaders()">
-	<script type="text/javascript">
-		function dropdown(mySel)
-    	{
-      		var myWin, myVal, myId, myUrl;
-    		myVal = mySel.options[mySel.selectedIndex].value;
-    		myId = myForm.CCID.value;
-      		myUrl = myVal + myId;
-      		
-      		if(myVal.length != 58)
-        	{
-        		var dummy = $('<input>').val(myUrl).appendTo('body').select();
-        		document.execCommand('copy');
-    			//$( "input" ).remove( "#dummy_id" );
-    			return false;
-       		} else {
-       			window.open(myUrl);
-       			return false;
-       			} 
-	    };
-
-    </script>
-
-   <!--  <form  id="myForm" action="logfiles.html" onsubmit="return dropdown(this.gourl)">	
-		        			<div class="form-group form-control">
-		        				<label >CCID</label>
-			        			<input id="cvgetlog" type="text" name="CCID" size="5" value="">
-								<select name="gourl">
-									<option value="\\ENG\CELOGS\">QUPLOAD [GUI SendLogs]</option>
-									<option value="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/">QNFTP [FTP Upload]</option>
-									<option value="\\eng\escalationlogs\">Escalation Logs [CE Log Share]</option>
-								</select>
-								<input class="btn btn-primary btn-info" type="submit" value="Go" name="B1">
-								
-
-								<p class="MsoNormal">
-										<span style="font-size:9.0pt;font-family:Verdana; color:#D8D8D8">
-										<a href="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming">QNFTP</a> -	<a target="_blank" href="file://\\\eng\CELOGS\">QUPLOAD</a> - <a target="_blank" href="file://\\\eng\escalationlogs\">Escalation Logs</a> - <a href="file:///127.0.0.1/Logs">Local Logs</a>
-									</span>
-								</p>
-							</div>
-		        		</form> -->
+	
+	<div class="container" align="center">
+		<div class="btn-group-vertical rounded">
+			<button class="btn cvbutton btn-logfiles cvlogbtn" type="button" onclick="clfbutton()">Customer Log Files</button>
+		<input class="btn btn-input logfiles" type="text" id="CCID" title="Hex CCID" placeholder="CCID" pattern="([a-fA-F0-9]{1,6})$">
+		<button class="btn btn-secondary logfiles" type="button" id="CELOGS" title="\\ENG\CELOGS\" onclick="celogfiles()">QUPLOAD [GUI SendLogs]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
+		<button class="btn btn-secondary logfiles" type="button" id="engLogs" title="\\eng\escalationlogs\" onclick="englogfiles()">Eng Logs [CE Log Share]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
+		<button class="btn btn-secondary logfiles" type="button" id="QNFTP" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" onclick="ftplogfiles()">QNFTP [FTP Upload]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
 		</div>
+	</div>
+<div class="dropdown dropright">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropright button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+	
 </body>
 </html>
