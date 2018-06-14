@@ -1,8 +1,8 @@
 /*
 csp.css Custom Stylesheet for the MC$ Support Page Setup.
-Based from original design By Ted Polny.
 Design by Thomas Dellorusso 
 tdellorusso@commvault.com 
+Based from original design by Ted Polny. 172.19.21.10/advanced/
 @2018 
 */
 
@@ -10,6 +10,7 @@ body 		{ background: #ADA996;  /* fallback for old browsers */	background: -webk
 h1			{ margin: 0px; }
 h2			{ font-size : 9pt; font-weight : none; color: #333333; margin: 0px; }
 h6.lsmodal	{ padding-top: 10px; padding-bottom: 0px; margin: 0px }
+
 small		{ font-size : 8pt; }
 ul  		{ list-style-type:none;}	
 
@@ -19,9 +20,9 @@ button.client, button.unix, button.msg, button.mm, button.server, button.logfile
 a.docNav	{ width: 20%}
 a.client, a.msg, a.mm, a.server, a.unix	{display:none;}
 
-div.teams 	{ width: 98%; margin: 0px auto; }
+div.teams 	{ width: 90%; margin: 0px auto; }
 div.teamNav	{ width: 100%}
-div.leftNav	{ width: 75%; margin-left: 50px; margin-right: 50px}
+div.leftNav, h4.leftNav{ width: 75%; margin-left: 50px; margin-right: 50px}
 
 span.MsoHyperlink {color:red;text-decoration:none;text-underline:none;text-decoration:none;text-line-through:none}
 
@@ -37,7 +38,7 @@ span.MsoHyperlink {color:red;text-decoration:none;text-underline:none;text-decor
 .explorer	{ padding: 0; margin: 0 auto; width: 100%}
 
 .firstrow	{ align-self: center;height: 25px;margin-left: 15px; padding-right: 0px}
-.fa-plus-square, .fa-clipboard-check, .fa-clipboard-list	{ float: right;}
+.fa-plus-square, .fa-clipboard-check, .fa-clipboard-list, .fa-link, .fa-share-alt	{ float: right;}
 
 .heading	{ padding: 0;  margin: 0;}
 
@@ -47,28 +48,12 @@ span.MsoHyperlink {color:red;text-decoration:none;text-underline:none;text-decor
 .navbg-dark	{ background-color: #00384F;}
 .navlogo	{ padding: 0 10px}
 
-.tooltip 	{
-    			position: relative;
-    			display: inline-block;
-			}
+.rightNav	{ margin: 0px auto; padding-right: 35px}
 
-.tooltip .tooltiptext {
-    		visibility: hidden;
-    		width: 140px;
-    		background-color: #555;
-    		color: #fff;
-    		text-align: center;
-    		border-radius: 6px;
-    		padding: 5px;
-    		position: absolute;
-    		z-index: 1;
-    		bottom: 150%;
-    		left: 50%;
-		    margin-left: -75px;
-		    opacity: 0;
-		    transition: opacity 0.3s;
-		}
+.tooltip 	{ position: relative; display: inline-block;}
 
+.tooltip .tooltiptext {	visibility: hidden;	width: 140px; background-color: #555; color: #fff; text-align: center; border-radius: 6px; padding: 5px; 
+						position: absolute; z-index: 1; bottom: 150%; left: 50%; margin-left: -75px; opacity: 0; transition: opacity 0.3s;}
 .tooltip .tooltiptext::after {
     content: "";
     position: absolute;

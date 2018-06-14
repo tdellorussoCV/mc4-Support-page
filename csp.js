@@ -1,8 +1,8 @@
 // csp.js Javascript for the MC$ Support Page Setup.
-// Based from original design By Ted Polny.
 // Design by Thomas Dellorusso
 // tdellorusso@commvault.com 
 // @2018
+// Based from original design by Ted Polny. 172.19.21.10/advanced/
 
 // Initial Load
 function loaders(){
