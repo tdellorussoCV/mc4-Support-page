@@ -1,4 +1,5 @@
 // csp.js Javascript for the MC$ Support Page Setup.
+// Based from original design By Ted Polny.
 // Design by Thomas Dellorusso
 // tdellorusso@commvault.com 
 // @2018
