@@ -12,115 +12,18 @@
 	  	<script type="text/javascript" src="csp.js"></script>
 </head>
 <body onload="loaders()">
+	<form>
+		<div ng-model>
+			<select>
+				<option value="all">Search Everything</option>
+				<option value="AdditionalSettings">Additional Settings</option>
+				<option value="AtoZ">A to Z Features</option>
+				<option value="AdditionalSettings">Additional Settings</option>
+				<option value="AdditionalSettings">Additional Settings</option>
+			</select>
+		</div>	
+	</form>
 	
-	<div class="container" align="center">
-		<div class="btn-group-vertical rounded">
-			<button class="btn cvbutton btn-logfiles cvlogbtn" type="button" onclick="clfbutton()">Customer Log Files</button>
-		<input class="btn btn-input logfiles" type="text" id="CCID" title="Hex CCID" placeholder="CCID" pattern="([a-fA-F0-9]{1,6})$">
-		<button class="btn btn-secondary logfiles" type="button" id="CELOGS" title="\\ENG\CELOGS\" onclick="celogfiles()">QUPLOAD [GUI SendLogs]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-		<button class="btn btn-secondary logfiles" type="button" id="engLogs" title="\\eng\escalationlogs\" onclick="englogfiles()">Eng Logs [CE Log Share]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-		<button class="btn btn-secondary logfiles" type="button" id="QNFTP" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" onclick="ftplogfiles()">QNFTP [FTP Upload]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-		</div>
-	</div>
-<div class="dropdown dropright">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-      Dropright button
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Link 1</a>
-      <a class="dropdown-item" href="#">Link 2</a>
-      <a class="dropdown-item" href="#">Link 3</a>
-    </div>
-  </div>
-	
-
-
-
-<!-- Customer Log Files -->
-		<div class="modal" id="myModal">
-  			<div class="modal-dialog">
-    			<div class="modal-content">
-					<!-- Modal Header -->
-			      	<div class="modal-header">
-				       	<h4 class="modal-title">Customer Log Files</h4>
-				       	<button type="button" class="close" data-dismiss="modal">&times;</button>
-				   	</div>
-					<!-- Modal body -->
-		      		<div class="modal-body">
-		        		<form  id="myForm" action="csp.html" method="POST" onsubmit="return dropdown(this.gourl)">	
-		        			<div class="form-group form-control">
-		        				<label >CCID</label>
-			        			<input id="cvgetlog" type="text" name="CCID" size="4" value="">
-								<select name="gourl">
-									<option value="\\ENG\CELOGS\">QUPLOAD [GUI SendLogs]</option>
-									<option value="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/">QNFTP [FTP Upload]</option>
-									<option value="\\eng\escalationlogs\">Escalation Logs [CE Log Share]</option>
-								</select>
-								<input class="btn btn-primary btn-info" type="submit" value="Go" name="B1">
-								<p class="MsoNormal">
-									<span style="font-size:9.0pt;font-family:Verdana; color:#D8D8D8">
-										<a href="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming">QNFTP</a> -	<a target="_blank" href="file://\\\eng\CELOGS\">QUPLOAD</a> - <a target="_blank" href="file://\\\eng\escalationlogs\">Escalation Logs</a> - <a href="file:///127.0.0.1/Logs">Local Logs</a>
-									</span>
-								</p>
-							</div>
-		        		</form>
-		      		</div>
-		      		<div class="modal-footer">
-		        		<button type="button" class="btn btn-info btn-default" data-dismiss="modal">Close</button>
-		      		</div>
-	    		</div>
-	  		</div>
-		</div>
-		<!-- Lab Systems -->
-		<div class="modal" id="labSystems">
-  			<div class="modal-dialog">
-    			<div class="modal-content">
-					<!-- Modal Header -->
-			      	<div class="modal-header">
-				       	<h4 class="modal-title">Lab Systems</h4>
-				       	<button type="button" class="close" data-dismiss="modal">&times;</button>
-				   	</div>
-					<!-- Modal body -->
-		      		<div class="modal-body">
-		        		<ul>
-							<li>
-								<h6 class="lsmodal">ADV70v</h6>
-								<a href="https://adv70v-exchx64/OWA" target="_blank">OWA</a> -
-								<h6 class="lsmodal">ADV80v</h6>
-								<a href="http://adv80v-moss/" target="_blank">MOSS</a>
-							</li>
-							<li>
-								<h6 class="lsmodal"><a href="http://adv90v-cs/Console/" target="_blank">ADV90</a></h6>
-								[<a href="http://adv90v-cs/Monitor" target="_blank">QNet</a>] 
-								[<a href="http://adv90v-srchadm/search" target="_blank">Search</a>] 
-								[<a href="http://adv90v-srchadm/compliancesearch" target="_blank">Comp</a>] 
-								[<a href="http://adv90v-srchadm/webconsole" target="_blank">Webconsole</a>]
-								[<a href="http://adv90v-srchadm/customreports" target="_blank">Custom Reports</a>]
-							</li>
-							<li>
-								<h6 class="lsmodal"><a href="http://adv10v-cs/Console/" target="_blank">ADV10</a></h6> 
-								[<a href="http://adv10v-cs/Monitor" target="_blank">QNet</a>] 
-								[<a href="http://adv10v-webserve/search" target="_blank">Search</a>] 
-								[<a href="http://adv10v-webserve/compliancesearch" target="_blank">Comp</a>] 
-								[<a href="http://adv10v-webserve/webconsole" target="_blank">Webconsole</a>]
-								[<a href="http://adv10v-webserve/customreports" target="_blank">Custom Reports</a>]</li>
-							<li>
-								<h6 class="lsmodal"><a href="http://adv11v-cs:81/Console/" target="_blank">ADV11</a></h6>
-								[<a href="https://adv11v-cs/webconsole" target="_blank">Webconsole</a>]
-								[<a href="https://adv11v-cs/adminconsole" target="_blank">Adminconsole</a>]</li>
-							<li>
-								<h6 class="lsmodal">QM-Lab</h6>
-								<a href="http://172.19.24.51/console/" target="_blank">QM11v-CS</a> -
-								<a href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">QM Lab Sheet</a> 
-							</li>
-						</ul>
-		      		</div>
-		      		<div class="modal-footer">
-		        		<button type="button" class="btn btn-info btn-default" data-dismiss="modal">Close</button>
-		      		</div>
-	    		</div>
-	  		</div>
-		</div>
 
 
 </body>
