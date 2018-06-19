@@ -5,29 +5,29 @@
 		test
 	</title>
 		<link rel="stylesheet" type="text/css" href="csp.css">
-	  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">-->
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-	  	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
 	  	<script type="text/javascript" src="csp.js"></script>
 </head>
 	<body>
 
 		<div class="container">
-			<form>
-				<div class="form-control">
-					<select>
-						<option value="all">Search Everything</option>
-						<option value="AdditionalSettings">Additional Settings</option>
-						<option value="AtoZ">A to Z Features</option>
-						<option value="AdditionalSettings">Additional Settings</option>
-						<option value="AdditionalSettings">Additional Settings</option>
-					</select>
-				</div>	
-			</form>
-			
-
-
+			<form action="https://engweb.commvault.com/search/?searchQuery=">
+				<div class="form-control input-group">
+					<div class="input-group-prepend"></div>
+						<span><input class="form-control" id="engweb" type="text" name="Search" placeholder="Enter search query..."></span>
+						<span><select class="form-control" name="sourceType">
+							<option value="all">Search Everything</option>
+							<option value="AdditionalSettings">Additional Settings</option>
+							<option value="AtoZ">A to Z Features</option>
+							<option value="CampusFeedback">Campus Feedback</option>
+							<option value="UpdateCenter">Updates</option>
+						</select></span>
+					</div>
+				</form>
+			<!-- ?https://engweb.commvault.com/search/?searchQuery=tarun&sourceType=all -->
 		</div>
 	</body>
 </html>

@@ -44,6 +44,7 @@ function alexlisteners(){
   });
  }
 
+
 function buttonlisteners(){
   $(".cvlogs").click(function(){
     var copyText = $(this);
@@ -117,6 +118,8 @@ function labbutton(){
     $("button.labsys").fadeToggle("slow");
     $("input.labsys").fadeToggle("slow");
 }
+
+
 
 // function copyToClipboard(val){
 //     //var dummy = document.createElement("input");
