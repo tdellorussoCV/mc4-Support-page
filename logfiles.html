@@ -8,26 +8,40 @@
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  		  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+
 	  	<script type="text/javascript" src="csp.js"></script>
 </head>
 	<body>
 
-		<div class="container">
+		<div class="navbar container">
 			<form action="https://engweb.commvault.com/search/?searchQuery=">
-				<div class="form-control input-group">
-					<div class="input-group-prepend"></div>
-						<span><input class="form-control" id="engweb" type="text" name="Search" placeholder="Enter search query..."></span>
-						<span><select class="form-control" name="sourceType">
+				<div class="navbar form-control input-group mb-3">
+					<input class="form-control" id="engweb" type="text" name="searchQuery"  target="_blank" placeholder="Enter search query...">
+					<select class="form-control" name="sourceType" uib-tooltip="Engweb Searches" tooltip-placement="bottom" tooltip-append-to-body="true">
 							<option value="all">Search Everything</option>
 							<option value="AdditionalSettings">Additional Settings</option>
 							<option value="AtoZ">A to Z Features</option>
 							<option value="CampusFeedback">Campus Feedback</option>
 							<option value="UpdateCenter">Updates</option>
-						</select></span>
+					</select>
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="submit">Go</button>
 					</div>
-				</form>
-			<!-- ?https://engweb.commvault.com/search/?searchQuery=tarun&sourceType=all -->
+				</div>
+			</form>
+			
 		</div>
+
+		<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+		<!-- ?https://engweb.commvault.com/search/?searchQuery=tarun&sourceType=all 
+		https://engweb.commvault.com/search/?Search=tarun&sourceType=all
+		https://engweb.commvault.com/search/?searchQuery=tarun&sourceType=all
+		-->
 	</body>
 </html>

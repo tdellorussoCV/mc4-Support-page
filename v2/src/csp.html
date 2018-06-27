@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 	<head>
 		<title>MC4 Support Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,7 @@
 	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	  	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
-	  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	  	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.2.0/js/tooltip.min.js"></script> -->
 	   	<script type="text/javascript" src="csp.js"></script>
 	  	
@@ -17,7 +16,7 @@
 
 	<body id="top" onload="loaders()">
 		<!-- Navbar -->
-		<!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
 			<div class="container-fluid">
 				<div class="nav-header">
 					<span><img id="cvlogo" src="images/favicon.png" alt="cvlogo"></span>
@@ -28,27 +27,29 @@
 			  	</button>	
 	  			<div class="collapse navbar-collapse" id="collapsibleNavbar" >
 			    	<div class="container-fluid">
-				    	<ul class="nav navbar-nav">
-			      			<li class="nav-item">
+				    	<ul class="nav navbar-nav navbar-right flex-row-reverse">
+			      			<!-- <li class="nav-item">
 					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
-					      	</li>
+					      	</li> -->
 					    </ul>
 					</div>
+					
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right flex-row-reverse">
 							<li class="nav-item">
-					      		<input class="form-control mr-sm-2" type="text" id="alex" placeholder="Alexandria Search" name="alex1">
+								<input class="form-control navForm" id="engweb" type="text" name="eng1"	 placeholder="EngWeb Search">
+							</li>
+							<li class="nav-item">
+					      		<input class="form-control" id="alex" 	type="text" name="alex1" placeholder="Alexandria Search" >
 	    					</li>
-							<li class="nav-item" style="padding: 0 10px">
-					        	<a class="nav-link" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
+	    					<li class="nav-item">
+					        	<a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
 					      	</li>
-					    </ul>
+						</ul>
 					</div>    
 			    </div>
 		    </div> 
-		</nav> -->
-		<!-- Angular Nav -->
-		
+		</nav>
 		<br>
 		<br>
 		<br>
@@ -65,8 +66,8 @@
 	    			<!-- <div class="container-fluid"> -->
 	    			<div class="jumbotron rounded" align="center" style="height: 100%;padding: 0; margin: 0">
 						<h1>MC4 Group Support Page</h1>
-						<h3>Tools for the Team to assist in providing The Best Support:</h3>
-						<h2>Period!!!</h2>
+						<h3>Tools for the Team to assist in providing </h3>
+						<h2>The Best Support. Period.</h2>
 						<div class="container cvmess hidden rounded "></div>
 	    			</div>
 	    		</div>
@@ -144,8 +145,24 @@
 						<div class="row">
 							<div class="col-sm-12 heading">
 								<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%;">
-									<a class="btn cvbutton docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault"> Documentation</button>
-									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v11/article">Simpana v11</a>
+									<a class="btn cvbutton docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault"> Documentation</a>
+									<button class="btn btn-secondary docNav" target="_blank" href="http://documentation.commvault.com/commvault/v11/article">Simpana v11</button>		
+									<button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+										<div class="dropdown-menu dropdown-menu-right docNav">
+											<p class="docdrop ">New Release</p>
+											<a href="http://documentation.commvault.com/commvault/v11_sp12/article" target="_blank" class="dropdown-item">Service 
+											Pack 12</a>
+											<hr class="docdrop">
+											<p class="docdrop">Mainstream Releases</p>
+											<a class="hidden" href="http://documentation.commvault.com/commvault/v11_sp11/article" target="_blank" class="dropdown-item">Service Pack 11</a>
+											<a href="http://documentation.commvault.com/commvault/v11_sp10/article" target="_blank" class="dropdown-item">Service Pack 10</a>
+											<a href="http://documentation.commvault.com/commvault/v11_sp9/article" target="_blank" class="dropdown-item">Service Pack 9</a>
+											<hr class="docdrop">
+											<p class="docdrop">Deprecated Releases</p>
+											<a href="http://documentation.commvault.com/commvault/v11_sp8/article" target="_blank" class="dropdown-item">Service Pack 8</a>
+											<a href="http://documentation.commvault.com/commvault/v11_sp7/article" target="_blank" class="dropdown-item">Service Pack 7</a>
+											<a href="http://documentation.commvault.com/commvault/v11_sp6/article" target="_blank" class="dropdown-item">Service Pack 6</a>
+										</div>
 									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v10/article">Simpana v10</a>
 									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm">Simpana v9</a>
 									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://internaldocs/">Internal Docs | OEM</a>								
@@ -195,10 +212,7 @@
 								<a href="https://ce-staging.commvault.com/" target="_blank">Staging Servers</a> 
 							</li>
 							<li>
-								<a href="http://lg.commvault.com/" target="_blank">License Generator V10+</a> 
-								
-							</li>
-							<li>
+								<a href="http://lg.commvault.com/" target="_blank">License Generator V10+</a> - 
 								<a href="file://gp.cv.commvault.com/dfs/Licensing" target="_blank">License Files</a></li>
 							<li>
 								<a href="https://mscrm.commvault.com/" target="_blank">Microsoft Dynamics CRM</a><!--  - 
@@ -220,16 +234,11 @@
 								<a href="https://connect.commvault.com/community/support" target="_blank">Connect | Customer Support</a>
 							</li>
 	    					<li>
-								<a href="https://connect.commvault.com/community/support/client-focus/pages/client" target="_blank">Client</a>
-								
-							</li>
-							<li>
+								<a href="https://connect.commvault.com/community/support/client-focus/pages/client" target="_blank">Client</a> - 
 								<a href="https://connect.commvault.com/community/support/mm-focus/pages/media-management" target="_blank">Media Management</a>
 							</li>
 	    					<li>
-								<a href="https://connect.commvault.com/community/support/messaging-focus/pages/messaging" target="_blank">Messaging</a>
-							</li>
-							<li>
+								<a href="https://connect.commvault.com/community/support/messaging-focus/pages/messaging" target="_blank">Messaging</a> - 
 								<a href="https://connect.commvault.com/community/support/server-focus/pages/server" target="_blank">Server</a> - 
 								<a href="https://connect.commvault.com/community/support/unixdb-focus/pages/unixdb" target="_blank">Unix</a>
 							</li>
@@ -339,7 +348,7 @@
 					   	<button class="btn btn-secondary mm cvlogs" name="file://CMCCARTHY/Logs" title="\\CMCCARTHY\Logs">Charles McCarthy</button>
 					   	<button class="btn btn-secondary mm cvlogs" name="file://cvce009077/Logs" title="\\cvce009077\Logs">Colin Falkinburg</button>
 					   	<button class="btn btn-secondary mm cvlogs" name="file://bsamuel/Logs" title="\\bsamuel\logs">Bryan Samuel</button>
-					   	<button class="btn btn-secondary mm disabled" name="file://bmarrow/Logs" title="\\bmarrow\logs">Bernard Marrow</button>
+					   	<button class="btn btn-secondary mm cvlogs" name="file://bmarrow/Logs" title="\\bmarrow\logs">Bernard Marrow</button>
 					   	<button class="btn btn-secondary mm cvlogs" name="file://CVCE009073/Logs" title="\\CVCE009073\logs">Richard Cauterucci</button>
 					   	<!-- MSG Members -->
 					   	<button class="btn btn-teams btn-lg btn-msg">MSG <i id="msg" style="padding-top: 6px"  class="far fa-plus-square"></i></button>

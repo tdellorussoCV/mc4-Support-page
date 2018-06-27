@@ -5,11 +5,15 @@
 // Based from original design by Ted Polny. 172.19.21.10/advanced/
 
 // Initial Load
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
 function loaders(){
   fadelisteners();
   alexlisteners();
   buttonlisteners();
- 
+  englisteners();
 }
 
 function fadelisteners(){
@@ -44,7 +48,19 @@ function alexlisteners(){
   });
  }
 
-
+function englisteners(){
+  $("#engweb[type='text']").keypress(function(event){
+    //console.trace();
+    if(event.which === 13){
+      var engwebinput = $(this).val();
+      var engwebstatic = "https://engweb.commvault.com/search/?searchQuery=";
+      var engwebappend = "&sourceType=all"
+      var engweburl = engwebstatic + engwebinput + engwebappend; 
+      window.open(engweburl);
+      $(this).val("");
+    }
+  });
+ }
 function buttonlisteners(){
   $(".cvlogs").click(function(){
     var copyText = $(this);

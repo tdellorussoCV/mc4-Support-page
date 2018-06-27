@@ -38,7 +38,26 @@ background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, F
 			<span class="cv-font-icon-file-pdf-o"></span>
 		</button>
 </div>
-
+<script type="text/javascript">
+      function engWeb(mySel){
+        $("#engweb[type='text']").keypress(function(event){
+          console.trace();
+          if(event.which === 13){
+            var myVal = mySel.options[mySel.selectedIndex].value
+          console.log(myval);
+            //  var enginput = $(this).val();
+            //  console.log(enginput);
+            //  var engstatic = "https://engweb.commvault.com/search/?searchQuery=";
+            //  var engstatic2 = "&sourceType=";
+            //  var srchType = "" ;
+            //  var engurl = engstatic + enginput + engstatic2 + myval;
+            //  console.log(engurl);
+            //  // window.open(engurl);
+            // $(this).val("");
+          }
+        });
+       }  
+      </script>
 
 <div id="back-top">
 	<a href="#top"><div>
@@ -155,7 +174,7 @@ $scope.OpenAnExternalFile = function (filename) {
 //  };
 
 
-
+action="logfiles.html" method="POST" onsubmit="return engweb(this.gourl)" 
 
 
 <!-- Customer Log Files -->
