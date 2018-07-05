@@ -39,7 +39,7 @@ ul          { list-style-type:none;}
 .btn-labsys	{ width: 100%;}
 .buffer 	{ margin-left: 50px;}
 
-.csSearch   { width: 90%}
+.csSearch   { width: 90%; margin-bottom: 10px}
 .cvbutton	{ color: white;background-color: steelblue; border-color: steelblue}
 .cvfooter 	{ width: 50 %;float: left}
 .cvmess     { width: 95%; height: 75px; background-color:  lightsteelblue; margin-bottom: 25px;}
