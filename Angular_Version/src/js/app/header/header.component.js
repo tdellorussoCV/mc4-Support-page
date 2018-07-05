@@ -3,7 +3,7 @@
 angular.module('header').
 	component('header', {
 		templateUrl: './templates/header.html',
-		controller: function($routeParams, $scope){
+		controller: function($scope){
 				$scope.alexSearch = alex1 ;
 				}
 		});

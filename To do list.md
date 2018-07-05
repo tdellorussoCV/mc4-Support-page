@@ -2,12 +2,14 @@ To do list
 --------------
 Unix uses this link most of the time for Weekend BB shift Rota and Some of the Unix stuff \\bizops\commvault\CE\UnixDB
 font icons to animate and change on click 
-
-
+Make the people list run from json file for easier updating. 
+Firefox - the Client dropdowns do not work. 
+Create Google , Documentation and bing searches.
 
 //---------//
 In Progress
 --------------
+Firefox - the Client dropdowns do not work.
 
 //---------//
 
