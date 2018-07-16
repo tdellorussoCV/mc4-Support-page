@@ -20,7 +20,6 @@ function loaders(){
   doclisteners();
   binglisteners();
   goolisteners();
-  lmDate();
 }
 
 function fadelisteners(){
