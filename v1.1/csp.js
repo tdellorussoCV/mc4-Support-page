@@ -7,7 +7,10 @@
 // Initial Load
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
+
 });
+
+
 
 function loaders(){
   fadelisteners();
@@ -17,6 +20,7 @@ function loaders(){
   doclisteners();
   binglisteners();
   goolisteners();
+  
 }
 
 function fadelisteners(){
@@ -176,8 +180,6 @@ function labbutton(){
     $("button.labsys").fadeToggle("slow");
     $("input.labsys").fadeToggle("slow");
 }
-
-
 
 // function copyToClipboard(val){
 //     //var dummy = document.createElement("input");

@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>MC4 Support Page</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="csp.css">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	  	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.2.0/js/tooltip.min.js"></script> -->
+	   	<script type="text/javascript" src="csp.js"></script>
+	  	
+	</head>
+
+	<body id="top" onload="loaders()">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
+			<div class="container-fluid">
+				<div class="nav-header">
+					<span><img id="cvlogo" src="images/favicon.png" alt="cvlogo"></span>
+					<span><a class="navbar-brand" href="csp.html" >	MC4 Support Page</a></span>
+				</div>	
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			    		<span class="navbar-toggler-icon"></span>
+			  	</button>	
+	  			<div class="collapse navbar-collapse" id="collapsibleNavbar" >
+			    	
+					
+					<div class="container-fluid">
+						<ul class="nav navbar-nav flex-row-reverse">
+							<li class="nav-item">
+							  	<input class="form-control navForm " navForm id="docSrchInput" type="text" name="docsearch" placeholder="Documentation Search">
+							</li>
+							<li class="nav-item">
+								<input class="form-control navForm" navForm id="bingSrchInput" type="text" name="bingsearch" placeholder="Bing Search">
+							</li>
+							<li class="nav-item"> 
+								<input class="form-control navForm" navForm id="gooSrchInput" type="text" name="googlesearch" placeholder="Google Search">
+							</li>
+							<li class="nav-item">
+								<input class="form-control navForm" id="engweb" type="text" name="eng1"	 placeholder="EngWeb Search">
+							</li>
+							<li class="nav-item">
+					      		<input class="form-control navForm" id="alex" 	type="text" name="alex1" title="Will not work with (){}[] in the search" data-toggle="tooltip" placeholder="Alexandria Search" >
+	    					</li>
+	    				</ul>
+					</div>
+					<div id="buffer" class="container-fluid"  >
+				    	<div class="container-fluid">
+				    		<ul class="navbar-nav navbar-right flex-row-reverse" >
+			      			<li class="nav-item">
+					        	<a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
+					      	</li>
+			      			<!-- <li class="nav-item">
+					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
+					      	</li> -->
+					    	</ul>
+				    	</div>
+					</div>    
+			    </div>
+		    </div> 
+		</nav>
+	</body>
+	</html>

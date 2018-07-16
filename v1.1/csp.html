@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>MC4 Support Page</title>
+		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="csp.css">
 	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -26,33 +27,12 @@
 			    		<span class="navbar-toggler-icon"></span>
 			  	</button>	
 	  			<div class="collapse navbar-collapse" id="collapsibleNavbar" >
-			    	<!-- <div class="container-fluid">
-				    	<ul class="nav navbar-nav navbar-right flex-row-reverse">
-			      			<li class="nav-item">
-					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
-					      	</li>
-					    </ul>
-					</div> -->
+			    	
 					
 					<div class="container-fluid">
 						<ul class="nav navbar-nav navbar-right flex-row-reverse">
 							<li class="nav-item">
-								<input class="form-control navForm" navForm id="docSrchInput" type="text" name="docsearch" placeholder="Documentation Search">
-								<select class="form-control navForm">
-									<p class="docdrop ">New Release</p>
-											<a href="http://documentation.commvault.com/commvault/v11_sp12/article" target="_blank" class="dropdown-item">Service 
-											Pack 12</a>
-											<hr class="docdrop">
-											<p class="docdrop">Mainstream Releases</p>
-											<a class="hidden" href="http://documentation.commvault.com/commvault/v11_sp11/article" target="_blank" class="dropdown-item">Service Pack 11</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp10/article" target="_blank" class="dropdown-item">Service Pack 10</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp9/article" target="_blank" class="dropdown-item">Service Pack 9</a>
-											<hr class="docdrop">
-											<p class="docdrop">Deprecated Releases</p>
-											<a href="http://documentation.commvault.com/commvault/v11_sp8/article" target="_blank" class="dropdown-item">Service Pack 8</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp7/article" target="_blank" class="dropdown-item">Service Pack 7</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp6/article" target="_blank" class="dropdown-item">Service Pack 6</a>
-								</select>
+							  	<input class="form-control navForm " navForm id="docSrchInput" type="text" name="docsearch" placeholder="Documentation Search">
 							</li>
 							<li class="nav-item">
 								<input class="form-control navForm" navForm id="bingSrchInput" type="text" name="bingsearch" placeholder="Bing Search">
@@ -66,10 +46,19 @@
 							<li class="nav-item">
 					      		<input class="form-control navForm" id="alex" 	type="text" name="alex1" title="Will not work with (){}[] in the search" data-toggle="tooltip" placeholder="Alexandria Search" >
 	    					</li>
-	    					<li class="nav-item">
+	    				</ul>
+					</div>
+					<div id="buffer" class="container-fluid"  >
+				    	<div class="container-fluid">
+				    		<ul class="navbar-nav navbar-right flex-row-reverse" >
+			      			<li class="nav-item">
 					        	<a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
 					      	</li>
-						</ul>
+			      			<!-- <li class="nav-item">
+					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
+					      	</li> -->
+					    	</ul>
+				    	</div>
 					</div>    
 			    </div>
 		    </div> 
@@ -286,7 +275,7 @@
 	    		<div class="row">
 	    			<!-- Development Information: -->
 	    			<div class="col-sm-4">
-	    				<h4 align="center">Development & Update Information:</h4>
+	    			<h4 align="center">Development Information:</h4>
 	    					<ul >
 								<li>
 									<a href="http://engweb/" target="_blank">EngWeb</a> -
@@ -301,19 +290,24 @@
 								<li>
 									<a href="https://engweb.commvault.com/search/?sourcetype=AdditionalSettings" target="_blank">Additional Settings</a>
 								</li>
-								<li>
-									<a href="http://updatecenter.commvault.com/" target="_blank">UpdateCenter</a>
-								</li>
-								<li>
-									<a href="https://engweb.commvault.com/releasemanagement/targets" target="_blank">Service Pack Timelines</a>
-								</li>
 							</ul>
 	    			</div>
 	    			<!-- Update Information: -->
 	    			<div class="col-sm-4">
-	    				<h4> Common Searches: </h4>															
+	    				<h4>Update Information:</h4>															
     					<ul>
-							
+							<li>
+								<a href="http://updatecenter.commvault.com/" target="_blank">UpdateCenter</a>
+							</li>
+							<!-- <li>
+								<a href="file://vega/releasedPackages" target="_blank">ReleasedPackages</a>
+							</li> -->
+							<li>
+								<a href="https://cloud.commvault.com/" target="_blank">cloud.commvault.com</a>
+							</li>
+							<li>
+								<a href="https://engweb.commvault.com/releasemanagement/targets" target="_blank">Service Pack Timelines</a>
+							</li>
 						</ul>
 	    			</div>
 	    			<!-- Third-Party Sites and Tools: -->
@@ -337,6 +331,9 @@
 							</li>
 							<li>
 								<a href="https://docs.microsoft.com/en-us/sysinternals/" target="_blank">Sysinternals</a>
+							</li>
+							<li>
+								<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank">Unix Time converter</a>
 							</li>
 							<li>
 								<hr>
@@ -397,9 +394,9 @@
 		    </div>
 		</div>
 		
-		<!-- <nav class="navbar fixed-bottom footer">
-  			<a class="navbar footer" href="#">@2018</a>
-		</nav> -->
+		<nav class="navbar fixed-bottom footer">
+  			<p class="navbar footer" href="#">@2018 v1.1.0</p>.
+  		</nav>
 <!-- 
 csp.html Main Page for the MC$ Support Page Setup.
 Design by Thomas Dellorusso 

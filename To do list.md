@@ -4,7 +4,7 @@ Unix uses this link most of the time for Weekend BB shift Rota and Some of the U
 font icons to animate and change on click 
 Make the people list run from json file for easier updating. 
 Firefox - the Client dropdowns do not work. 
-Create Google , Documentation and bing searches.
+update Document search to search each service pack.
 
 //---------//
 In Progress
@@ -40,3 +40,10 @@ Can we put the Best Support Period on one line? And change to . after support an
 Can you  make and engwebsearch as well like Alexandria at the top? Have one next to it that searches engweb, using the same global search as above
 BTW Clicking this does nothing v11 documentation button.
 Added Hintenach log share 
+
+7/13/18
+Create Google , Documentation and bing searches.
+added copyright and footer version stamp.
+
+7/16
+added <meta charset="utf-8"/> to header for Firefox
