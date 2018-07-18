@@ -1,408 +1,762 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>MC4 Support Page</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="csp.css">
-	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-	  	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.2.0/js/tooltip.min.js"></script> -->
-	   	<script type="text/javascript" src="csp.js"></script>
-	  	
-	</head>
-
-	<body id="top" onload="loaders()">
-		<!-- Navbar -->
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
-			<div class="container-fluid">
-				<div class="nav-header">
-					<span><img id="cvlogo" src="images/favicon.png" alt="cvlogo"></span>
-					<span><a class="navbar-brand" href="csp.html" >	MC4 Support Page</a></span>
-				</div>	
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			    		<span class="navbar-toggler-icon"></span>
-			  	</button>	
-	  			<div class="collapse navbar-collapse" id="collapsibleNavbar" >
-			    	
-					
-					<div class="container-fluid">
-						<ul class="nav navbar-nav navbar-right flex-row-reverse">
-							<li class="nav-item">
-							  	<input class="form-control navForm " navForm id="docSrchInput" type="text" name="docsearch" placeholder="Documentation Search">
-							</li>
-							<li class="nav-item">
-								<input class="form-control navForm" navForm id="bingSrchInput" type="text" name="bingsearch" placeholder="Bing Search">
-							</li>
-							<li class="nav-item"> 
-								<input class="form-control navForm" navForm id="gooSrchInput" type="text" name="googlesearch" placeholder="Google Search">
-							</li>
-							<li class="nav-item">
-								<input class="form-control navForm" id="engweb" type="text" name="eng1"	 placeholder="EngWeb Search">
-							</li>
-							<li class="nav-item">
-					      		<input class="form-control navForm" id="alex" 	type="text" name="alex1" title="Will not work with (){}[] in the search" data-toggle="tooltip" placeholder="Alexandria Search" >
-	    					</li>
-	    				</ul>
-					</div>
-					<div id="buffer" class="container-fluid"  >
-				    	<div class="container-fluid">
-				    		<ul class="navbar-nav navbar-right flex-row-reverse" >
-			      			<li class="nav-item">
-					        	<a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
-					      	</li>
-			      			<!-- <li class="nav-item">
+    <head>
+        <title>
+            MC4 Support Page
+        </title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+            <link href="csp.css" rel="stylesheet" type="text/css">
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+                    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+                        </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+                        </script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">
+                        </script>
+                        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether-tooltip/1.2.0/js/tooltip.min.js"></script> -->
+                        <script src="csp.js" type="text/javascript">
+                        </script>
+                    </link>
+                </link>
+            </link>
+        </meta>
+    </head>
+    <body id="top" onload="loaders()">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <div class="nav-header">
+                    <span>
+                        <img alt="cvlogo" id="cvlogo" src="images/favicon.png"/>
+                    </span>
+                    <span>
+                        <a class="navbar-brand" href="csp.html">
+                            MC4 Support Page
+                        </a>
+                    </span>
+                </div>
+                <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav navbar-right flex-row-reverse">
+                            <li class="nav-item">
+                                <input class="form-control navForm " id="docSrchInput" name="docsearch" navform="" placeholder="Documentation Search" type="text">
+                                </input>
+                            </li>
+                            <li class="nav-item">
+                                <input class="form-control navForm" id="bingSrchInput" name="bingsearch" navform="" placeholder="Bing Search" type="text">
+                                </input>
+                            </li>
+                            <li class="nav-item">
+                                <input class="form-control navForm" id="gooSrchInput" name="googlesearch" navform="" placeholder="Google Search" type="text">
+                                </input>
+                            </li>
+                            <li class="nav-item">
+                                <input class="form-control navForm" id="engweb" name="eng1" placeholder="EngWeb Search" type="text">
+                                </input>
+                            </li>
+                            <li class="nav-item">
+                                <input class="form-control navForm" data-toggle="tooltip" id="alex" name="alex1" placeholder="Alexandria Search" title="Will not work with (){}[] in the search" type="text">
+                                </input>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container-fluid" id="buffer">
+                        <div class="container-fluid">
+                            <ul class="navbar-nav navbar-right flex-row-reverse">
+                                <li class="nav-item">
+                                    <a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback">
+                                        <i class="far fa-envelope">
+                                        </i>
+                                        Feedback
+                                    </a>
+                                </li>
+                                <!-- <li class="nav-item">
 					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
 					      	</li> -->
-					    	</ul>
-				    	</div>
-					</div>    
-			    </div>
-		    </div> 
-		</nav>
-		<br>
-		<br>
-		<br>
-		<!-- Buffer -->
-		<div class="row">
-			<div class="col-sm-12" >
-		 	</div>
-	    </div>
-	    <!-- Jumbotron Level -->
-	    <div class="row">
-	    		<div class="col-sm-2" >
-	    		</div>
-	    		<div class="col-sm-8" >
-	    			<!-- <div class="container-fluid"> -->
-	    			<div class="jumbotron rounded" align="center" style="height: 100%;padding: 0; margin: 0">
-						<h1>MC4 Group Support Page</h1>
-						<h3>Tools for the Team to assist in providing </h3>
-						<h2>The Best Support. Period.</h2>
-						<div class="container cvmess hidden rounded "></div>
-	    			</div>
-	    		</div>
-	    		<div class="col-sm-2" >
-	    			
-	    		</div>
-		</div>
-		<!-- Main Body -->
-		<div class="row">
-			<!-- Left Hand Buttons -->
-	    	<div class="col-sm-2" style="padding: 0 " >
-	    		<h4 class="leftNav">
-	    			Quick Links
-	    			<i class="fas fa-link"></i>
-	    		</h4>
-	    		<div class="btn-group-vertical rounded leftNav">
-	    			<button class="btn cvbutton btn-logfiles cvlogbtn" type="button" onclick="clfbutton()">Customer Log Files</button>
-		        		<input class="btn btn-input logfiles" type="text" id="CCID" title="Hex CCID" placeholder="CCID" pattern="([a-fA-F0-9]{1,6})$">
-		        		<button class="btn btn-secondary logfiles" type="button" id="CELOGS" title="\\ENG\CELOGS\" onclick="celogfiles()">CELOGS [GUI SendLogs]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-	        			<button class="btn btn-secondary logfiles" type="button" id="engLogs" title="\\eng\escalationlogs\" onclick="englogfiles()">Eng [Escalation Log Share]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-        				<button class="btn btn-secondary logfiles" type="button" id="QNFTP" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" onclick="ftplogfiles()">QNFTP [FTP Upload]<i style="padding-top: 6px" class="fas fa-clipboard-check"></i></button>
-  					<!-- Labs Dropright -->
-  					<button class="btn cvbutton cvlogbtn" type="button" onclick="labbutton()">Lab Systems</button>
-  						<div class="dropdown dropright btn-labsys">
-  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV11" title="ADV11">ADV11 V11 Lab</button>
-	  							<div class="dropdown-menu">
-	  								<a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">ADV11</a>
-									<a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">Webconsole</a>
-									<a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">Adminconsole</a>
-		  						</div>
-	  					</div>
-	  					<div class="dropdown dropright btn-labsys">
-  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">ADV10 V10 Lab</button>
-	  							<div class="dropdown-menu">
-	  								<a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">ADV10 GUI Console</a>
-	  								<a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">QNet</a> 
-									<a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">Search</a> 
-									<a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">Comp</a> 
-									<a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">Webconsole</a>
-									<a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">Custom Reports</a>
-		  						</div>
-	  					</div>
-	  					<div class="dropdown dropright btn-labsys">
-  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">ADV90 V9 Lab</button>
-	  							<div class="dropdown-menu">
-	  								<a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">ADV90 GUI Console</a>
-	  								<a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">QNet</a>
-									<a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">Search</a> 
-									<a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">Comp</a> 
-									<a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">Webconsole</a>
-									<a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">Custom Reports</a>
-	  							</div>
-	  					</div>
-	  					<div class="dropdown dropright btn-labsys">
-  						 	<button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">QM11v-CS</button>
-	  							<div class="dropdown-menu">
-	  								<a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">QM11v-CS</a>
-	  								<a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">QM Lab Sheet</a>
-		  						</div>
-	  					</div>
-
-  					<!-- Rest of the links  -->
-  					<a class="btn cvbutton" role="button" href="http://bytecafe/" target="_blank">ByteCafe</a>
- 					<a class="btn cvbutton" role="button" href="https://connect.commvault.com/" target="_blank">Connect</a>
- 					<a class="btn cvbutton" role="button" href="https://co13611.purelyhr.com/?ct=1" target="_blank">Time Off</a>
-  					<a class="btn cvbutton"  title="CommVault, Tinton Falls, NJ" role="button" href="http://engweb.commvault.com/OfficeMap/default.asp" target="_blank">Office Map</a>
-  					<a class="btn cvbutton" role="button" href="https://commvault.samanage.com/" target="_blank">HelpDesk</a>
-				</div>
-	    	</div>
-	    	<!-- Center Links Section -->
-	    	<div class="col-sm-8" align="center">
-	    		<div class="row">	
-		   			<!-- Documentation Navbar row -->
-					<div class="container-fluid heading">
-						<div class="row">
-							<div class="col-sm-12 heading">
-								<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%;">
-									<a class="btn cvbutton docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault"> Documentation</a>
-									<a class="btn btn-secondary docNav" role="button" target="_blank" href="http://documentation.commvault.com/commvault/v11/article">Simpana v11</a>		
-									<button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
-										<div class="dropdown-menu dropdown-menu-right docNav">
-											<p class="docdrop ">New Release</p>
-											<a href="http://documentation.commvault.com/commvault/v11_sp12/article" target="_blank" class="dropdown-item">Service 
-											Pack 12</a>
-											<hr class="docdrop">
-											<p class="docdrop">Mainstream Releases</p>
-											<a class="hidden" href="http://documentation.commvault.com/commvault/v11_sp11/article" target="_blank" class="dropdown-item">Service Pack 11</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp10/article" target="_blank" class="dropdown-item">Service Pack 10</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp9/article" target="_blank" class="dropdown-item">Service Pack 9</a>
-											<hr class="docdrop">
-											<p class="docdrop">Deprecated Releases</p>
-											<a href="http://documentation.commvault.com/commvault/v11_sp8/article" target="_blank" class="dropdown-item">Service Pack 8</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp7/article" target="_blank" class="dropdown-item">Service Pack 7</a>
-											<a href="http://documentation.commvault.com/commvault/v11_sp6/article" target="_blank" class="dropdown-item">Service Pack 6</a>
-										</div>
-									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/v10/article">Simpana v10</a>
-									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm">Simpana v9</a>
-									<a class="btn btn-secondary docNav" role="button"  target="_blank" href="http://internaldocs/">Internal Docs | OEM</a>								
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Commvault Information: -->
-		   			<div class="well col-sm-4">
-		   				<h4 align="center">Commvault Information:</h4>
-		   				<ul>
-							<li>
-								<a href="https://ma.commvault.com/Account/Login?ReturnUrl=%2F" target="_blank">Maintenance Advantage</a>
-							</li>
-							<li>
-								<a href="https://commvault.csod.com/client/commvault/default.aspx" target="_blank"><i class="fas fa-graduation-cap"></i>  Learning@Commvault</a>
-							</li>
-							<li>
-								<a href="http://brand.commvault.com/" target="_blank">Commvault Brand Place</a>
-							</li>
-							<li>
-								<a href="https://ops-commvault-home.teamexos.com" target="_blank">  EXOS | Fitness Center</a>
-							</li>
-							<li>
-								<a href="https://portal.adp.com/public/index.htm" target="_blank">ADP Portal</a>
-							</li>
-							<li>
-								<a href="https://mail.commvault.com/owa" target="_blank"><i class="far fa-envelope"></i>  CommVault Webmail (OWA)</a>
-							</li>
-							<li>
-								<a href="http://uxwiki.unixdb.lab/" target="_blank">Unix Wiki</a>
-							</li>
-						</ul>
-	    			</div>
-	    			<!-- Customer Engineering: -->
-	    			<div class="well col-sm-4">
-	    				<h4 align="center">Customer Engineering:</h4>
-	    				<ul>
-							<li>
-								<a href="https://alexandria.commvault.com/" target="_blank"><i class="fas fa-search"></i>  Alexandria</a>
-							</li>
-							<li>
-								<a href="https://commvault.webex.com/" target="_blank">Commvault WebEx</a> - 
-								<a href="http://services.commvault.com/assist" target="_blank">CVLT.net</a> 
-							</li>
-							<li>
-								<a href="https://ce-staging.commvault.com/" target="_blank">Staging Servers</a> 
-							</li>
-							<li>
-								<a href="http://lg.commvault.com/" target="_blank">License Generator V10+</a> - 
-								<a href="file://gp.cv.commvault.com/dfs/Licensing" target="_blank">License Files</a></li>
-							<li>
-								<a href="https://mscrm.commvault.com/" target="_blank">Microsoft Dynamics CRM</a><!--  - 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+            <br>
+                <br>
+                    <!-- Buffer -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                        </div>
+                    </div>
+                    <!-- Jumbotron Level -->
+                    <div class="row">
+                        <div class="col-sm-2">
+                        </div>
+                        <div class="col-sm-8">
+                            <!-- <div class="container-fluid"> -->
+                            <div align="center" class="jumbotron rounded" style="height: 100%;padding: 0; margin: 0">
+                                <h1>
+                                    MC4 Group Support Page
+                                </h1>
+                                <h3>
+                                    Tools for the Team to assist in providing
+                                </h3>
+                                <h2>
+                                    The Best Support. Period.
+                                </h2>
+                                <div class="container cvmess hidden rounded ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                    </div>
+                    <!-- Main Body -->
+                    <div class="row">
+                        <!-- Left Hand Buttons -->
+                        <div class="col-sm-2" style="padding: 0 ">
+                            <h4 class="leftNav">
+                                Quick Links
+                                <i class="fas fa-link">
+                                </i>
+                            </h4>
+                            <div class="btn-group-vertical rounded leftNav">
+                                <button class="btn cvbutton btn-logfiles cvlogbtn" onclick="clfbutton()" type="button">
+                                    Customer Log Files
+                                </button>
+                                <input class="btn btn-input logfiles" id="CCID" pattern="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
+                                    <button class="btn btn-secondary logfiles" id="CELOGS" onclick="celogfiles()" title="\\ENG\CELOGS\" type="button">
+                                        CELOGS [GUI SendLogs]
+                                        <i class="fas fa-clipboard-check" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary logfiles" id="engLogs" onclick="englogfiles()" title="\\eng\escalationlogs\" type="button">
+                                        Eng [Escalation Log Share]
+                                        <i class="fas fa-clipboard-check" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary logfiles" id="QNFTP" onclick="ftplogfiles()" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" type="button">
+                                        QNFTP [FTP Upload]
+                                        <i class="fas fa-clipboard-check" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <!-- Labs Dropright -->
+                                    <button class="btn cvbutton cvlogbtn" onclick="labbutton()" type="button">
+                                        Lab Systems
+                                    </button>
+                                    <div class="dropdown dropright btn-labsys">
+                                        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV11" title="ADV11">
+                                            ADV11 V11 Lab
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">
+                                                ADV11
+                                            </a>
+                                            <a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">
+                                                Webconsole
+                                            </a>
+                                            <a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">
+                                                Adminconsole
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropright btn-labsys">
+                                        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">
+                                            ADV10 V10 Lab
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">
+                                                ADV10 GUI Console
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">
+                                                QNet
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">
+                                                Search
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">
+                                                Comp
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">
+                                                Webconsole
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">
+                                                Custom Reports
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropright btn-labsys">
+                                        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">
+                                            ADV90 V9 Lab
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">
+                                                ADV90 GUI Console
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">
+                                                QNet
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">
+                                                Search
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">
+                                                Comp
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">
+                                                Webconsole
+                                            </a>
+                                            <a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">
+                                                Custom Reports
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropright btn-labsys">
+                                        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">
+                                            QM11v-CS
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">
+                                                QM11v-CS
+                                            </a>
+                                            <a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">
+                                                QM Lab Sheet
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- Rest of the links  -->
+                                    <a class="btn cvbutton" href="http://bytecafe/" role="button" target="_blank">
+                                        ByteCafe
+                                    </a>
+                                    <a class="btn cvbutton" href="https://connect.commvault.com/" role="button" target="_blank">
+                                        Connect
+                                    </a>
+                                    <a class="btn cvbutton" href="https://co13611.purelyhr.com/?ct=1" role="button" target="_blank">
+                                        Time Off
+                                    </a>
+                                    <a class="btn cvbutton" href="http://engweb.commvault.com/OfficeMap/default.asp" role="button" target="_blank" title="CommVault, Tinton Falls, NJ">
+                                        Office Map
+                                    </a>
+                                    <a class="btn cvbutton" href="https://commvault.samanage.com/" role="button" target="_blank">
+                                        HelpDesk
+                                    </a>
+                                </input>
+                            </div>
+                        </div>
+                        <!-- Center Links Section -->
+                        <div align="center" class="col-sm-8">
+                            <div class="row">
+                                <!-- Documentation Navbar row -->
+                                <div class="container-fluid heading">
+                                    <div class="row">
+                                        <div class="col-sm-12 heading">
+                                            <div class="btn-group rounded " style="margin-bottom: 10px; width: 100%;">
+                                                <a class="btn cvbutton docNav" href="http://documentation.commvault.com/commvault" role="button" target="_blank">
+                                                    Documentation
+                                                </a>
+                                                <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/v11/article" role="button" target="_blank">
+                                                    Simpana v11
+                                                </a>
+                                                <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right docNav">
+                                                    <p class="docdrop ">
+                                                        New Release
+                                                    </p>
+                                                    <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp12/article" target="_blank">
+                                                        Service 
+											Pack 12
+                                                    </a>
+                                                    <hr class="docdrop">
+                                                        <p class="docdrop">
+                                                            Mainstream Releases
+                                                        </p>
+                                                        <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp11/article" target="_blank">
+                                                            Service Pack 11
+                                                        </a>
+                                                        <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp10/article" target="_blank">
+                                                            Service Pack 10
+                                                        </a>
+                                                        <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp9/article" target="_blank">
+                                                            Service Pack 9
+                                                        </a>
+                                                        <hr class="docdrop">
+                                                            <p class="docdrop">
+                                                                Deprecated Releases
+                                                            </p>
+                                                            <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp8/article" target="_blank">
+                                                                Service Pack 8
+                                                            </a>
+                                                            <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp7/article" target="_blank">
+                                                                Service Pack 7
+                                                            </a>
+                                                            <a class="dropdown-item" href="http://documentation.commvault.com/commvault/v11_sp6/article" target="_blank">
+                                                                Service Pack 6
+                                                            </a>
+                                                        </hr>
+                                                    </hr>
+                                                </div>
+                                                <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/v10/article" role="button" target="_blank">
+                                                    Simpana v10
+                                                </a>
+                                                <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm" role="button" target="_blank">
+                                                    Simpana v9
+                                                </a>
+                                                <a class="btn btn-secondary docNav" href="http://internaldocs/" role="button" target="_blank">
+                                                    Internal Docs | OEM
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Commvault Information: -->
+                                <div class="well col-sm-4">
+                                    <h4 align="center">
+                                        Commvault Information:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://ma.commvault.com/Account/Login?ReturnUrl=%2F" target="_blank">
+                                                Maintenance Advantage
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://commvault.csod.com/client/commvault/default.aspx" target="_blank">
+                                                <i class="fas fa-graduation-cap">
+                                                </i>
+                                                Learning@Commvault
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://brand.commvault.com/" target="_blank">
+                                                Commvault Brand Place
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ops-commvault-home.teamexos.com" target="_blank">
+                                                EXOS | Fitness Center
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://portal.adp.com/public/index.htm" target="_blank">
+                                                ADP Portal
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://mail.commvault.com/owa" target="_blank">
+                                                <i class="far fa-envelope">
+                                                </i>
+                                                CommVault Webmail (OWA)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://uxwiki.unixdb.lab/" target="_blank">
+                                                Unix Wiki
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Customer Engineering: -->
+                                <div class="well col-sm-4">
+                                    <h4 align="center">
+                                        Customer Engineering:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://alexandria.commvault.com/" target="_blank">
+                                                <i class="fas fa-search">
+                                                </i>
+                                                Alexandria
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://commvault.webex.com/" target="_blank">
+                                                Commvault WebEx
+                                            </a>
+                                            -
+                                            <a href="http://services.commvault.com/assist" target="_blank">
+                                                CVLT.net
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ce-staging.commvault.com/" target="_blank">
+                                                Staging Servers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://lg.commvault.com/" target="_blank">
+                                                License Generator V10+
+                                            </a>
+                                            -
+                                            <a href="file://gp.cv.commvault.com/dfs/Licensing" target="_blank">
+                                                License Files
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://mscrm.commvault.com/" target="_blank">
+                                                Microsoft Dynamics CRM
+                                            </a>
+                                            <!--  - 
 								<a href="https://co13611.purelyhr.com/?ct=1" target="_blank">TimeOff</a> -->
-							</li>
-							<li>
-								<a href="https://cloud.commvault.com/" target="_blank">cloud.commvault.com</a>
-							</li>
-							<li>
-								<a href="https://drive.commvault.com/" target="_blank">Cloud Drive</a>
-							</li>
-							<li>
-								<a href="http://sso.forum.commvault.com/forums/default.aspx" target="_blank">Customer Support Forums</a>
-							</li>
-						</ul>
-	    			</div>	
-	    			<!-- Connect Customer Support: -->
-	    			<div class="well col-sm-4">
-	    				<h4>Connect Customer Support:</h4>
-	    				<ul>
-	    					<li>
-								<a href="https://connect.commvault.com/community/support" target="_blank">Connect | Customer Support</a>
-							</li>
-	    					<li>
-								<a href="https://connect.commvault.com/community/support/client-focus/pages/client" target="_blank">Client</a> - 
-								<a href="https://connect.commvault.com/community/support/mm-focus/pages/media-management" target="_blank">Media Management</a>
-							</li>
-	    					<li>
-								<a href="https://connect.commvault.com/community/support/messaging-focus/pages/messaging" target="_blank">Messaging</a> - 
-								<a href="https://connect.commvault.com/community/support/server-focus/pages/server" target="_blank">Server</a> - 
-								<a href="https://connect.commvault.com/community/support/unixdb-focus/pages/unixdb" target="_blank">Unix</a>
-							</li>
-							<li>
-								<a href="https://connect.commvault.com/community/support/pages/ideas" target="_blank"><i class="far fa-lightbulb"></i>  Ideas</a>
-							</li>
-							<li>
-								<a href="https://connect.commvault.com/community/support/pages/support-expertise-enablement" target="_blank">Support Expertise Enablement</a>
-							</li>
-							<li>
-								<a href="https://connect.commvault.com/docs/DOC-25700" target="_blank">Onboarding</a> - 
-								<a href="https://connect.commvault.com/docs/DOC-3231" target="_blank">Tools & Resources</a> - 
-								<a href="https://connect.commvault.com/docs/DOC-8447" target="_blank">SOP's</a>
-							</li>
-	    				</ul>
-	    			</div>
-	    		</div>
-	    		<div class="row">
-	    			<!-- Development Information: -->
-	    			<div class="col-sm-4">
-	    			<h4 align="center">Development Information:</h4>
-	    					<ul >
-								<li>
-									<a href="http://engweb/" target="_blank">EngWeb</a> -
-									<a href="http://engweb/search/" target="_blank">EngWeb Search</a>
-								</li>
-								<li>
-									<a href="https://engweb.commvault.com/engtools/defect" target="_blank">New MR Request</a>
-								</li>
-								<li>
-									<a href="https://engweb.commvault.com/search/?sourceType=CampusFeedback" target="_blank">Campus Feedback</a>
-								</li>
-								<li>
-									<a href="https://engweb.commvault.com/search/?sourcetype=AdditionalSettings" target="_blank">Additional Settings</a>
-								</li>
-							</ul>
-	    			</div>
-	    			<!-- Update Information: -->
-	    			<div class="col-sm-4">
-	    				<h4>Update Information:</h4>															
-    					<ul>
-							<li>
-								<a href="http://updatecenter.commvault.com/" target="_blank">UpdateCenter</a>
-							</li>
-							<!-- <li>
+                                        </li>
+                                        <li>
+                                            <a href="https://cloud.commvault.com/" target="_blank">
+                                                cloud.commvault.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://drive.commvault.com/" target="_blank">
+                                                Cloud Drive
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://sso.forum.commvault.com/forums/default.aspx" target="_blank">
+                                                Customer Support Forums
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Connect Customer Support: -->
+                                <div class="well col-sm-4">
+                                    <h4>
+                                        Connect Customer Support:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="https://connect.commvault.com/community/support" target="_blank">
+                                                Connect | Customer Support
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.commvault.com/community/support/client-focus/pages/client" target="_blank">
+                                                Client
+                                            </a>
+                                            -
+                                            <a href="https://connect.commvault.com/community/support/mm-focus/pages/media-management" target="_blank">
+                                                Media Management
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.commvault.com/community/support/messaging-focus/pages/messaging" target="_blank">
+                                                Messaging
+                                            </a>
+                                            -
+                                            <a href="https://connect.commvault.com/community/support/server-focus/pages/server" target="_blank">
+                                                Server
+                                            </a>
+                                            -
+                                            <a href="https://connect.commvault.com/community/support/unixdb-focus/pages/unixdb" target="_blank">
+                                                Unix
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.commvault.com/community/support/pages/ideas" target="_blank">
+                                                <i class="far fa-lightbulb">
+                                                </i>
+                                                Ideas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.commvault.com/community/support/pages/support-expertise-enablement" target="_blank">
+                                                Support Expertise Enablement
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://connect.commvault.com/docs/DOC-25700" target="_blank">
+                                                Onboarding
+                                            </a>
+                                            -
+                                            <a href="https://connect.commvault.com/docs/DOC-3231" target="_blank">
+                                                Tools & Resources
+                                            </a>
+                                            -
+                                            <a href="https://connect.commvault.com/docs/DOC-8447" target="_blank">
+                                                SOP's
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Development Information: -->
+                                <div class="col-sm-4">
+                                    <h4 align="center">
+                                        Development Information:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="http://engweb/" target="_blank">
+                                                EngWeb
+                                            </a>
+                                            -
+                                            <a href="http://engweb/search/" target="_blank">
+                                                EngWeb Search
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engweb.commvault.com/engtools/defect" target="_blank">
+                                                New MR Request
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engweb.commvault.com/search/?sourceType=CampusFeedback" target="_blank">
+                                                Campus Feedback
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engweb.commvault.com/search/?sourcetype=AdditionalSettings" target="_blank">
+                                                Additional Settings
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Update Information: -->
+                                <div class="col-sm-4">
+                                    <h4>
+                                        Update Information:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="http://updatecenter.commvault.com/" target="_blank">
+                                                UpdateCenter
+                                            </a>
+                                        </li>
+                                        <!-- <li>
 								<a href="file://vega/releasedPackages" target="_blank">ReleasedPackages</a>
 							</li> -->
-							<li>
-								<a href="https://cloud.commvault.com/" target="_blank">cloud.commvault.com</a>
-							</li>
-							<li>
-								<a href="https://engweb.commvault.com/releasemanagement/targets" target="_blank">Service Pack Timelines</a>
-							</li>
-						</ul>
-	    			</div>
-	    			<!-- Third-Party Sites and Tools: -->
-	    			<div class="col-sm-4">
-	    				<!-- TODO  -->
-	    				<h4 align="center">Third-Party Sites and Tools:</h4>		    				
-    					<ul>
-							<li>
-								<a href="http://www.google.com/" target="_blank"><i class="fab fa-google"></i> Google</a> - 
-								<a href="https://translate.google.com/#" target="_blank">Google Translate</a>
-							</li>
-							<li>
-								<a href="http://www.bing.com/" target="_blank"><i class="fab fa-microsoft"></i> Bing</a> - 
-								<a href="https://www.bing.com/translator" target="_blank">Bing Microsoft Translator</a>
-							<li>
-								<a href="http://www.matisse.net/bitcalc/?input_amount=&input_units=bytes&notation=legacy" target="_blank">Bit Calculator</a> - 
-								<a href="http://www.iometer.org/doc/downloads.html" target="_blank">I/O meter</a> 
-							</li>
-							<li>
-								<a href="https://www.virten.net/vmware/esxi-release-build-number-history/#esxi6.7" target="_blank">VMware ESXi Release and Build Number History</a>
-							</li>
-							<li>
-								<a href="https://docs.microsoft.com/en-us/sysinternals/" target="_blank">Sysinternals</a>
-							</li>
-							<li>
-								<a href="http://www.onlineconversion.com/unix_time.htm" target="_blank">Unix Time converter</a>
-							</li>
-							<li>
-								<hr>
-								<h6>Use the Feedback to give me the Links you use all the time!!!</h6>
-							</li>
-						</ul>
-	    			</div>
-	    		</div> 	
-    		</div>
-    		<!-- Right Hand Buttons  -->
-    		<div class="col-sm-2" style="padding: 0;" >
-    			<div class="rounded container">
-    				<h4>Log Shares <i class="fas fa-share-alt rightNav"></i></h4>
-					<div class="btn-group-vertical rounded teams">
-				    	<!-- Client Members -->
-				    	<button class="btn cvbutton btn-lg btn-client" >Client <i id="client" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-				    	<button class="btn btn-secondary client cvlogs" name="file://mmancino840/Logs" title="\\mmancino840\Logs">Michael Mancino</button>
-	        			<button class="btn btn-secondary client cvlogs" name="file://tdellorusso/Logs" title="\\tdellorusso\Logs">Thomas Dello Russo</button>
-        				<button class="btn btn-secondary client cvlogs" name="file://tarunkumar/Logs" title="\\tarunkumar\Logs">Tarun Kumar Jain</button>
-        				<button class="btn btn-secondary client cvlogs" name="file://jkrol/Logs" title="\\jkrol\Logs">Jason Krol</button>
-        				<button class="btn btn-secondary client cvlogs" name="file://WSHERIDAN/Logs" title="\\WSHERIDAN\Logs">William "Liam" Sheridan</button>
-					   	<button class="btn btn-secondary client cvlogs" name="file://mwhitman/Logs" title="\\mwhitman\Logs">Mike Whitman</button>
-					   	<button class="btn btn-secondary client cvlogs" name="file://cstogsdill800/Logs" title="\\cstogsdill800\Logs">Chris Stogsdill</button>
-					   	<button class="btn btn-secondary client cvlogs" name="file://wesyoung/Logs" title="\\wesyoung\Logs">Wes Young</button>
-					   	<button class="btn btn-secondary client cvlogs" name="file://jpolicastro/Logs" title="\\jpolicastro\Logs">James Policastro</button>
-					   	<button class="btn btn-secondary client cvlogs" name="file://dwhite800/Logs" title="\\dwhite800\Logs">Daniel White</button>
-					   	<!-- MM logs -->
-					   	<button class="btn btn-teams btn-lg btn-mm">MM <i id="mm" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://PBATTIFORA/Logs" title="\\PBATTIFORA\Logs">Paolo Battifora</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://mcozzi/Logs" title="\\mcozzi\logs">Michael Cozzi</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://CMCCARTHY/Logs" title="\\CMCCARTHY\Logs">Charles McCarthy</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://cvce009077/Logs" title="\\cvce009077\Logs">Colin Falkinburg</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://bsamuel/Logs" title="\\bsamuel\logs">Bryan Samuel</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://bmarrow/Logs" title="\\bmarrow\logs">Bernard Marrow</button>
-					   	<button class="btn btn-secondary mm cvlogs" name="file://CVCE009073/Logs" title="\\CVCE009073\logs">Richard Cauterucci</button>
-					   	<!-- MSG Members -->
-					   	<button class="btn btn-teams btn-lg btn-msg">MSG <i id="msg" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-					   	<button class="btn btn-secondary msg cvlogs" name="file://tobermeit/Logs" title="\\tobermeit\logs">Tamara Obermeit</button>
-					   	<button class="btn btn-secondary msg cvlogs" name="file://Vvovchik10/cv-logs" title="\\Vvovchik10\cv-logs">Vlad Vovchik</button>
-					   	<button class="btn btn-secondary msg cvlogs" name="file://tflanagan800/logs" title="\\tflanagan800\logs\">Thomas Flanagan</button>
-					   	<button class="btn btn-secondary msg cvlogs" name="file://mhintenach-lt/Logs" title="\\mhintenach-lt\Logs ">Michael Hintenach</button>
-					   	<!-- Server Members -->
-					   	<button class="btn btn-teams btn-lg btn-server">Server <i id="server" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-					   	<button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="\\khayes800\logs">Kenneth Hayes</button>
-					   	<button class="btn btn-secondary server cvlogs" name="file://kbabeu/Logs" title="\\kbabeu\logs">Kevin Babeu <kbabeu@commvault.com></button>
-					   	<button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">Michael Peterson</button>
-					   	<button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">Johnathan Cseh</button>
-					   	<button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">Joe Pettignano</button>
-					   	<button class="btn btn-secondary server cvlogs" name="file://scottsheldon/Logs" title="\\scottsheldon\mc4s">Scott Sheldon</button>
-					   	<!-- Unix Members -->
-					   	<button class="btn btn-teams btn-lg btn-unix">Unix <i id="unix" style="padding-top: 6px"  class="far fa-plus-square"></i></button>
-					   	<button class="btn btn-secondary unix cvlogs" name="file://THADLEY800/Logs" title="\\thadley800\Logs">Thomas Hadley</button>
-					   	<button class="btn btn-secondary unix cvlogs" name="file://Rtrione800g2/cvlogs" title="\\Rtrione800g2\cvlogs">Rick Trione</button>
-					   	<button class="btn btn-secondary unix cvlogs" name="file://MREDDY800/Mahender_Logs" title="\\MREDDY800\Mahender_Logs">Mahender Reddy</button>
-					   	<button class="btn btn-secondary unix disabled" name="file://v/Logs" title="\\thadley800\Logs">Kerwin Rodgers</button>
-	        		</div>
-		    	</div>
-		    </div>
-		</div>
-		
-		<nav class="navbar fixed-bottom footer">
-  			<p class="navbar footer" href="#">@2018 v1.1.0</p>.
-  		</nav>
-<!-- 
+                                        <li>
+                                            <a href="https://cloud.commvault.com/" target="_blank">
+                                                cloud.commvault.com
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://engweb.commvault.com/releasemanagement/targets" target="_blank">
+                                                Service Pack Timelines
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Third-Party Sites and Tools: -->
+                                <div class="col-sm-4">
+                                    <!-- TODO  -->
+                                    <h4 align="center">
+                                        Third-Party Sites and Tools:
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <a href="http://www.google.com/" target="_blank">
+                                                <i class="fab fa-google">
+                                                </i>
+                                                Google
+                                            </a>
+                                            -
+                                            <a href="https://translate.google.com/#" target="_blank">
+                                                Google Translate
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.bing.com/" target="_blank">
+                                                <i class="fab fa-microsoft">
+                                                </i>
+                                                Bing
+                                            </a>
+                                            -
+                                            <a href="https://www.bing.com/translator" target="_blank">
+                                                Bing Microsoft Translator
+                                            </a>
+                                            <li>
+                                                <a href="http://www.matisse.net/bitcalc/?input_amount=&input_units=bytes¬ation=legacy" target="_blank">
+                                                    Bit Calculator
+                                                </a>
+                                                -
+                                                <a href="http://www.iometer.org/doc/downloads.html" target="_blank">
+                                                    I/O meter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.virten.net/vmware/esxi-release-build-number-history/#esxi6.7" target="_blank">
+                                                    VMware ESXi Release and Build Number History
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.microsoft.com/en-us/sysinternals/" target="_blank">
+                                                    Sysinternals
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://www.onlineconversion.com/unix_time.htm" target="_blank">
+                                                    Unix Time converter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr>
+                                                    <h6>
+                                                        Use the Feedback to give me the Links you use all the time!!!
+                                                    </h6>
+                                                </hr>
+                                            </li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Right Hand Buttons  -->
+                        <div class="col-sm-2" style="padding: 0;">
+                            <div class="rounded container">
+                                <h4>
+                                    Log Shares
+                                    <i class="fas fa-share-alt rightNav">
+                                    </i>
+                                </h4>
+                                <div class="btn-group-vertical rounded teams">
+                                    <!-- Client Members -->
+                                    <button class="btn cvbutton btn-lg btn-client">
+                                        Client
+                                        <i class="far fa-plus-square" id="client" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://mmancino840/Logs" title="\\mmancino840\Logs">
+                                        Michael Mancino
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://tdellorusso/Logs" title="\\tdellorusso\Logs">
+                                        Thomas Dello Russo
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://tarunkumar/Logs" title="\\tarunkumar\Logs">
+                                        Tarun Kumar Jain
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://jkrol/Logs" title="\\jkrol\Logs">
+                                        Jason Krol
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://WSHERIDAN/Logs" title="\\WSHERIDAN\Logs">
+                                        William "Liam" Sheridan
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://mwhitman/Logs" title="\\mwhitman\Logs">
+                                        Mike Whitman
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://cstogsdill800/Logs" title="\\cstogsdill800\Logs">
+                                        Chris Stogsdill
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://wesyoung/Logs" title="\\wesyoung\Logs">
+                                        Wes Young
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://jpolicastro/Logs" title="\\jpolicastro\Logs">
+                                        James Policastro
+                                    </button>
+                                    <button class="btn btn-secondary client cvlogs" name="file://dwhite800/Logs" title="\\dwhite800\Logs">
+                                        Daniel White
+                                    </button>
+                                    <!-- MM logs -->
+                                    <button class="btn btn-teams btn-lg btn-mm">
+                                        MM
+                                        <i class="far fa-plus-square" id="mm" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://PBATTIFORA/Logs" title="\\PBATTIFORA\Logs">
+                                        Paolo Battifora
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://mcozzi/Logs" title="\\mcozzi\logs">
+                                        Michael Cozzi
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://CMCCARTHY/Logs" title="\\CMCCARTHY\Logs">
+                                        Charles McCarthy
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://cvce009077/Logs" title="\\cvce009077\Logs">
+                                        Colin Falkinburg
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://bsamuel/Logs" title="\\bsamuel\logs">
+                                        Bryan Samuel
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://bmarrow/Logs" title="\\bmarrow\logs">
+                                        Bernard Marrow
+                                    </button>
+                                    <button class="btn btn-secondary mm cvlogs" name="file://CVCE009073/Logs" title="\\CVCE009073\logs">
+                                        Richard Cauterucci
+                                    </button>
+                                    <!-- MSG Members -->
+                                    <button class="btn btn-teams btn-lg btn-msg">
+                                        MSG
+                                        <i class="far fa-plus-square" id="msg" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary msg cvlogs" name="file://tobermeit/Logs" title="\\tobermeit\logs">
+                                        Tamara Obermeit
+                                    </button>
+                                    <button class="btn btn-secondary msg cvlogs" name="file://Vvovchik10/cv-logs" title="\\Vvovchik10\cv-logs">
+                                        Vlad Vovchik
+                                    </button>
+                                    <button class="btn btn-secondary msg cvlogs" name="file://tflanagan800/logs" title="\\tflanagan800\logs\">
+                                        Thomas Flanagan
+                                    </button>
+                                    <button class="btn btn-secondary msg cvlogs" name="file://mhintenach-lt/Logs" title="\\mhintenach-lt\Logs ">
+                                        Michael Hintenach
+                                    </button>
+                                    <!-- Server Members -->
+                                    <button class="btn btn-teams btn-lg btn-server">
+                                        Server
+                                        <i class="far fa-plus-square" id="server" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="\\khayes800\logs">
+                                        Kenneth Hayes
+                                    </button>
+                                    <button class="btn btn-secondary server cvlogs" name="file://kbabeu/Logs" title="\\kbabeu\logs">
+                                        Kevin Babeu
+                                        <kbabeu@commvault.com>
+                                        </kbabeu@commvault.com>
+                                    </button>
+                                    <button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">
+                                        Michael Peterson
+                                    </button>
+                                    <button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">
+                                        Johnathan Cseh
+                                    </button>
+                                    <button class="btn btn-secondary server disabled" name="file://tobermeit/Logs" title="null">
+                                        Joe Pettignano
+                                    </button>
+                                    <button class="btn btn-secondary server cvlogs" name="file://scottsheldon/Logs" title="\\scottsheldon\mc4s">
+                                        Scott Sheldon
+                                    </button>
+                                    <!-- Unix Members -->
+                                    <button class="btn btn-teams btn-lg btn-unix">
+                                        Unix
+                                        <i class="far fa-plus-square" id="unix" style="padding-top: 6px">
+                                        </i>
+                                    </button>
+                                    <button class="btn btn-secondary unix cvlogs" name="file://THADLEY800/Logs" title="\\thadley800\Logs">
+                                        Thomas Hadley
+                                    </button>
+                                    <button class="btn btn-secondary unix cvlogs" name="file://Rtrione800g2/cvlogs" title="\\Rtrione800g2\cvlogs">
+                                        Rick Trione
+                                    </button>
+                                    <button class="btn btn-secondary unix cvlogs" name="file://MREDDY800/Mahender_Logs" title="\\MREDDY800\Mahender_Logs">
+                                        Mahender Reddy
+                                    </button>
+                                    <button class="btn btn-secondary unix disabled" name="file://v/Logs" title="\\thadley800\Logs">
+                                        Kerwin Rodgers
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar fixed-bottom footer">
+                        <p class="navbar footer" href="#">
+                            @2018 v1.1.1
+                        </p>
+                        .
+                    </nav>
+                    <!-- 
 csp.html Main Page for the MC$ Support Page Setup.
 Design by Thomas Dellorusso 
 tdellorusso@commvault.com 
 Based from original design by Ted Polny. 172.19.21.10/advanced/
 @2018 
 -->
-	</body>
+                </br>
+            </br>
+        </br>
+    </body>
 </html>

@@ -23,6 +23,7 @@ function loaders(){
 }
 
 function fadelisteners(){
+  console.trace();
   $(".btn-client .fa-plus-square").click(function(){
     $("button.client").fadeToggle("slow");
   });

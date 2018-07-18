@@ -10,6 +10,7 @@ update Document search to search each service pack.
 In Progress
 --------------
 Firefox - the Client dropdowns do not work.
+Make the people list run from json file for easier updating. 
 
 //---------//
 
@@ -47,3 +48,4 @@ added copyright and footer version stamp.
 
 7/16
 added <meta charset="utf-8"/> to header for Firefox
+modified nav bar to work in Firefox
