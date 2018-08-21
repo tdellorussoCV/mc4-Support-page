@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addClass\t.addClass()"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"padding",
+				"padding-right\tproperty"
+			],
+			[
+				"padd",
+				"padding-right\tproperty"
+			],
+			[
+				"CV",
+				"cvgetlog"
+			],
+			[
+				"my",
+				"myUrl"
+			],
+			[
+				"se",
+				"selectedIndex"
+			],
+			[
+				"d",
+				"dummy_id"
+			],
+			[
+				"dumm",
+				"dummyContent"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"fad",
+				"fadeToggle"
+			],
+			[
+				"log",
+				"Logs"
+			],
+			[
+				"copy",
+				"copyToClipboard"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"sr",
+				"srchTerm"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"alexs",
+				"alexSch"
+			],
+			[
+				"m",
+				"mySel"
+			],
+			[
+				"o",
+				"objecttxt"
+			],
+			[
+				"man",
+				"mmancino840"
+			],
+			[
+				"h",
+				"height\tproperty"
+			],
+			[
+				"s",
+				"srchTerm"
+			],
+			[
+				"navbar",
+				"navbar-right"
+			],
+			[
+				"nabar",
+				"navbar"
+			],
+			[
+				"col",
+				"col-sm-8"
+			],
+			[
+				"btn-seC",
+				"btn-secondary"
+			],
+			[
+				"a",
+				"alexIpt"
+			],
+			[
+				"i",
+				"input"
+			],
+			[
+				"al",
+				"alexSch"
+			],
+			[
+				"Lba",
+				"labSystems"
+			],
+			[
+				"alig",
+				"align-items\tproperty"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"cen",
+				"center"
+			],
+			[
+				"fo",
+				"footer\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"no",
+				"noscript\tTag"
+			],
+			[
+				"l",
+				"li\tTag"
+			],
+			[
+				"b",
+				"border"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/css/style.css",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/core/images.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/core/images.service.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/raspberry.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/raspberry.component.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/templates/raspberry.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/app.config.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/app.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/index.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4pi/v2.1/src/js/app/carousel/carousel.component.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/templates/raspberry/rasp-nav.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/rasp-nav/rasp-nav.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/raspberry/rasp-nav/rasp-nav.component.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/utils/clicktoedit.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/templates/header.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/templates/mc4cli.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/templates/main.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/src/js/app/header/header.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/v1/Config.ru",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/src/app/app.config.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/src/app/app.module.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/index.html",
+		"/Z/mgt page/Management-page/header.html",
+		"/Z/mgt page/Management-page/index.html",
+		"/Z/mgt page/Management-page/getlog script.js",
+		"/Z/mgt page/Management-page/source/js/pmpage.js",
+		"/Z/mgt page/Management-page/source/css/pmpage.css",
+		"/C/Users/tdellorusso/OneDrive/MC4/mgt page/main.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/main.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/index.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/scraps.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/logfiles.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/csp.css",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/csp.js",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/csp.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/To do list.md",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/angtest.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/Client Support Page.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/nav test.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/style.css",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/index 1.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/Client Support Page main.html",
+		"/C/Users/tdellorusso/OneDrive/MC4/MC4Client/css/bootstrap.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/temp/index.html",
+		"/C/Users/tdellorusso/Downloads/style.css",
+		"/C/Users/tdellorusso/Downloads/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index_2.php",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/index.php",
+		"/C/Users/tdellorusso/Documents/Sublime3 Workspace/Getlogs app/getlogs.cs",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/MC4pi/test.html",
+		"/C/Users/tdellorusso/Documents/Webrot/the_kindergarten_site/template12/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/temp/zengarden-sample.css",
+		"/C/Users/tdellorusso/Documents/Webrot/the_kindergarten_site/template12/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/style.css",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/index.html",
+		"/C/Users/tdellorusso/Documents/Webrot/MC4/ScoreCard Exclude Weekends.mhtml",
+		"/C/Users/tdellorusso/Documents/Webrot/personal_portfolio/template11/index.html",
+		"//172.25.202.75/PiShare/index.htm",
+		"/Z/configs/bookmarks_11_12_14.html",
+		"/Z/configs/Firefox Recovery Key.html"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"    \t\n",
+			"firstrow",
+			"name",
+			"nav-header",
+			"index",
+			"form-",
+			"form",
+			"header",
+			"navbar",
+			"NAVBAR-HEADER",
+			"}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\tdellorusso\\OneDrive\\MC4\\mc4client.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 178.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

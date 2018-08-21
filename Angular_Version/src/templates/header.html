@@ -1,38 +1,61 @@
 <!-- Navbar -->
-<div class=''>
-		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">	
-			<div class="container-fluid">
-				<div class="nav-header">
-					<span><img id="cvlogo" src="images/favicon.png" alt="cvlogo"></span>
-					<span><a class="navbar-brand" href="csp.html" >	MC4 Support Page</a></span>
-				</div>	
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-			    		<span class="navbar-toggler-icon"></span>
-			  	</button>	
-	  			<div class="collapse navbar-collapse" id="collapsibleNavbar" >
-			    	<div class="container-fluid">
-				    	<ul class="nav navbar-nav navbar-right flex-row-reverse">
-			      			<!-- <li class="nav-item">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <div class="nav-header">
+            <span>
+                <img alt="cvlogo" id="cvlogo" src="images/favicon.png"/>
+            </span>
+            <span>
+                <a class="navbar-brand" href="csp.html">
+                    MC4 Support Page
+                </a>
+            </span>
+        </div>
+        <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right flex-row-reverse">
+                    <li class="nav-item">
+                        <input class="form-control navForm " id="docSrchInput" name="docsearch" placeholder="Documentation Search" type="text" ng-keypress="alexSearch($event)">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input class="form-control navForm" id="bingSrchInput" name="bingsearch" navform="" placeholder="Bing Search" type="text">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input class="form-control navForm" id="gooSrchInput" name="googlesearch" navform="" placeholder="Google Search" type="text">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input class="form-control navForm" id="engweb" name="eng1" placeholder="EngWeb Search" type="text">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input class="form-control navForm" data-toggle="tooltip" id="alex" name="alex1" placeholder="Alexandria Search" title="Will not work with (){}[] in the search" type="text">
+                        </input>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid" id="buffer">
+                <div class="container-fluid">
+                    <ul class="navbar-nav navbar-right flex-row-reverse">
+                        <li class="nav-item">
+                            <a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback">
+                                <i class="far fa-envelope">
+                                </i>
+                                Feedback
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
 					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
 					      	</li> -->
-					    </ul>
-					</div>
-					
-					<div class="container-fluid">
-						<ul class="nav navbar-nav navbar-right flex-row-reverse">
-							<li class="nav-item">
-								<input class="form-control navForm" id="engweb" type="text" name="eng1"	 placeholder="EngWeb Search">
-							</li>
-							<li class="nav-item">
-					      		<input class="form-control" id="alex" 	type="text" name="alex1" title="Will not work with (){}[] in the search" data-toggle="tooltip" placeholder="Alexandria Search" >
-	    					</li>
-	    					<li class="nav-item">
-					        	<a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback"><i class="far fa-envelope"></i> Feedback</a>
-					      	</li>
-						</ul>
-					</div>    
-			    </div>
-		    </div> 
-		</nav>
-</div>		
-		
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
