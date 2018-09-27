@@ -1,0 +1,15 @@
+{
+    "userlogs": [{
+        "team": "client",
+        "name": "Michael Mancino",
+        "file": "mmancino840/Logs",
+        "path": "\\\\mmancino840\\Logs",
+        "stat": "cvlogs"
+    }, {
+        "team": "client",
+        "name": "Thomas Dello Russo",
+        "file": "tdellorusso/Logs",
+        "path": "\\\\tdellorusso\\Logs",
+        "stat": "cvlogs"
+    }]
+},

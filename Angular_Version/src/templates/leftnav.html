@@ -4,11 +4,11 @@
     </i>
 </h4>
 <div class="btn-group-vertical rounded leftNav">
-    <button class="btn cvbutton btn-logfiles cvlogbtn" onclick="clfbutton()" type="button">
+    <button class="btn cvbutton btn-logfiles cvlogbtn" type="button">
         Customer Log Files
     </button>
-    <input class="btn btn-input logfiles" id="CCID" pattern="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
-        <button class="btn btn-secondary logfiles" id="CELOGS" onclick="celogfiles()" title="\\ENG\CELOGS\" type="button">
+    <input class="btn btn-input logfiles ng-hide" id="CCID" pattern="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
+        <button class="btn btn-secondary logfiles ng-hide" id="CELOGS" onclick="celogfiles()" title="\\ENG\CELOGS\" type="button">
             CELOGS [GUI SendLogs]
             <i class="fas fa-clipboard-check" style="padding-top: 6px">
             </i>
