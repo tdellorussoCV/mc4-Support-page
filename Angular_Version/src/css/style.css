@@ -12,7 +12,8 @@ body        { background: #ADA996;  /* fallback for old browsers */ background: 
 
 a.client, a.msg, a.mm, a.server, a.unix {display:none;}
 
-button.client, button.unix, button.msg, button.mm, button.server, button.logfiles, input.logfiles, button.labsys {display:none;}
+button.client, button.unix, button.msg, button.mm, button.server, button.labsys {display:none;}
+button.logfiles, input.logfiles,
 button.docNav {}
 
 div.teams   { width: 90%; margin: 0px auto; }
