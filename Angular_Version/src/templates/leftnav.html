@@ -4,27 +4,14 @@
     </i>
 </h4>
 <div class="btn-group-vertical rounded leftNav">
-    <button class="btn cvbutton btn-logfiles cvlogbtn" type="button">
+    <button class="btn cvbutton btn-logfiles cvlogbtn" ng-click="clfButton($event)" type="button">
         Customer Log Files
     </button>
-    <input ng-model="logInput" class="btn btn-input logfiles" id="CCID" pattern="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
-        <button class="btn btn-secondary logfiles" id="CELOGS" ng-click="celogfiles($event)" title="\\ENG\CELOGS\" type="button">
-            CELOGS [GUI SendLogs]
-            <!-- <i class="fas fa-clipboard-check" style="padding-top: 6px">
-            </i> -->
-        </button>
-        <button class="btn btn-secondary logfiles" id="engLogs" onclick="englogfiles()" title="\\eng\escalationlogs\" type="button">
-            Eng [Escalation Log Share]
-            <!-- <i class="fas fa-clipboard-check" style="padding-top: 6px">
-            </i> -->
-        </button>
-        <button class="btn btn-secondary logfiles" id="QNFTP" onclick="ftplogfiles()" title="ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/" type="button">
-            QNFTP [FTP Upload]
-            <!-- <i class="fas fa-clipboard-check" style="padding-top: 6px">
-            </i> -->
-        </button>
+    <select class="btn btn-secondary disabled logfiles" name="clfLocation" ng-model="clfLocation.selectedOption" ng-options="option.name for option in clfLocation.availableOptions track by option.id">
+    </select>
+    <input class="btn btn-input logfiles" id="CCID" ng-keypress="celogfiles($event)" ng-model="logInput" ngrequired="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
         <!-- Labs Dropright -->
-        <button class="btn cvbutton cvlogbtn" onclick="labbutton()" type="button">
+        <button class="btn cvbutton cvlogbtn" ng-click="labbutton($event)" type="button">
             Lab Systems
         </button>
         <div class="dropdown dropright btn-labsys">

@@ -12,8 +12,8 @@ body        { background: #ADA996;  /* fallback for old browsers */ background: 
 
 a.client, a.msg, a.mm, a.server, a.unix {display:none;}
 
-button.client, button.unix, button.msg, button.mm, button.server, button.labsys {display:none;}
-button.logfiles, input.logfiles,
+button.client, button.unix, button.msg, button.mm, button.server, button.labsys, button.logfiles, input.logfiles, select.logfiles  {display:none;}
+
 button.docNav {}
 
 div.teams   { width: 90%; margin: 0px auto; }
@@ -57,7 +57,7 @@ ul          { list-style-type:none;}
 .heading    { padding: 0;  margin: 0;}
 .hidden     { display: none;}
 .logfiles   {   }
-.labsys     {   }
+.labsys     { }
 
 .nospace    {padding: 0;margin: 0}
 .navbg-dark { background-color: #00384F;}
