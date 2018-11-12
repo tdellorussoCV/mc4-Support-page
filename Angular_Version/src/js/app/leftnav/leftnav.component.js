@@ -2,7 +2,7 @@
 angular.module('leftnav').
 component('leftnav', {
     templateUrl: './templates/leftnav.html',
-    controller: function($scope) {
+    controller: function($scope, $http) {
         // console.trace();
         var ccid = '';
         // Log Location array
@@ -11,23 +11,36 @@ component('leftnav', {
             availableOptions: [{
                 id: '1',
                 value: '\\\\ENG\\CELOGS\\',
-                name: 'CELOGS [GUI SendLogs]'
+                name: 'CELOGS [GUI SendLogs]',
+                placeholder: "CCID"
             }, {
                 id: '2',
                 value: '\\\\eng\\escalationlogs\\',
-                name: 'Eng [Escalation Log Share]'
+                name: 'Eng [Escalation Log Share]',
+                placeholder: "CCID"
             }, {
                 id: '3',
+                value: '\\\\titan\\cloudriver\\CloudUploads\\',
+                name: 'CRM Collect Logs',
+                placeholder: "Request ID"
+            }, {
+                id: '4',
                 value: 'ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/',
-                name: 'QNFTP [FTP Upload]'
+                name: 'QNFTP [FTP Upload]',
+                placeholder: "CCID"
             }],
             selectedOption: {
                 id: '1',
                 value: '\\\\ENG\\CELOGS\\',
-                name: 'CELOGS [GUI SendLogs]'
+                name: 'CELOGS [GUI SendLogs]',
+                placeholder: "CCID"
             } //This sets the default value of the select in the ui
         };
-        // End Log Location array
+        //End
+        $http.get("/json/leftnav.json").then(function(res, ) {
+            $scope.leftNav = res.data;
+            console.log(res.data);
+        });
         //Customer Log File 
         $scope.celogfiles = function($event) {
             var keyCode = $event.which || $event.keyCode;
@@ -39,7 +52,7 @@ component('leftnav', {
                     var copyId = $scope.clfLocation.selectedOption.id;
                     var copyText = $scope.clfLocation.selectedOption.value;
                     var logurl = copyText + ccid;
-                    if (copyId == 3) {
+                    if (copyId == 4) {
                         window.open(logurl);
                     } else {
                         var dummy = $('<input id="dummy_id">').val(logurl).appendTo('body').select();
@@ -52,14 +65,18 @@ component('leftnav', {
         }
         //End Customer Log File
         //Animations 
-        $scope.clfButton =function($event){
-        	$("select.logfiles").fadeToggle("slow");
-        	$("button.logfiles").fadeToggle("slow");
-    		$("input.logfiles").fadeToggle("slow");
-        } 
+        $scope.clfButton = function($event) {
+            $("select.logfiles").fadeToggle("slow");
+            $("button.logfiles").fadeToggle("slow");
+            $("input.logfiles").fadeToggle("slow");
+        }
         $scope.labbutton = function($event) {
             $("button.labsys").fadeToggle("slow");
-            $("input.labsys").fadeToggle("slow");
+            $("select.labsys").fadeToggle("slow");
         }
+        // $scope.labGo = function($event) {
+        //    var goUrl = $scope.labModel.selectedOption.value;
+        //    console.log(goUrl);           
+        // }
     }
 });

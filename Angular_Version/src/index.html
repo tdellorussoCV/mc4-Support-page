@@ -1,102 +1,98 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="cvsupport">
     <head>
-        <meta charset="utf-8">
-            <meta content="IE=edge" http-equiv="X-UA-Compatible">
-                <meta content="width=device-width, initial-scale=1" name="viewport">
-                    <title>
-                        MC4 Support Page
-                    </title>
-                    <!-- Greensock -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
-                    </script>
-                    <!-- CSS -->
-                    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
-                        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-                            <link href="/css/style.css" rel="stylesheet" type="text/css">
-                                <!-- popper -->
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
-                                </script>
-                                <!-- AngularJS -->
-                                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js" type="text/javascript">
-                                </script>
-                                <script src="https://code.angularjs.org/1.7.2/angular-route.js" type="text/javascript">
-                                </script>
-                                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-resource.js" type="text/javascript">
-                                </script>
-                                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.js" type="text/javascript"></script>
-                                <!-- app -->
-                                <script src="./js/app/app.module.js">
-                                </script>
-                                <script src="./js/app/app.config.js">
-                                </script>
-                                <!-- header -->
-                                <script src="./js/app/header/header.module.js">
-                                </script>
-                                <script src="./js/app/header/header.component.js">
-                                </script>
-                                <!-- jumbo -->
-                                <script src="./js/app/jumborow/jumborow.module.js">
-                                </script>
-                                <script src="./js/app/jumborow/jumborow.component.js">
-                                </script>
-                                <!-- leftnav -->
-                                <script src="./js/app/leftnav/leftnav.module.js">
-                                </script>
-                                <script src="./js/app/leftnav/leftnav.component.js">
-                                </script>
-                                <!-- center -->
-                                <script src="./js/app/center/center.module.js">
-                                </script>
-                                <script src="./js/app/center/center.component.js">
-                                </script>
-                                <!-- userlinks -->
-                                <script src="./js/app/userlinks/userlinks.module.js">
-                                </script>
-                                <script src="./js/app/userlinks/userlinks.component.js">
-                                </script>
-                                <!-- footer -->
-                                <!-- utils  -->
-                                <!-- Jquery  -->
-                                <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
-                                </script>
-                            </link>
-                        </link>
-                    </link>
-                </meta>
-            </meta>
-        </meta>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <title>
+            MC4 Support Page
+        </title>
+        <!-- Greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
+        </script>
+        <!-- CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet"/>
+        <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js" type="text/javascript">
+        </script>
+        <script src="https://code.angularjs.org/1.7.2/angular-route.js" type="text/javascript">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-resource.js" type="text/javascript">
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.js" type="text/javascript">
+        </script>
+        <!-- app -->
+        <script src="./js/app/app.module.js">
+        </script>
+        <script src="./js/app/app.config.js">
+        </script>
+        <!-- header -->
+        <script src="./js/app/header/header.module.js">
+        </script>
+        <script src="./js/app/header/header.component.js">
+        </script>
+        <!-- jumbo -->
+        <script src="./js/app/jumborow/jumborow.module.js">
+        </script>
+        <script src="./js/app/jumborow/jumborow.component.js">
+        </script>
+        <!-- leftnav -->
+        <script src="./js/app/leftnav/leftnav.module.js">
+        </script>
+        <script src="./js/app/leftnav/leftnav.component.js">
+        </script>
+        <!-- center -->
+        <script src="./js/app/center/center.module.js">
+        </script>
+        <script src="./js/app/center/center.component.js">
+        </script>
+        <!-- userlinks -->
+        <script src="./js/app/userlinks/userlinks.module.js">
+        </script>
+        <script src="./js/app/userlinks/userlinks.component.js">
+        </script>
+        <!-- footer -->
+        <!-- utils  -->
+        <!-- Jquery  -->
+        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
+        <!--
+            </meta-->
     </head>
-    <body>
-        <header>
-        </header>
-        <jumborow>
-        </jumborow>
-        <div class="row">
-            <div class="col-sm-2">
-                <leftnav>
-                </leftnav>
-            </div>
-            <div class="col-sm-8">
-                <center>
-                </center>
-            </div>
-            <div class="col-sm-2" style="padding: 0;">
-                <userlinks>
-                </userlinks>
-            </div>
+</html>
+<body>
+    <header>
+    </header>
+    <jumborow>
+    </jumborow>
+    <div class="row">
+        <div class="col-sm-2">
+            <leftnav>
+            </leftnav>
         </div>
-        <nav class="navbar fixed-bottom footer">
+        <div class="col-sm-8">
+            <center>
+            </center>
+        </div>
+        <div class="col-sm-2" style="padding: 0;">
+            <userlinks>
+            </userlinks>
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom footer">
+        <div>
             <p class="navbar footer" href="#">
                 @2018 v2.0.0
             </p>
-        </nav>
-        <!-- 
+        </div>
+    </nav>
+    <!-- 
 MC# Support Main Page for the MC$ Support Page Setup.
 Design by Thomas Dellorusso 
 tdellorusso@commvault.com 
 Based from original design by Ted Polny. 172.19.21.10/advanced/
 @2018 
 -->
-    </body>
-</html>
+</body>

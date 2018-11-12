@@ -18,13 +18,15 @@ button.docNav {}
 
 div.teams   { width: 90%; margin: 0px auto; }
 div.teamNav { width: 100%}
-div.leftNav, h4.leftNav{ width: 75%; margin-left: 50px; margin-right: 50px}
+div.leftNav, h4.leftNav{ width: 85%; margin-left: 50px; margin-right: 50px}
+div.nav-header {width: 240px;}
 div.jumbotron {background-color: lightsteelblue; padding: 20px}
 
 h1          { margin: 0px; }
 h2          { font-size : 9pt; font-weight : none; color: #333333; margin: 0px; }
 h6.lsmodal  { padding-top: 10px; padding-bottom: 0px; margin: 0px }
 
+label.client, label.mm{ margin-bottom: 0px; display:none;}
 nav.footer: { background-color: none;}
 
 p.docdrop   { font-weight: bold}
@@ -41,20 +43,21 @@ ul          { list-style-type:none;}
 .btn-labsys { width: 100%;}
 
 .csSearch   { background-color: none; }
+.cvlogbtn   { margin-bottom: 0px }
 .cvbutton   { color: white;background-color: steelblue; border-color: steelblue}
 .cvfooter   { width: 50 %;float: left}
 .cvmess     { width: 95%; height: 75px; background-color:  lightsteelblue; margin-bottom: 25px;}
 
 .docNav     { width: 20%}
 .docdrop    { width: 95%; margin: 0px auto}
-
+#docdrop    { width: 20%}
 .explorer   { padding: 0; margin: 0 auto; width: 100%}
 
 .firstrow   { align-self: center;height: 25px;margin-left: 15px; padding-right: 0px}
 .fa-plus-square, .fa-clipboard-check, .fa-clipboard-list, .fa-link, .fa-share-alt   { float: right;}
 .footer     { background-color: none; font-size: .85em;    }
 
-.heading    { padding: 0;  margin: 0;}
+.heading    { padding: 0;  margin: 0; max-width: 100%}
 .hidden     { display: none;}
 .logfiles   {   }
 .labsys     { }
@@ -87,7 +90,7 @@ ul          { list-style-type:none;}
 }
 
 /* ID */
-#buffer     { -moz-width: 498px ;width: 500px}
+#buffer     { width: 425px}
 
 #cvlogo     { height: 36px; width: 36px}
 

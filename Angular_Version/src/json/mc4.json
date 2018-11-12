@@ -1,15 +1,74 @@
 {
-    "userlogs": [{
-        "team": "client",
-        "name": "Michael Mancino",
-        "file": "mmancino840/Logs",
-        "path": "\\\\mmancino840\\Logs",
-        "stat": "cvlogs"
-    }, {
-        "team": "client",
-        "name": "Thomas Dello Russo",
-        "file": "tdellorusso/Logs",
-        "path": "\\\\tdellorusso\\Logs",
-        "stat": "cvlogs"
-    }]
-},
+   "client":[
+      {
+         "team":"client",
+         "name":"Michael Mancino",
+         "file":"mmancino840/Logs",
+         "path":"\\\\mmancino840\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Thomas Dello Russo",
+         "file":"tdellorusso/Logs",
+         "path":"\\\\tdellorusso\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Tarun Kumar Jain",
+         "file":"tarunkumar/Logs",
+         "path":"\\\\tarunkumar\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Jason Krol",
+         "file":"jkrol/Logs",
+         "path":"\\\\jkrol\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"William 'Liam' Sheridan",
+         "file":"WSHERIDAN/Logs",
+         "path":"\\\\WSHERIDAN\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Mike Whitman",
+         "file":"mwhitman/Logs",
+         "path":"\\\\mwhitman\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"ChrisS togsdill",
+         "file":"cstogsdill800/Logs",
+         "path":"\\\\cstogsdill800\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Wes Young",
+         "file":"wesyoung/Logs",
+         "path":"\\\\wesyoung\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"James Policastro",
+         "file":"jpolicastro/Logs",
+         "path":"\\\\jpolicastro\\Logs",
+         "stat":"cvlogs"
+      },
+      {
+         "team":"client",
+         "name":"Daniel White",
+         "file":"dwhite800/Logs",
+         "path":"\\\\dwhite800\\Logs",
+         "stat":"cvlogs"
+      }
+   ]
+}

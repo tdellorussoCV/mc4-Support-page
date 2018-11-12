@@ -7,107 +7,110 @@
     <button class="btn cvbutton btn-logfiles cvlogbtn" ng-click="clfButton($event)" type="button">
         Customer Log Files
     </button>
-    <select class="btn btn-secondary disabled logfiles" name="clfLocation" ng-model="clfLocation.selectedOption" ng-options="option.name for option in clfLocation.availableOptions track by option.id">
+    <select class="btn btn-secondary logfiles" name="clfLocation" ng-model="leftNav.selectedOptionlogs" ng-options="option.name for option in clfLocation.availableOptions track by option.id">
     </select>
-    <input class="btn btn-input logfiles" id="CCID" ng-keypress="celogfiles($event)" ng-model="logInput" ngrequired="([a-fA-F0-9]{1,6})$" placeholder="CCID" title="Hex CCID" type="text">
-        <!-- Labs Dropright -->
-        <button class="btn cvbutton cvlogbtn" ng-click="labbutton($event)" type="button">
-            Lab Systems
+    <input class="btn btn-input logfiles" id="CCID" ng-keypress="celogfiles($event)" ng-model="logInput" ngrequired="([a-fA-F0-9]{1,6})$" placeholder="{{leftNav.selectedOptionlogs.placeholder}}" title="Hex CCID" type="text"/>
+    <!-- Labs Dropright -->
+    <label class="btn cvbutton cvlogbtn" ng-click="labbutton($event)">
+        Lab Systems
+    </label>
+    <!-- 
+        <select class="btn btn-secondary labsys" name="adv11Lab" ng-model="adv11Lab.selectedOption" ng-options="option.name for option in adv11Lab.availableOptions track by option.id">
+        </select>
+        -->
+    <div class="dropdown btn-labsys">
+        <button class="btn btn-secondary labsys dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" name="ADV11" title="ADV11" type="button" id="dropdownMenu1" aria-haspopup="true" aria-expanded="true">
+            ADV11 V11 Lab
         </button>
-        <div class="dropdown dropright btn-labsys">
-            <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV11" title="ADV11">
-                ADV11 V11 Lab
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">
-                    ADV11
-                </a>
-                <a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">
-                    Webconsole
-                </a>
-                <a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">
-                    Adminconsole
-                </a>
-            </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">
+                ADV11
+            </a></li>
+            <li><a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">
+                Webconsole
+            </a></li>
+            <li><a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">
+                Adminconsole
+            </a></li>
+        </ul>
+    </div>
+    <div class="dropdown dropright btn-labsys">
+        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">
+            ADV10 V10 Lab
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">
+                ADV10 GUI Console
+            </a>
+            <a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">
+                QNet
+            </a>
+            <a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">
+                Search
+            </a>
+            <a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">
+                Comp
+            </a>
+            <a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">
+                Webconsole
+            </a>
+            <a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">
+                Custom Reports
+            </a>
         </div>
-        <div class="dropdown dropright btn-labsys">
-            <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">
-                ADV10 V10 Lab
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">
-                    ADV10 GUI Console
-                </a>
-                <a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">
-                    QNet
-                </a>
-                <a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">
-                    Search
-                </a>
-                <a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">
-                    Comp
-                </a>
-                <a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">
-                    Webconsole
-                </a>
-                <a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">
-                    Custom Reports
-                </a>
-            </div>
+    </div>
+    <div class="dropdown dropright btn-labsys">
+        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">
+            ADV90 V9 Lab
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">
+                ADV90 GUI Console
+            </a>
+            <a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">
+                QNet
+            </a>
+            <a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">
+                Search
+            </a>
+            <a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">
+                Comp
+            </a>
+            <a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">
+                Webconsole
+            </a>
+            <a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">
+                Custom Reports
+            </a>
         </div>
-        <div class="dropdown dropright btn-labsys">
-            <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">
-                ADV90 V9 Lab
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">
-                    ADV90 GUI Console
-                </a>
-                <a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">
-                    QNet
-                </a>
-                <a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">
-                    Search
-                </a>
-                <a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">
-                    Comp
-                </a>
-                <a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">
-                    Webconsole
-                </a>
-                <a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">
-                    Custom Reports
-                </a>
-            </div>
-        </div>
-        <div class="dropdown dropright btn-labsys">
-            <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">
+    </div>
+    <div class="dropdown dropright btn-labsys">
+        <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">
+            QM11v-CS
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">
                 QM11v-CS
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">
-                    QM11v-CS
-                </a>
-                <a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">
-                    QM Lab Sheet
-                </a>
-            </div>
+            </a>
+            <a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">
+                QM Lab Sheet
+            </a>
         </div>
-        <!-- Rest of the links  -->
-        <a class="btn cvbutton" href="http://bytecafe/" role="button" target="_blank">
-            ByteCafe
-        </a>
-        <a class="btn cvbutton" href="https://connect.commvault.com/" role="button" target="_blank">
-            Connect
-        </a>
-        <a class="btn cvbutton" href="https://co13611.purelyhr.com/?ct=1" role="button" target="_blank">
-            Time Off
-        </a>
-        <a class="btn cvbutton" href="http://engweb.commvault.com/OfficeMap/default.asp" role="button" target="_blank" title="CommVault, Tinton Falls, NJ">
-            Office Map
-        </a>
-        <a class="btn cvbutton" href="https://commvault.samanage.com/" role="button" target="_blank">
-            HelpDesk
-        </a>
-    </input>
+    </div>
+    <!-- Rest of the links  -->
+    <a class="btn cvbutton" href="http://bytecafe/" role="button" target="_blank">
+        ByteCafe
+    </a>
+    <a class="btn cvbutton" href="https://connect.commvault.com/" role="button" target="_blank">
+        Connect
+    </a>
+    <a class="btn cvbutton" href="https://co13611.purelyhr.com/?ct=1" role="button" target="_blank">
+        Time Off
+    </a>
+    <a class="btn cvbutton" href="http://engweb.commvault.com/OfficeMap/default.asp" role="button" target="_blank" title="CommVault, Tinton Falls, NJ">
+        Office Map
+    </a>
+    <a class="btn cvbutton" href="https://commvault.samanage.com/" role="button" target="_blank">
+        HelpDesk
+    </a>
 </div>
