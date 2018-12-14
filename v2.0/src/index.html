@@ -7,21 +7,14 @@
         <title>
             MC4 Support Page
         </title>
-        <!-- Greensock -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
-        </script>
+        <!-- icon -->
+        <link href="/images/favicon.png" rel="shortcut icon"/>
         <!-- CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet"/>
         <link href="/css/style.css" rel="stylesheet" type="text/css"/>
         <!-- AngularJS -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js" type="text/javascript">
-        </script>
-        <script src="https://code.angularjs.org/1.7.2/angular-route.js" type="text/javascript">
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-resource.js" type="text/javascript">
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular-animate.js" type="text/javascript">
         </script>
         <!-- app -->
         <script src="./js/app/app.module.js">
@@ -48,6 +41,11 @@
         </script>
         <script src="./js/app/center/center.component.js">
         </script>
+        <!-- centernav -->
+        <script src="./js/app/centernav/centernav.module.js">
+        </script>
+        <script src="./js/app/centernav/centernav.component.js">
+        </script>
         <!-- userlinks -->
         <script src="./js/app/userlinks/userlinks.module.js">
         </script>
@@ -55,44 +53,44 @@
         </script>
         <!-- footer -->
         <!-- utils  -->
-        <!-- Jquery  -->
-        <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js">
+        <script src="./js/lib/csDropdown.module.js">
         </script>
-        <!--
-            </meta-->
+        <script src="./js/lib/csDropdown.directive.js" type="text/javascript">
+        </script>
+        <!-- Greensock -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
+        </script>
+        <!-- Jquery  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+        </script>
     </head>
-</html>
-<body>
-    <header>
-    </header>
-    <jumborow>
-    </jumborow>
-    <div class="row">
-        <div class="col-sm-2">
-            <leftnav>
-            </leftnav>
+    <body>
+        <header>
+        </header>
+        <jumborow>
+        </jumborow>
+        <div class="row">
+            <div class="col-sm-2">
+                <leftnav>
+                </leftnav>
+            </div>
+            <div class="col-sm-8">
+                <centernav>
+                </centernav>
+                <center>
+                </center>
+            </div>
+            <div class="col-sm-2" style="padding: 0;">
+                <userlinks>
+                </userlinks>
+            </div>
         </div>
-        <div class="col-sm-8">
-            <center>
-            </center>
-        </div>
-        <div class="col-sm-2" style="padding: 0;">
-            <userlinks>
-            </userlinks>
-        </div>
-    </div>
-    <nav class="navbar fixed-bottom footer">
-        <div>
-            <p class="navbar footer" href="#">
-                @2018 v2.0.0
-            </p>
-        </div>
-    </nav>
-    <!-- 
+        <!-- 
 MC# Support Main Page for the MC$ Support Page Setup.
 Design by Thomas Dellorusso 
 tdellorusso@commvault.com 
 Based from original design by Ted Polny. 172.19.21.10/advanced/
 @2018 
 -->
-</body>
+    </body>
+</html>

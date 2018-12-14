@@ -3,12 +3,12 @@
 angular.module('cvsupport', 
 	[
 	// external
-		// 'ngroute',
-		// 'ngresource',
+		'csDropdown',
 	// internal
 		'header',
 		'jumborow',
 		'leftnav',
 		'center',
+		'centernav',
 		'userlinks',
 	]);

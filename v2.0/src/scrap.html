@@ -1,0 +1,146 @@
+<li class="list-group-item" >
+                    <a ng-repeat="name in docPage"ng-href="{{docPage[$index].path}}">
+                        {{docPage[$index].name}}
+                    </a>
+                </li>
+
+
+<div class="dropdown btn-labsys">
+    <button aria-expanded="true" aria-haspopup="true" class="btn btn-secondary labsys dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" id="dropdownMenu1" name="ADV11" title="ADV11" type="button">
+        ADV11 V11 Lab
+    </button>
+    <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+        <li>
+            <a class="dropdown-item" href="http://adv11v-cs:81/Console/" target="_blank">
+                ADV11
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://adv11v-cs/webconsole" target="_blank">
+                Webconsole
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item" href="https://adv11v-cs/adminconsole" target="_blank">
+                Adminconsole
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="dropdown dropright btn-labsys">
+    <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV10" title="ADV10">
+        ADV10 V10 Lab
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://adv10v-cs/Console/" target="_blank">
+            ADV10 GUI Console
+        </a>
+        <a class="dropdown-item" href="http://adv10v-cs/Monitor" target="_blank">
+            QNet
+        </a>
+        <a class="dropdown-item" href="http://adv10v-webserve/search" target="_blank">
+            Search
+        </a>
+        <a class="dropdown-item" href="http://adv10v-webserve/compliancesearch" target="_blank">
+            Comp
+        </a>
+        <a class="dropdown-item" href="http://adv10v-webserve/webconsole" target="_blank">
+            Webconsole
+        </a>
+        <a class="dropdown-item" href="http://adv10v-webserve/customreports" target="_blank">
+            Custom Reports
+        </a>
+    </div>
+</div>
+<div class="dropdown dropright btn-labsys">
+    <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="ADV90" title="ADV90">
+        ADV90 V9 Lab
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://adv90v-cs/Console/" target="_blank">
+            ADV90 GUI Console
+        </a>
+        <a class="dropdown-item" href="http://adv90v-cs/Monitor" target="_blank">
+            QNet
+        </a>
+        <a class="dropdown-item" href="http://adv90v-srchadm/search" target="_blank">
+            Search
+        </a>
+        <a class="dropdown-item" href="http://adv90v-srchadm/compliancesearch" target="_blank">
+            Comp
+        </a>
+        <a class="dropdown-item" href="http://adv90v-srchadm/webconsole" target="_blank">
+            Webconsole
+        </a>
+        <a class="dropdown-item" href="http://adv90v-srchadm/customreports" target="_blank">
+            Custom Reports
+        </a>
+    </div>
+</div>
+<div class="dropdown dropright btn-labsys">
+    <button class="btn btn-secondary labsys dropdown-toggle " data-toggle="dropdown" name="QM11v-CS" title="QM11v-CS">
+        QM11v-CS
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="http://172.19.24.51/console/" target="_blank">
+            QM11v-CS
+        </a>
+        <a class="dropdown-item" href="http://cic/departments/customersupport/upgrades/11/Shared%20Documents/LabIPaddress.xlsx" target="_blank">
+            QM Lab Sheet
+        </a>
+    </div>
+</div>
+<div class="dropdown-filter">
+    <button class="btn btn-grey transparent dropdown-filter-toggle" ng-click="open=!open">
+        <div class="filter-wrap">
+            <span class="filter-label">
+                {{filterName}}:
+            </span>
+            <span class="filter-values">
+                {{selectedItemsString}}
+            </span>
+        </div>
+        <span class="caret" ng-if="filterItems.length > 0">
+        </span>
+    </button>
+    <ul aria-labelledby="dropdownMenu" class="dropdown-menu">
+        <li ng-click="selectedItems()" ng-repeat="item in filterItems">
+            <input ng-model="item.selected" type="checkbox"/>
+            <span ng-click="itemSelected($index)">
+                {{item.name}}
+            </span>
+        </li>
+    </ul>
+</div>
+// Log Location array
+        $scope.clfLocation = {
+            model: null,
+            availableOptions: [{
+                id: '1',
+                value: '\\\\ENG\\CELOGS\\',
+                name: 'CELOGS [GUI SendLogs]',
+                placeholder: "CCID"
+            }, {
+                id: '2',
+                value: '\\\\eng\\escalationlogs\\',
+                name: 'Eng [Escalation Log Share]',
+                placeholder: "CCID"
+            }, {
+                id: '3',
+                value: '\\\\titan\\cloudriver\\CloudUploads\\',
+                name: 'CRM Collect Logs',
+                placeholder: "Request ID"
+            }, {
+                id: '4',
+                value: 'ftp://ccust01:ahPohni$b4Mo@qnftp01.commvault.com/incoming/',
+                name: 'QNFTP [FTP Upload]',
+                placeholder: "CCID"
+            }],
+            selectedOption: {
+                id: '1',
+                value: '\\\\ENG\\CELOGS\\',
+                name: 'CELOGS [GUI SendLogs]',
+                placeholder: "CCID"
+            } //This sets the default value of the select in the ui
+        };
+        //End

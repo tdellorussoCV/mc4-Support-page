@@ -1,0 +1,20 @@
+<!-- Documentation Navbar row -->
+<div class="btn-group rounded " style="margin-bottom: 10px; width: 100%;">
+    <a class="btn cvbutton docNav" href="http://documentation.commvault.com/commvault" role="button" target="_blank">Documentation</a>
+    <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/v11/article" role="button" target="_blank">Simpana v11</a>
+    <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" cs-dropdown="dropdownOneIsOpen"></button>
+    <div class="cs-dropdown-menu docNav" ng-show="dropdownOneIsOpen">
+        <p class="docdrop ">Service Pack Versions</p>
+        <a ng-href="{{docPage[$index].path}}" ng-repeat="name in docPage" class="dropdown-item" target="_blank">{{docPage[$index].name}}</a>
+    </div>
+    
+    <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/v10/article" role="button" target="_blank">
+        Simpana v10
+    </a>
+    <a class="btn btn-secondary docNav" href="http://documentation.commvault.com/commvault/release_9_0_0/books_online_1/default.htm" role="button" target="_blank">
+        Simpana v9
+    </a>
+    <a class="btn btn-secondary docNav" href="http://internaldocs/" role="button" target="_blank">
+        Internal Docs | OEM
+    </a>
+</div>

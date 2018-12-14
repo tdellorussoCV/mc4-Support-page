@@ -3,7 +3,7 @@ angular.module('leftnav').
 component('leftnav', {
     templateUrl: './templates/leftnav.html',
     controller: function($scope, $http) {
-        // console.trace();
+      //console.trace();
         var ccid = '';
         // Log Location array
         $scope.clfLocation = {
@@ -44,9 +44,10 @@ component('leftnav', {
         //Customer Log File 
         $scope.celogfiles = function($event) {
             var keyCode = $event.which || $event.keyCode;
+            console.log(keyCode);
             if (keyCode === 13) {
                 // Do that thing you finally wanted to do
-                if (event.which === 13) {
+                if ($event.which === 13) {
                     // Input variable
                     var ccid = $scope.logInput;
                     var copyId = $scope.clfLocation.selectedOption.id;

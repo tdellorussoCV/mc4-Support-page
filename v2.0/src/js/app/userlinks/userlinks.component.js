@@ -35,10 +35,10 @@ component('userlinks', {
         //Get user userInfo
         $http.get('./json/mc4.json').then(function(res, ) {
             $scope.userInfo = res.data;
-            console.log($scope.userInfo);
+            //console.log($scope.userInfo);
         });
         var clientTeam = $scope.userInfo.client;
-        console.log(clientTeam);
+        //console.log(clientTeam);
         $scope.clientUser = function() {
             // angular.element('<button class="btn btn-secondary unix cvlogs" name="$scope.userInfo" title="$scope.userInfo">$scope.userInfo</button>')
         };
