@@ -1,0 +1,104 @@
+{
+    "sp15": [{
+        "name": "Service Pack 15",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp5/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp15/article?p=105092.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp15/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp15/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+                    
+    }],
+    "sp14": [{
+        "name": "Service Pack 14",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp14/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp14/article?p=105092.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp14/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp14/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+                    
+    }],
+    "sp13": [{
+        "name": "Service Pack 13",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp13/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp13/article?p=102852.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp13/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp13/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp12": [{
+        "name": "Service Pack 12",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp12/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp12/article?p=99252.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp12/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp12/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp11": [{
+        "name": "Service Pack 11",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp11/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp11/article?p=97124.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp11/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp11/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp10": [{
+        "name": "Service Pack 10",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp10/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp10/article?p=service_pack/updates/sp10_available_pack.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp10/article?p=features/deduplication/deduplication_building_block.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp10/article?p=system_requirements/common/requirements_overview.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp9": [{
+        "name": "Service Pack 9",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp9/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp9/article?p=service_pack/updates/sp9.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp9/article?p=features/deduplication/deduplication_building_block.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp9/article?p=system_requirements/common/requirements_overview.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp8": [{
+        "name": "Service Pack 8",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp8/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp8/article?p=service_pack/updates/sp8_available_pack.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp8/article?p=features/deduplication/deduplication_building_block.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp8/article?p=system_requirements/common/requirements_overview.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp7": [{
+        "name": "Service Pack 7",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp7/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp8/article?p=service_pack/updates/sp7_available_pack.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp7/article?p=features/deduplication/deduplication_building_block.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp7/article?p=system_requirements/common/requirements_overview.htm" ,
+        "sysReqname": "System Requirements"
+    }],
+    "sp6": [{
+        "name": "Service Pack 6",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp6/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp6/article?p=service_pack/updates/sp6_available_pack.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp6/article?p=features/deduplication/deduplication_building_block.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp6/article?p=system_requirements/common/requirements_overview.htm" ,
+        "sysReqname": "System Requirements"
+    }]
+}

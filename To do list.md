@@ -1,16 +1,12 @@
 To do list 
 --------------
 Unix uses this link most of the time for Weekend BB shift Rota and Some of the Unix stuff \\bizops\commvault\CE\UnixDB
-font icons to animate and change on click 
-Make the people list run from json file for easier updating. 
-Firefox - the Client dropdowns do not work. 
-update Document search to search each service pack.
+
 
 //---------//
 In Progress
 --------------
-Firefox - the Client dropdowns do not work.
-Make the people list run from json file for easier updating. 
+
 
 //---------//
 
@@ -51,3 +47,19 @@ added <meta charset="utf-8"/> to header for Firefox
 modified nav bar to work in Firefox
  8/16
   update BOL links
+
+2/5
+-----   
+Deployed 2.0
+font icons to animate and change on click 
+Make the people list run from json file for easier updating. 
+Firefox - the Client dropdowns do not work. 
+update Document search to search each service pack.
+
+2/8
+--------------------
+Started 3.0
+Node.js angular cli
+Serverside move
+
+

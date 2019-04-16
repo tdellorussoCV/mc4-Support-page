@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cvsupport">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        MC4 Support Page
+    </title>
+    <!-- icon -->
+    <link href="/mc4/images/favicon.png" rel="shortcut icon" />
+    <!-- Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
+    <link href="/mc4/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-route.min.js" type="text/javascript">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-resource.min.js" type="text/javascript">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js" type="text/javascript">
+    </script>
+    <!-- app -->
+    <script src="/mc4/js/app/app.module.js">
+    </script>
+    <script src="/mc4/js/app/app.config.js">
+    </script>
+    <!-- header -->
+    <script src="/mc4/js/app/header/header.module.js">
+    </script>
+    <script src="/mc4/js/app/header/header.component.js">
+    </script>
+    <!-- jumbo -->
+    <script src="/mc4/js/app/jumborow/jumborow.module.js">
+    </script>
+    <script src="/mc4/js/app/jumborow/jumborow.component.js">
+    </script>
+    <!-- leftnav -->
+    <script src="/mc4/js/app/leftnav/leftnav.module.js">
+    </script>
+    <script src="/mc4/js/app/leftnav/leftnav.component.js">
+    </script>
+    <!-- centernav -->
+    <script src="/mc4/js/app/centernav/centernav.module.js">
+    </script>
+    <script src="/mc4/js/app/centernav/centernav.component.js">
+    </script>
+    <!-- center -->
+    <script src="/mc4/js/app/center/center.module.js">
+    </script>
+    <script src="/mc4/js/app/center/center.component.js">
+    </script>
+    <!-- servicepack -->
+    <script src="/mc4/js/app/servicepack/servicepack.module.js">
+    </script>
+    <script src="/mc4/js/app/servicepack/servicepack.component.js">
+    </script>
+    <!-- labsystems -->
+    <script src="/mc4/js/app/labsystems/labsystems.module.js">
+    </script>
+    <script src="/mc4/js/app/labsystems/labsystems.component.js">
+    </script>
+    <!-- userlinks -->
+    <script src="/mc4/js/app/userlinks/userlinks.module.js">
+    </script>
+    <script src="/mc4/js/app/userlinks/userlinks.component.js">
+    </script>
+    <!-- footer -->
+    <script src="/mc4/js/app/footer/footer.module.js">
+    </script>
+    <script src="/mc4/js/app/footer/footer.component.js">
+    </script>
+    <!-- utils  -->
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
+    </script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <jumborow>
+    </jumborow>
+    <div class="row">
+        <div class="col-sm-2">
+            <leftnav>
+            </leftnav>
+        </div>
+        <div class="col-sm-8">
+            <centernav>
+            </centernav>
+            <div ng-view=""></div>
+        </div>
+        <div class="col-sm-2" style="padding: 0;">
+            <userlinks>
+            </userlinks>
+        </div>
+    </div>
+    <footer></footer>
+    <!-- 
+MC# Support Main Page for the MC$ Support Page Setup.
+Design by Thomas Dellorusso 
+tdellorusso@commvault.com 
+Based from original design by Ted Polny. 172.19.21.10/advanced/
+@2018 
+-->
+</body>
+
+</html>

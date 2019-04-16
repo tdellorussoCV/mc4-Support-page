@@ -1,0 +1,245 @@
+/*
+style.css Custom Stylesheet for the MC$ Support Page Setup.
+Design by Thomas Dellorusso 
+tdellorusso@commvault.com 
+Based from original design by Ted Polny. 172.19.21.10/advanced/
+@2018 
+*/
+
+/*Tags*/
+
+body {
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    margin: 0;
+    position: relative;
+    top: 0px;
+    /* background-repeat: repeat-x */
+    width: 100%;
+}
+a.client, a.msg, a.mm, a.server, a.unix {
+    display: none;
+}
+button.client, button.unix, button.msg, button.mm, button.server, button.labsys, button.logfiles, input.logfiles, select.logfiles, label.logfiles {
+    display: none;
+}
+div.teams {
+    width: 90%;
+    margin: 0px auto;
+}
+div.teamNav {
+    width: 100%
+}
+div.leftNav, h4.leftNav {
+    width: 85%;
+    margin-left: 50px;
+    margin-right: 50px
+}
+div.nav-header {
+    width: 240px;
+}
+div.jumbotron {
+    background-color: lightsteelblue;
+    padding: 20px
+}
+h1 {
+    margin: 0px;
+}
+h2 {
+    font-size: 9pt;
+    color: #333333;
+    margin: 0px;
+}
+h6.lsmodal {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0px
+}
+label.client, label.mm ,label.msg, label.server, label.unix{
+    margin-bottom: 0px;
+    display: none;
+}
+p.docdrop {
+    font-weight: bold
+}
+small {
+    font-size: 8pt;
+}
+ul {
+    list-style-type: none;
+}
+/*Classes*/
+
+.btn-teams {
+    color: white;
+    background-color: steelblue;
+}
+.btn-client {
+    background-color: steelblue;
+    border-color: steelblue
+}
+.btn-input {
+    color: #7C8084
+}
+.btn-labsys {
+    width: 100%;
+}
+.btnNav {
+        padding-top: 0;
+    width: 50%
+}
+.cvlogbtn {
+    margin-bottom: 0px
+}
+.cvbutton {
+    color: white;
+    background-color: steelblue;
+    border-color: steelblue
+}
+.cvbutton1 {
+    /* color: white; */
+    background-color: lightsteelblue;
+    border-color: lightsteelblue
+}
+.cvdrop {
+    display: block;
+    padding: .5rem 1.5rem;
+    margin-bottom: 0;
+    font-size: .875rem;
+    color: #6c757d;
+    white-space: nowrap;
+}
+.cvfooter {
+    width: 50%;
+    float: left;
+}
+.cvmess {
+    width: 95%;
+    height: 75px;
+    background-color: lightsteelblue;
+    margin-bottom: 25px;
+}
+.docNav {
+    width: 20%
+}
+.docdrop {
+    width: 95%;
+    margin: 0px auto
+}
+#docdrop {
+    width: 20%
+}
+.explorer {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%
+}
+.firstrow {
+    align-self: center;
+    height: 25px;
+    margin-left: 15px;
+    padding-right: 0px
+}
+.fa-plus-square, .fa-clipboard-check, .fa-clipboard-list, .fa-link, .fa-share-alt {
+    float: right;
+}
+.footer {
+    font-size: .90em;
+    display: initial;
+    margin-right: 5px;
+}
+.heading {
+    padding: 0;
+    margin: 0;
+    max-width: 100%
+}
+.hidden {
+    display: none;
+}
+.logfiles { list-style-type: none;}
+.labsys { list-style-type: none;}
+.nospace {
+    padding: 0;
+    margin: 0
+}
+.navbg-dark {
+    background-color: #00384F;
+}
+.navlogo {
+    padding: 0 10px
+}
+.navForm {
+    max-width: 95%;
+    margin: 0px 10px
+}
+.rightNav {
+    margin: 0px auto;
+    padding-right: 35px
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+/* ID */
+
+#buffer {
+    width: 425px
+}
+#cvlogo {
+    height: 36px;
+    width: 36px
+}
+#glossybtn {
+    width: 32px;
+    height: 32px;
+    /*background-color: lightsteelblue;
+    margin: 25px;*/
+}
+#navheader{
+    max-width: 100%;
+}
+#subNav{
+    max-height: 25px;
+    max-width: 100%;
+    width: inherit;
+    background: lightsteelblue;
+}
+#tag{
+    display: inline-flex;
+}
+/*#docNavInput{ width: 75%}*/

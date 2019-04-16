@@ -47,7 +47,7 @@ function alexlisteners(){
     //console.trace();
     if(event.which === 13){
       var alexinput = $(this).val();
-      var alexstatic = "https://alexandria.commvault.com/#!/search;searchTerms=";
+      var alexstatic = "https://alexandria.commvault.com/search?q=";
       var alexurl = alexstatic + alexinput;
       window.open(alexurl);
       $(this).val("");

@@ -1,0 +1,37 @@
+<h4 class="leftNav">
+    Quick Links
+    <i class="fas fa-link">
+    </i>
+</h4>
+<div class="btn-group-vertical rounded leftNav">
+    <button class="btn cvbutton btn-logfiles cvlogbtn" ng-click="clfButton($event)" type="button">
+        Customer Log Files
+    </button>
+    <!-- <label class="btn cvbutton1 nospace logfiles ">Choose One</label> -->
+    <select class="btn btn-secondary logfiles" name="clfLocation" ng-model="leftNav.selectedOptionlogs" 
+    ng-options="option.name for option in clfLocation.availableOptions track by option.id"><option value="">Choose a Path </option></select>
+    <input class="btn btn-input logfiles" id="CCID" ng-keypress="celogfiles($event)" ng-model="logInput" ngrequired="([a-fA-F0-9]{1,6})$"
+        placeholder="Type ID and press Enter" title="Hex CCID" type="text" />
+    <!-- Rest of the links  -->
+    <a class="btn cvbutton" href="http://bytecafe/menus.php?menu=weeklymenu" role="button" target="_blank">
+        ByteCafe
+    </a>
+    <a class="btn cvbutton" href="https://connect.commvault.com/" role="button" target="_blank">
+        Connect
+    </a>
+    <a class="btn cvbutton" href="https://co13611.purelyhr.com/?ct=1" role="button" target="_blank">
+        Time Off
+    </a>
+    <a class="btn cvbutton" href="http://engweb.commvault.com/OfficeMap/default.asp" role="button" target="_blank"
+        title="CommVault, Tinton Falls, NJ">
+        Office Map
+    </a>
+    <a class="btn cvbutton" href="https://commvault.samanage.com/" role="button" target="_blank">
+        HelpDesk
+    </a>
+</div>
+<br />
+<br />
+<br />
+
+<!-- selectedOption.name -->
