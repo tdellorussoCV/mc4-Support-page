@@ -1,0 +1,34 @@
+<!-- Right Hand Buttons  -->
+<div class="rounded container">
+    <h4>
+        Log Shares
+        <i class="fas fa-share-alt rightNav">
+        </i>
+    </h4>
+    <div class="btn-group-vertical rounded teams">
+        <!-- Client Members -->
+        <button class="btn cvbutton btn-lg btn-client" id="client" ng>Client
+        </button>
+        <label class="btn btn-secondary client {{userInfo.client[$index].stat}}" name="{{userInfo.client[$index].file}}" title="{{userInfo.client[$index].path}}"
+            ng-repeat="items in userInfo.client" ng-click="copyClick($event)">{{userInfo.client[$index].name}}</label>
+        <!-- MM logs -->
+        <button class="btn btn-teams btn-lg btn-mm" id="mm">MM</button>
+        <label class="btn btn-secondary mm {{userInfo.mm[$index].stat}}" name="{{userInfo.mm[$index].file}}" title="{{userInfo.mm[$index].path}}"
+            ng-repeat="items in userInfo.mm" ng-click="copyClick($event)">{{userInfo.mm[$index].name}}</label>
+        <!--v MSG Members -->
+        <button class="btn btn-teams btn-lg btn-msg" id="msg">MSG
+        </button>
+        <label class="btn btn-secondary msg {{userInfo.msg[$index].stat}}" name="{{userInfo.msg[$index].file}}" title="{{userInfo.msg[$index].path}}"
+        ng-repeat="items in userInfo.msg" ng-click="copyClick($event)">{{userInfo.msg[$index].name}}</label>
+        <!-- Server Members -->
+        <button class="btn btn-teams btn-lg btn-server" id="server">Server
+        </button>
+        <label class="btn btn-secondary server {{userInfo.server[$index].stat}}" name="{{userInfo.server[$index].file}}" title="{{userInfo.server[$index].path}}"
+        ng-repeat="items in userInfo.server" ng-click="copyClick($event)">{{userInfo.server[$index].name}}</label>
+        <!-- Unix Members -->
+        <button class="btn btn-teams btn-lg btn-unix" id="unix">Unix
+        </button>
+        <label class="btn btn-secondary unix {{userInfo.unix[$index].stat}}" stat="{{userInfo.unix[$index].stat}}" name="{{userInfo.unix[$index].file}}" title="{{userInfo.unix[$index].path}}"
+        ng-repeat="items in userInfo.unix" ng-click="copyClick($event)">{{userInfo.unix[$index].name}}</label>
+    </div>
+</div>

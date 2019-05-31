@@ -1,0 +1,284 @@
+{
+   "client": [
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Michael Mancino",
+         "file": "mmancino840/Logs",
+         "path": "\\\\mmancino840\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Thomas Dello Russo",
+         "file": "tdellorusso/Logs",
+         "path": "\\\\tdellorusso\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Tarun Kumar Jain",
+         "file": "tarunkumar/Logs",
+         "path": "\\\\tarunkumar\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Jason Krol",
+         "file": "jkrol/Logs",
+         "path": "\\\\jkrol\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "William 'Liam' Sheridan",
+         "file": "WSHERIDAN/Logs",
+         "path": "\\\\WSHERIDAN\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Mike Whitman",
+         "file": "mwhitman/Logs",
+         "path": "\\\\mwhitman\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Chris Stogsdill",
+         "file": "cstogsdill800/Logs",
+         "path": "\\\\cstogsdill800\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Wes Young",
+         "file": "wesyoung/Logs",
+         "path": "\\\\wesyoung\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "James Policastro",
+         "file": "jpolicastro/Logs",
+         "path": "\\\\jpolicastro\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "client",
+         "name": "Daniel White",
+         "file": "dwhite800/Logs",
+         "path": "\\\\dwhite800\\Logs",
+         "stat": "cvlogs"
+      }
+   ],
+   "mm": [
+      {
+         "geo": "MC2",
+         "team": "MM",
+         "name": "Ed Anderson",
+         "file": "PBATTIFORA/Logs",
+         "path": "\\\\PBATTIFORA\\Log",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Paolo Battifora",
+         "file": "PBATTIFORA/Logs",
+         "path": "\\\\PBATTIFORA\\Log",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Michael Cozzi",
+         "file": "mcozzi/Logs",
+         "path": "\\\\mcozzi\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Charles McCarthy",
+         "file": "CMCCARTHY/Logs",
+         "path": "\\\\CMCCARTHY-WIN10\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Colin Falkinburg",
+         "file": "cvce009077/Logs",
+         "path": "\\\\cvce009077\\Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Bryan Samuel",
+         "file": "bsamuel/Logs",
+         "path": "\\\\bsamuel\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Bernard Marrow",
+         "file": "bmarrow/Logs",
+         "path": "\\\\bmarrow\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Colin Harper",
+         "file": "charper800g4/Logs",
+         "path": "\\\\charper800g4\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MM",
+         "name": "Nick Decillis",
+         "file": "NDESILLIS800G2/Logs",
+         "path": "\\\\NDESILLIS800G2\\logs",
+         "stat": "cvlogs"
+      }
+   ],
+   "msg": [
+      {
+         "geo": "MC4",
+         "team": "MSG",
+         "name": "Tamara Obermeit",
+         "file": "tobermeit/Logs",
+         "path": "\\\\tobermeit\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MSG",
+         "name": "Chris Banafato",
+         "file": "cbanafato800g1/cv-logs",
+         "path": "\\\\cbanafato800g1\\cv-logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MSG",
+         "name": "Thomas Flanagan",
+         "file": "tflanagan800/Logs",
+         "path": "\\\\tflanagan800\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "MSG",
+         "name": "Michael Hintenach",
+         "file": "mhintenach-lt/Logs",
+         "path": "\\\\mhintenach-lt\\logs",
+         "stat": "cvlogs"
+      }
+   ],
+   "server": [
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Robert Michaels",
+         "file": "tobermeit/Logs",
+         "path": "\\\\tobermeit\\logs",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Kenneth Hayes",
+         "file": "khayes800/Logs",
+         "path": "\\\\khayes800\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Kevin Babeu",
+         "file": "kbabeu/Logs",
+         "path": "\\\\kbabeu\\logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Michael Peterson",
+         "file": "tobermeit/Logs",
+         "path": "\\\\tobermeit\\logs",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Johnathan Cseh",
+         "file": "tobermeit/Logs",
+         "path": "\\\\tobermeit\\logs",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Billy Yates",
+         "file": "tobermeit/Logs",
+         "path": "\\\\tobermeit\\logs",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "server",
+         "name": "Scott Sheldon",
+         "file": "scottsheldon/Logs",
+         "path": "\\\\scottsheldon\\mc4s",
+         "stat": "cvlogs"
+      }
+   ],
+   "unix": [
+      {
+         "geo": "MC4",
+         "team": "unix",
+         "name": "Rick Trione",
+         "file": "Rtrione800g2/cvlogs",
+         "path": "\\\\Rtrione800g2\\cvlogs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "unix",
+         "name": "Mahender Reddy",
+         "file": "MREDDY800/Mahender_Logs",
+         "path": "\\\\MREDDY800\\Mahender_Logs",
+         "stat": "cvlogs"
+      },
+      {
+         "geo": "MC4",
+         "team": "unix",
+         "name": "Kerwin Rodgers",
+         "file": "Null",
+         "path": "\\\\scottsheldon\\Logs",
+         "stat": "disabled"
+      },
+      {
+         "geo": "MC4",
+         "team": "unix",
+         "name": "Thomas Hadley",
+         "file": "THADLEY800/Logs",
+         "path": "\\\\THADLEY800\\Logs",
+         "stat": "cvlogs"
+      }
+   ]
+}

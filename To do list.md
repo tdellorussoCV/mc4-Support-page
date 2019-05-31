@@ -6,6 +6,8 @@ Unix uses this link most of the time for Weekend BB shift Rota and Some of the U
 //---------//
 In Progress
 --------------
+v2.2
+Changing Header Search bar to be one search bar instead of 5
 
 
 //---------//
@@ -62,4 +64,15 @@ Started 3.0
 Node.js angular cli
 Serverside move
 
+4/18/19
+--------------------
+v2.1 
+Added Facilities link for email. 
+Charlies logs are now here:: \\CMCCARTHY-win10\Logs
 
+v2.2
+
+5/2/19
+--------------------
+v3.0
+Scraping angular 7 and returning to AngularJS

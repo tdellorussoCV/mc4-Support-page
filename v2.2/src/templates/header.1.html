@@ -1,0 +1,69 @@
+<!-- Navbar -->
+<nav id="navheader" class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <div class="nav-header">
+            <a class="navbar-brand" href="/">
+                MC4 Support Page
+            </a>
+            <img alt="cvlogo" id="cvlogo" src="./images/favicon.png" />
+        </div>
+        <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="container">
+                <div class="container navbar-nav pull-right navbar-right flex-row-reverse">
+                    <!-- <button class="btn btn-secondary">Go</button> -->
+                    <input class="form-control" type="text" style="width: 50%; margin:0">
+                    <select class="form-control" name="SearchUrls" id="SearchBar" ng-model="SearchUrls.search"
+                        ng-options="option.name for option in SearchUrls.search track by option.id"
+                        style="width: 200px">
+                        <option value="">Select a Search </option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right flex-row-reverse">
+                    <li class="nav-item">
+                        <input ng-model="docSrc"class="form-control navForm " id="docSrch" name="docsearch" placeholder="Documentation Search" type="text" ng-keypress="docSearch($event)">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input ng-model="bingSrc"class="form-control navForm" id="bingSrch" name="bingsearch" placeholder="Bing Search" type="text" ng-keypress="bingSearch($event)">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input ng-model="gooSrc"class="form-control navForm" id="gooSrch" name="googlesearch" placeholder="Google Search" type="text" ng-keypress="gooSearch($event)">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input ng-model="engSrc" class="form-control navForm" id="engweb" name="eng1" placeholder="EngWeb Search" type="text" ng-keypress="engSearch($event)">
+                        </input>
+                    </li>
+                    <li class="nav-item">
+                        <input ng-model="alexSrc" class="form-control navForm" id="alex" name="alex1" placeholder="Alexandria Search" ng-keypress="alexSearch($event)">
+                        </input>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="container-fluid" id="buffer">
+                <div class="container-fluid">
+                    <ul class="navbar-nav navbar-right flex-row-reverse">
+                        <li class="nav-item">
+                            <a class="nav-link navForm"
+                                href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback">
+                                <i class="far fa-envelope">
+                                </i>
+                                Feedback
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
+					      	</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
