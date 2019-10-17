@@ -1,0 +1,58 @@
+<!-- Navbar -->
+<nav id="navheader"  class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <div class="nav-header">
+                <a class="navbar-brand nospace" href="/">
+                    MC4 Support Page
+                </a>
+                <img alt="cvlogo" id="cvlogo" src="assets/img/favicon.png"/> 
+        </div>
+        <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-right flex-row-reverse">
+                    <li class="nav-item">
+                        <input [(ngModel)]="docSrc" class="form-control navForm " id="docSrch" name="docsearch" placeholder="Documentation Search" type="text" (keydown)="docSearch($event)">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <input [(ngModel)]="bingSrc"class="form-control navForm" id="bingSrch" name="bingsearch" placeholder="Bing Search" type="text" (keydown)="bingSearch($event)">
+    
+                    </li>
+                    <li class="nav-item">
+                        <input [(ngModel)]="gooSrc"class="form-control navForm" id="gooSrch" name="googlesearch" placeholder="Google Search" type="text" (keydown)="gooSearch($event)">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <input [(ngModel)]="engSrc" class="form-control navForm" id="engweb" name="eng1" placeholder="EngWeb Search" type="text" (keydown)="engSearch($event)">
+                        
+                    </li>
+                    <li class="nav-item">
+                        <input [(ngModel)]="alexSrc" class="form-control navForm" id="alex" name="alex1" placeholder="Alexandria Search" (keydown)="alexSearch($event)">
+                        
+                    </li> 
+                </ul>
+            </div>
+            <div class="container-fluid" id="buffer">
+                <div class="container-fluid">
+                    <ul class="navbar-nav navbar-right flex-row-reverse">
+                        <li class="nav-item">
+                            <a class="nav-link navForm" href="mailto:tdellorusso@commvault.com?subject=MC4 Support Page - Feedback">
+                                <!-- <i class="">
+                                </i> -->
+                                <fa-icon [icon]="['far', 'envelope']"></fa-icon>
+                                Feedback
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+					        	<a class="nav-link" href="https://alexandria.commvault.com">Alexandria</a>
+					      	</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

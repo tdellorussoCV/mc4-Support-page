@@ -1,0 +1,34 @@
+<!-- Buffer -->
+<br/>
+<br/>
+<br/>
+<!-- Status Messages -->
+<div class="row">
+    <div class="col-sm-12 container cvmess hidden rounded ">
+    </div>
+</div>
+<!-- Jumbotron Level -->
+<div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8 nospace">
+        <div align="center" class="jumbotron rounded header">
+            <h1>
+                {{ctrMessages.jumbo.line1}}
+            </h1>
+            <h3>
+                {{ctrMessages.jumbo.line2}}
+            </h3>
+            <h3>
+                {{ctrMessages.jumbo.line3}}
+            </h3>
+            <div *ngIf="alertstate" class="alert alert-info header" id="alertstate">
+                <strong>
+                    {{ctrMessages.critical.value}}
+                </strong>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+    </div>
+</div>

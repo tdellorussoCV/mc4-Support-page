@@ -1,7 +1,7 @@
 'use strict';
 angular.module('header').
 component('header', {
-    templateUrl: '/templates/header.1.html',
+    templateUrl: '/templates/header.html',
     controller: function($scope) {
         // Static URLS
         var alexstatic = "https://alexandria.commvault.com/search?q=";

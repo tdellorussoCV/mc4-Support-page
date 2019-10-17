@@ -1,0 +1,32 @@
+<div class="row">
+    <!-- sp15 -->
+    <div class="well col-sm-3" ng-repeat="items in serPack">
+        <ul>
+            <li >
+                <h5>
+                    {{serPack.[$index].name}}
+                </h5>
+                <div>
+                    <a class="" ng-href="{{serPack.sp15[$index].mainpath}}" target="_blank">
+                        {{serPack.[$index].name}}
+                    </a>
+                </div>
+                <div>
+                    <a class="" ng-href="{{serPack.sp15[$index].hotfixpath}}" target="_blank">
+                        {{serPack.[$index].hotfixLabel}}
+                    </a>
+                </div>
+                <div>
+                    <a class="" ng-href="{{serPack.sp15[$index].DedupBBguide}}" target="_blank">
+                        {{serPack.[$index].dedupLabel}}
+                    </a>
+                </div>
+                <div>
+                    <a class="" ng-href="{{serPack.sp15[$index].sysReq}}" target="_blank">
+                        {{serPack.[$index].sysReqname}}
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -12,19 +12,12 @@
          "file": "tdellorusso/Logs",
          "path": "\\\\tdellorusso\\Logs",
          "stat": "cvlogs"
-      },
-      {
-         "team": "client",
-         "name": "Tarun Kumar Jain",
-         "file": "tarunkumar/Logs",
-         "path": "\\\\tarunkumar\\Logs",
-         "stat": "cvlogs"
-      },
+		}, 
       {
          "team": "client",
          "name": "Jason Krol",
-         "file": "jkrol/Logs",
-         "path": "\\\\jkrol\\Logs",
+         "file": "JKROL800G4/Logs",
+         "path": "\\\\JKROL800G4\\Logs",
          "stat": "cvlogs"
       },
       {
@@ -92,7 +85,7 @@
       "team": "MM",
       "name": "Charles McCarthy",
       "file": "CMCCARTHY/Logs",
-      "path": "\\\\CMCCARTHY\\Logs",
+      "path": "\\\\CMCCARTHY-WIN10\\Logs",
       "stat": "cvlogs"
    }, {
       "team": "MM",

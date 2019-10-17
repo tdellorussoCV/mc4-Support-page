@@ -1,5 +1,15 @@
 {
-    "sp15": [{
+    "sp16": [{
+        "name": "Service Pack 16",
+        "mainpath": "http://documentation.commvault.com/commvault/v11_sp16/article",
+        "hotfixLabel": "Hotfix Packs",
+        "hotfixpath": "http://documentation.commvault.com/commvault/v11_sp16/article?p=105092.htm",
+        "dedupLabel": "Deduplication Building Block Guide",
+        "DedupBBguide": "http://documentation.commvault.com/commvault/v11_sp16/article?p=12411.htm",
+        "sysReq" : "http://documentation.commvault.com/commvault/v11_sp16/article?p=2798.htm" ,
+        "sysReqname": "System Requirements"
+                    
+    }],"sp15": [{
         "name": "Service Pack 15",
         "mainpath": "http://documentation.commvault.com/commvault/v11_sp5/article",
         "hotfixLabel": "Hotfix Packs",
